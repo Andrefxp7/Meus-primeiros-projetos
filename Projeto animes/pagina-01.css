@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+
+    font-family: 'Japones';
+    src: url('Fontes/go3v2.ttf') format('truetype');
+    font-weight: normal;
+
+}
+
+@font-face {
+    font-family: 'escrita';
+    src: url('Fontes/Butter.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root{
+
+    --cor1: #BF49F2;
+    --cor2: #A800F0;
+    --cor3: #592270;
+    --cor4: #4F0070;
+    --cor5: #000000;
+    --cor6: white;
+
+    --font-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --font-titulo: 'Japones';
+    --font-paragrafos: 'escrita';
+
+}
+
+body{
+
+    font-family: var(--font-padrão);
+}
+
+header{
+
+    background-color: var(--cor4);
+
+}
+
+header > h1{
+
+    font-family: var(--font-titulo);
+    color: var(--cor6);
+    text-align: center;
+    padding: 15px;
+
+}
+
+header > p{
+
+    font-family: var(--font-paragrafos);
+    color: var(--cor6);
+    text-align: center;
+    padding-bottom: 15px;
+
+}
+
+nav{
+
+    background-color: var(--cor4);
+    padding-bottom: 10px;
+    
+}
+
+nav > a{
+
+    color: var(--cor6);
+    padding-right: 7px;
+    padding-left: 7px;
+    text-decoration: none;
+    
+}
+
+article{
+    
+    background-color:var(--cor5);
+    height: 1300px;
+    margin: auto;
+
+}
+
+article > h2{
+
+    color: var(--cor1);
+    font-family: var(--font-titulo);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 6px;
+
+}
+
+article > p{
+
+    color:var(--cor6);
+    font-family: var(--font-padrão);
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    
+}
+
+strong{
+
+    color: var(--cor1);
+}
+
+aside{
+
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #A800F0;
+
+}
+
+article > picture > img{
+
+    display: block;
+    margin: auto;
+    width: 50%;
+
+}
+
+a{
+
+    color: var(--cor6);
+
+}
+
+p{
+
+    color: var(--cor6);
+    padding-bottom: 5px;
+
+}
