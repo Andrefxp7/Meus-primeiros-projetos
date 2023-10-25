@@ -1,0 +1,1233 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" class="pointer skrollr skrollr-desktop"><head>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style id="customRules"></style><script async="" src="//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js"></script><script type="text/javascript">
+        window._currentDevice = 'desktop';
+        window.Parameters = window.Parameters || {
+            AjaxContainer: 'div.dmBody',
+            WrappingContainer: 'div.dmOuter',
+            HomeUrl: 'https://oruocetyn.multiscreensite.com/',
+            AccountUUID: '5a4c9fd2bd8a4e7cbe4beaabbf6df10c',
+            SystemID: 'US_DIRECT_PRODUCTION',
+            SiteAlias: 'c8fe7d10',
+            SiteType: atob('RFVEQU9ORQ=='),
+            PublicationDate: 'Thu Oct 05 23:23:01 UTC 2023',
+            ExternalUid: null,
+            IsSiteMultilingual: false,
+            InitialPostAlias: '',
+            InitialDynamicItem: '',
+            DynamicPageInfo: {
+                isDynamicPage: false,
+                base64JsonRowData: 'null',
+            },
+            InitialPageAlias: 'home',
+            InitialPageUuid: '837564a8360d44a5b613b513756902e9',
+            InitialPageId: '26480022',
+            InitialEncodedPageAlias: 'aG9tZQ==',
+            CurrentPageUrl: '',
+            IsCurrentHomePage: true,
+            AllowAjax: false,
+            AfterAjaxCommand: null,
+            HomeLinkText: 'Back To Home',
+            UseGalleryModule: false,
+            CurrentThemeName: 'Layout Theme',
+            ThemeVersion: '38150',
+            DefaultPageAlias: '',
+            RemoveDID: true,
+            WidgetStyleID: null,
+            IsHeaderFixed: false,
+            IsHeaderSkinny: false,
+            IsBfs: true,
+            StorePageAlias: 'null',
+            StorePagesUrls: 'e30=',
+            IsNewStore: 'false',
+            StorePath: '',
+            StoreId: 'null',
+            StoreVersion: 0,
+            StoreBaseUrl: '',
+            StoreCleanUrl: true,
+            StoreDisableScrolling: true,
+            IsStoreSuspended: false,
+            NotificationSubDomain: 'null',
+            HasCustomDomain: false,
+            showCookieNotification: false,
+            cookiesNotificationMarkup: 'null',
+            translatedPageUrl: '',
+            isFastMigrationSite: false,
+            sidebarPosition: 'LEFT',
+            currentLanguage: 'pt',
+            currentLocale: 'pt',
+            NavItems: '{}',
+            errors: {
+                general: 'Houve um erro ao conectar à página.<br/> Verifique se você não está off-line.',
+                password: 'Nome/combinação de senha incorreta',
+                tryAgain: 'Tente novamente'
+            },
+            NavigationAreaParams: {
+                ShowBackToHomeOnInnerPages: true,
+                NavbarSize: 4,
+                NavbarLiveHomePage: 'https://oruocetyn.multiscreensite.com/',
+                BlockContainerSelector: '.dmBody',
+                NavbarSelector: '#dmNav:has(a)',
+                SubNavbarSelector: '#subnav_main'
+            },
+            hasCustomCode: false,
+            planID: '7',
+            customTemplateId: 'null',
+            siteTemplateId: 'null',
+            productId: 'DM_DIRECT',
+            disableTracking: false,
+            pageType: 'FROM_SCRATCH',
+            isRuntimeServer: true,
+            isInEditor: false,
+        };
+    
+        window.Parameters.LayoutID = {};
+        window.Parameters.LayoutID[window._currentDevice] = 6;
+        window.Parameters.LayoutVariationID = {};
+        window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Injecting site-wide to the head -->
+    
+    
+    
+    
+    <!-- End Injecting site-wide to the head -->
+    
+    <!-- Inject secured cdn script -->
+    
+    
+    <!-- ========= Meta Tags ========= -->
+    <!-- PWA settings -->
+    <script>
+        function toHash(str) {
+            var hash = 5381, i = str.length;
+            while (i) {
+                hash = hash * 33 ^ str.charCodeAt(--i)
+            }
+            return hash >>> 0
+        }
+    </script>
+    <script>
+        (function (global) {
+        //const cacheKey = global.cacheKey;
+        const isOffline = 'onLine' in navigator && navigator.onLine === false;
+        const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+        if (isOffline) {
+            console.log('offline mode');
+        }
+        if (!hasServiceWorkerSupport) {
+            console.log('service worker is not supported');
+        }
+        if (hasServiceWorkerSupport && !isOffline) {
+            window.addEventListener('load', function () {
+                const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+                navigator.serviceWorker
+                    .register(serviceWorkerPath, { scope: './' })
+                    .then(
+                        function (registration) {
+                            // Registration was successful
+                            console.log(
+                                'ServiceWorker registration successful with scope: ',
+                                registration.scope
+                            );
+                        },
+                        function (err) {
+                            // registration failed :(
+                            console.log('ServiceWorker registration failed: ', err);
+                        }
+                    )
+                    .catch(function (err) {
+                        console.log(err);
+                    });
+            });
+    
+            // helper function to refresh the page
+            var refreshPage = (function () {
+                var refreshing;
+                return function () {
+                    if (refreshing) return;
+                    // prevent multiple refreshes
+                    var refreshkey = 'refreshed' + location.href;
+                    var prevRefresh = localStorage.getItem(refreshkey);
+                    if (prevRefresh) {
+                        localStorage.removeItem(refreshkey);
+                        if (Date.now() - prevRefresh < 30000) {
+                            return; // dont go into a refresh loop
+                        }
+                    }
+                    refreshing = true;
+                    localStorage.setItem(refreshkey, Date.now());
+                    console.log('refereshing page');
+                    window.location.reload();
+                };
+            })();
+    
+            function messageServiceWorker(data) {
+                return new Promise(function (resolve, reject) {
+                    if (navigator.serviceWorker.controller) {
+                        var worker = navigator.serviceWorker.controller;
+                        var messageChannel = new MessageChannel();
+                        messageChannel.port1.onmessage = replyHandler;
+                        worker.postMessage(data, [messageChannel.port2]);
+                        function replyHandler(event) {
+                            resolve(event.data);
+                        }
+                    } else {
+                        resolve();
+                    }
+                });
+            }
+        }
+    })(window);
+    </script>
+    <!-- Add manifest -->
+    <!-- End PWA settings -->
+    
+    
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+    <meta charset="utf-8">
+    
+    <link rel="canonical" href="https://oruocetyn.multiscreensite.com/">
+    
+    <meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Home
+    </title>
+    
+    <!--Add favorites icons-->
+    
+    <link rel="icon" type="image/x-icon" href="https://static.cdn-website.com/runtime/favicon_d1_res.ico">
+    
+    <!-- End favorite icons -->
+    
+    <link rel="preconnect" href="https://lirp.cdn-website.com/" crossorigin="">
+    
+    
+    
+    <!-- render the required CSS and JS in the head section -->
+    <script>
+        window.SystemID = 'US_DIRECT_PRODUCTION';
+    
+        if(!window.dmAPI) {
+            window.dmAPI = {
+                registerExternalRuntimeComponent: function() {
+                },
+                getCurrentDeviceType: function() {
+                    return window._currentDevice;
+                }
+            };
+        }
+    
+        if (!window.requestIdleCallback) {
+            window.requestIdleCallback = function (fn) {
+                setTimeout(fn, 0);
+            }
+        }
+    </script>
+    <!-- loadCSS function -->
+    
+    
+    
+    <script id="d-js-load-css">
+    /**
+     * There are a few <link> tags with CSS resource in them that are preloaded in the page
+     * in each of those there is a "onload" handler which invokes the loadCSS callback
+     * defined here.
+     * We are monitoring 3 main CSS files - the runtime, the global and the page.
+     * When each load we check to see if we can append them all in a batch. If threre
+     * is no page css (which may happen on inner pages) then we do not wait for it
+     */
+    (function () {
+      let cssLinks = {};
+      function loadCssLink(link) {
+        link.onload = null;
+        link.rel = "stylesheet";
+        link.type = "text/css";
+      }
+      
+        function checkCss() {
+          const pageCssLink = document.querySelector("[id*='CssLink']");
+    
+            if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page)) {
+                const storedRuntimeCssLink = cssLinks.runtime;
+                const storedPageCssLink = cssLinks.page;
+                const storedGlobalCssLink = cssLinks.global;
+    
+                storedGlobalCssLink.disabled = true;
+                loadCssLink(storedGlobalCssLink);
+    
+                if (storedPageCssLink) {
+                    storedPageCssLink.disabled = true;
+                    loadCssLink(storedPageCssLink);
+                }
+    
+                storedRuntimeCssLink.disabled = true;
+                loadCssLink(storedRuntimeCssLink);
+    
+                requestAnimationFrame(() => {
+                    setTimeout(() => {
+                        storedRuntimeCssLink.disabled = false;
+                        storedGlobalCssLink.disabled = false;
+                        if (storedPageCssLink) {
+                          storedPageCssLink.disabled = false;
+                        }
+                        cssLinks = null;
+                    }, 0);
+                });
+            }
+        }
+      
+    
+      function loadCSS(link) {
+        try {
+          var urlParams = new URLSearchParams(window.location.search);
+          var noCSS = !!urlParams.get("nocss");
+          var cssTimeout = urlParams.get("cssTimeout") || 0;
+    
+          if (noCSS) {
+            return;
+          }
+          if (link.href.includes("d-css-runtime")) {
+            cssLinks.runtime = link;
+            checkCss();
+          } else if (link.id === "siteGlobalCss") {
+            cssLinks.global = link;
+            checkCss();
+          } 
+          
+          else if(link.id.includes("CssLink")) {
+            cssLinks.page = link;
+            checkCss();
+          }  
+          
+          else {
+            requestIdleCallback(function () {
+              window.setTimeout(function () {
+                loadCssLink(link);
+              }, parseInt(cssTimeout, 10));
+            });
+          }
+        } catch (e) {
+          throw e
+        }
+      }
+      window.loadCSS = window.loadCSS || loadCSS;
+    })();
+    </script>
+    
+    <script data-role="deferred-init" type="text/javascript">
+        /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+        function Def(){this.promise=new Promise((function(a,b){this.resolve=a,this.reject=b}).bind(this))}
+        const defs={};
+        window.getDeferred=function(a){return null==defs[a]&&(defs[a]=new Def),defs[a]}
+        window.waitForDeferred = function (b, a, c) {
+          let d = window?.getDeferred?.(b);
+          d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+            ? setTimeout(a, 1)
+            : c
+            ? document.addEventListener("DOMContentLoaded", a)
+            : console.error(`Deferred  does not exist`);
+        };
+    </script>
+    <style id="forceCssIncludes">
+        /* This file is auto-generated from a `scss` file with the same name */
+    
+    .videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}
+    </style>
+    <style id="cssVariables" type="text/css">
+        
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Google Fonts Include -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- loadCSS function -->
+    
+    
+    
+    <script id="d-js-load-css">
+    /**
+     * There are a few <link> tags with CSS resource in them that are preloaded in the page
+     * in each of those there is a "onload" handler which invokes the loadCSS callback
+     * defined here.
+     * We are monitoring 3 main CSS files - the runtime, the global and the page.
+     * When each load we check to see if we can append them all in a batch. If threre
+     * is no page css (which may happen on inner pages) then we do not wait for it
+     */
+    (function () {
+      let cssLinks = {};
+      function loadCssLink(link) {
+        link.onload = null;
+        link.rel = "stylesheet";
+        link.type = "text/css";
+      }
+      
+        function checkCss() {
+          const pageCssLink = document.querySelector("[id*='CssLink']");
+    
+            if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page)) {
+                const storedRuntimeCssLink = cssLinks.runtime;
+                const storedPageCssLink = cssLinks.page;
+                const storedGlobalCssLink = cssLinks.global;
+    
+                storedGlobalCssLink.disabled = true;
+                loadCssLink(storedGlobalCssLink);
+    
+                if (storedPageCssLink) {
+                    storedPageCssLink.disabled = true;
+                    loadCssLink(storedPageCssLink);
+                }
+    
+                storedRuntimeCssLink.disabled = true;
+                loadCssLink(storedRuntimeCssLink);
+    
+                requestAnimationFrame(() => {
+                    setTimeout(() => {
+                        storedRuntimeCssLink.disabled = false;
+                        storedGlobalCssLink.disabled = false;
+                        if (storedPageCssLink) {
+                          storedPageCssLink.disabled = false;
+                        }
+                        cssLinks = null;
+                    }, 0);
+                });
+            }
+        }
+      
+    
+      function loadCSS(link) {
+        try {
+          var urlParams = new URLSearchParams(window.location.search);
+          var noCSS = !!urlParams.get("nocss");
+          var cssTimeout = urlParams.get("cssTimeout") || 0;
+    
+          if (noCSS) {
+            return;
+          }
+          if (link.href.includes("d-css-runtime")) {
+            cssLinks.runtime = link;
+            checkCss();
+          } else if (link.id === "siteGlobalCss") {
+            cssLinks.global = link;
+            checkCss();
+          } 
+          
+          else if(link.id.includes("CssLink")) {
+            cssLinks.page = link;
+            checkCss();
+          }  
+          
+          else {
+            requestIdleCallback(function () {
+              window.setTimeout(function () {
+                loadCssLink(link);
+              }, parseInt(cssTimeout, 10));
+            });
+          }
+        } catch (e) {
+          throw e
+        }
+      }
+      window.loadCSS = window.loadCSS || loadCSS;
+    })();
+    </script>
+    
+    <link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/fonts/css2?family=Roboto+Slab:ital,wght@0,100..900;1,100..900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;subset=latin-ext&amp;display=swap">
+    
+    
+    
+    
+    
+    <!-- RT CSS Include d-css-runtime-desktop-one-package-structured-global-->
+    <link rel="stylesheet" type="text/css" href="https://static.cdn-website.com/mnlt/production/3815/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css">
+    
+    <!-- End of RT CSS Include -->
+    
+    
+    <link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/WIDGET_CSS/production_3815/768a4c7c39d5403efa67d8006729be2c.css" id="widgetCSS">
+    
+    
+    <!-- Support `img` size attributes -->
+    <style>img[width][height] {
+      height: auto;
+    }</style>
+    
+    <!-- Support showing sticky element on page only -->
+    <style>
+      body[data-page-alias="home"] #dm [data-show-on-page-only="home"] {
+        display: block !important;
+      }
+    </style>
+    
+    <!-- This is populated in Ajax navigation -->
+    <style id="pageAdditionalWidgetsCss" type="text/css">
+    </style>
+    
+    
+    
+    
+    <!-- Site CSS -->
+    <link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/c8fe7d10/files/c8fe7d10_withFlex_1.min.css?v=3" id="siteGlobalCss">
+    
+    
+    
+    <style id="customWidgetStyle" type="text/css">
+        
+    </style>
+    <style id="innerPagesStyle" type="text/css">
+        
+    </style>
+    
+    
+    <style id="additionalGlobalCss" type="text/css">
+    </style>
+    
+    <!-- Page CSS -->
+    <link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/c8fe7d10/files/c8fe7d10_home_withFlex_1.min.css?v=3" id="homeCssLink">
+    
+    <style id="pagestyle" type="text/css">
+        
+    </style>
+    
+    <style id="pagestyleDevice" type="text/css">
+        
+    </style>
+    
+    <!-- Flex Sections CSS -->
+    
+    
+    
+    
+    
+    <style id="globalFontSizeStyle" type="text/css">
+        .font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }
+    </style>
+    <style id="pageFontSizeStyle" type="text/css">
+    </style>
+    
+    
+    
+    
+    <style id="hideAnimFix">
+      .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+        visibility: hidden;
+      }
+      .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+        visibility: hidden !important;
+      }
+    </style>
+    
+    
+    
+    
+    
+    
+    <!-- End render the required css and JS in the head section -->
+    
+    
+    
+    
+    
+    
+    
+    
+    <meta property="og:type" content="website">
+    
+      <meta name="twitter:card" content="summary">
+    
+    
+    
+    
+    <!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+    <style type="text/css" id="operaUserStyle">
+        video {
+          filter: -opera-shader(url(data:text/plain;base64,dW5pZm9ybSBzaGFkZXIgaUNodW5rOwp1bmlmb3JtIGZsb2F0MiBpQ2h1bmtTaXplOwoKY29uc3QgZmxvYXQgVEhSRVNIT0xEX0FSRUEgPSA4MDAgKiA2MDA7CmNvbnN0IGZsb2F0IE1JTl9BUkVBID0gNDAwICogMTAwOwpjb25zdCBmbG9hdCBNSU5fU1RSSVAgPSAyMDsKY29uc3QgZmxvYXQgTUFSR0lOID0gMTsKCmhhbGYzIHBpeGVsKGNvbnN0IGludCB4LCBjb25zdCBpbnQgeSwgaW4gaGFsZjIgeHkpCnsKCXJldHVybiBpQ2h1bmsuZXZhbCh4eSArIGhhbGYyKHgsIHkpKS5yZ2I7Cn0gIAoKaGFsZjMgUkdYKGhhbGYyIHh5KXsKCWhhbGYzIGYgPQoJcGl4ZWwoLTEsLTEsIHh5KSAqICAxLiArICAgICAgICAgICAgICAgICAgICAgCglwaXhlbCggMCwtMSwgeHkpICogLTEuICsgICAgICAgICAgICAgICAgICAgIAoJcGl4ZWwoIDEsLTEsIHh5KSAqICAxLiArCgkKCXBpeGVsKC0xLCAwLCB4eSkgKiAtMS4gKyAgICAgICAgICAgICAgICAgICAgCglwaXhlbCggMCwgMCwgeHkpICogLTIuICsgICAgICAgICAgICAgICAgICAgICAKCXBpeGVsKCAxLCAwLCB4eSkgKiAtMS4gKyAgICAgICAgICAgICAgICAgICAgIAoJCglwaXhlbCgtMSwgMSwgeHkpICogIDEuICsgICAgICAgICAgICAgICAgICAgICAKCXBpeGVsKCAwLCAxLCB4eSkgKiAtMS4gKyAgICAgICAgICAgICAgICAgICAgIAoJcGl4ZWwoIDEsIDEsIHh5KSAqICAxLgoJOwoJcmV0dXJuIGYgLyAtMjsKfQoKaGFsZjMgUkdYTW9yZShoYWxmMiB4eSl7CgloYWxmMyBmID0KCXBpeGVsKC0xLC0xLCB4eSkgKiAgMS4gKyAgICAgICAgICAgICAgICAgICAgIAoJcGl4ZWwoIDAsLTEsIHh5KSAqIC0xLiArICAgICAgICAgICAgICAgICAgICAKCXBpeGVsKCAxLC0xLCB4eSkgKiAgMS4gKwoJCglwaXhlbCgtMSwgMCwgeHkpICogLTEuICsgICAgICAgICAgICAgICAgICAgIAoJcGl4ZWwoIDAsIDAsIHh5KSAqIC0xLiArICAgICAgICAgICAgICAgICAgICAgCglwaXhlbCggMSwgMCwgeHkpICogLTEuICsgICAgICAgICAgICAgICAgICAgICAKCQoJcGl4ZWwoLTEsIDEsIHh5KSAqICAxLiArICAgICAgICAgICAgICAgICAgICAgCglwaXhlbCggMCwgMSwgeHkpICogLTEuICsgICAgICAgICAgICAgICAgICAgICAKCXBpeGVsKCAxLCAxLCB4eSkgKiAgMS4gCgk7CglyZXR1cm4gZiAvIC0xOwp9CgoKaGFsZjQgbWFpbihmbG9hdDIgeHkpCnsKCWhhbGY0IGNvbG9yID0gaUNodW5rLmV2YWwoeHkpOwoJCglpZiAoY29sb3IuYSA8IDEpIHsKCQlyZXR1cm4gY29sb3I7Cgl9CgkKCWlmIChpQ2h1bmtTaXplLnggKiBpQ2h1bmtTaXplLnkgPCBNSU5fQVJFQSkgewoJCXJldHVybiBjb2xvcjsKCX0KCglpZiAoaUNodW5rU2l6ZS55IDwgTUlOX1NUUklQIHx8IGlDaHVua1NpemUueCA8IE1JTl9TVFJJUCkgewoJCXJldHVybiBjb2xvcjsKCX0KCglpZiAoeHkueCA8IE1BUkdJTiB8fCB4eS54ID4gKGlDaHVua1NpemUueCAtIE1BUkdJTikgfHwKCSAgICB4eS55IDwgTUFSR0lOIHx8IHh5LnkgPiAoaUNodW5rU2l6ZS55IC0gTUFSR0lOKSkgewogICAgCXJldHVybiBjb2xvcjsgICAgCiAgICB9CgkKCWlmIChpQ2h1bmtTaXplLnggKiBpQ2h1bmtTaXplLnkgPiBUSFJFU0hPTERfQVJFQSkgewoJCWNvbG9yID0gaGFsZjQoUkdYTW9yZSh4eSksIDEpOwoJfSBlbHNlIHsKCQljb2xvciA9IGhhbGY0KFJHWCh4eSksIDEpOwoJfQoKCXJldHVybiBjb2xvcjsKfQo=));
+        }
+      
+    
+        img {
+          filter: -opera-shader(url(data:text/plain;base64,dW5pZm9ybSBzaGFkZXIgaUNodW5rOwp1bmlmb3JtIGZsb2F0MiBpQ2h1bmtTaXplOwoKY29uc3QgZmxvYXQgVEhSRVNIT0xEX0FSRUEgPSA4MDAgKiA2MDA7CmNvbnN0IGZsb2F0IE1JTl9BUkVBID0gNDAwICogMTAwOwpjb25zdCBmbG9hdCBNSU5fU1RSSVAgPSAyMDsKY29uc3QgZmxvYXQgTUFSR0lOID0gMTsKCmhhbGYzIHBpeGVsKGNvbnN0IGludCB4LCBjb25zdCBpbnQgeSwgaW4gaGFsZjIgeHkpCnsKCXJldHVybiBpQ2h1bmsuZXZhbCh4eSArIGhhbGYyKHgsIHkpKS5yZ2I7Cn0gIAoKaGFsZjMgUkdYKGhhbGYyIHh5KXsKCWhhbGYzIGYgPQoJcGl4ZWwoLTEsLTEsIHh5KSAqICAxLiArICAgICAgICAgICAgICAgICAgICAgCglwaXhlbCggMCwtMSwgeHkpICogLTEuICsgICAgICAgICAgICAgICAgICAgIAoJcGl4ZWwoIDEsLTEsIHh5KSAqICAxLiArCgkKCXBpeGVsKC0xLCAwLCB4eSkgKiAtMS4gKyAgICAgICAgICAgICAgICAgICAgCglwaXhlbCggMCwgMCwgeHkpICogLTIuICsgICAgICAgICAgICAgICAgICAgICAKCXBpeGVsKCAxLCAwLCB4eSkgKiAtMS4gKyAgICAgICAgICAgICAgICAgICAgIAoJCglwaXhlbCgtMSwgMSwgeHkpICogIDEuICsgICAgICAgICAgICAgICAgICAgICAKCXBpeGVsKCAwLCAxLCB4eSkgKiAtMS4gKyAgICAgICAgICAgICAgICAgICAgIAoJcGl4ZWwoIDEsIDEsIHh5KSAqICAxLgoJOwoJcmV0dXJuIGYgLyAtMjsKfQoKaGFsZjMgUkdYTW9yZShoYWxmMiB4eSl7CgloYWxmMyBmID0KCXBpeGVsKC0xLC0xLCB4eSkgKiAgMS4gKyAgICAgICAgICAgICAgICAgICAgIAoJcGl4ZWwoIDAsLTEsIHh5KSAqIC0xLiArICAgICAgICAgICAgICAgICAgICAKCXBpeGVsKCAxLC0xLCB4eSkgKiAgMS4gKwoJCglwaXhlbCgtMSwgMCwgeHkpICogLTEuICsgICAgICAgICAgICAgICAgICAgIAoJcGl4ZWwoIDAsIDAsIHh5KSAqIC0xLiArICAgICAgICAgICAgICAgICAgICAgCglwaXhlbCggMSwgMCwgeHkpICogLTEuICsgICAgICAgICAgICAgICAgICAgICAKCQoJcGl4ZWwoLTEsIDEsIHh5KSAqICAxLiArICAgICAgICAgICAgICAgICAgICAgCglwaXhlbCggMCwgMSwgeHkpICogLTEuICsgICAgICAgICAgICAgICAgICAgICAKCXBpeGVsKCAxLCAxLCB4eSkgKiAgMS4gCgk7CglyZXR1cm4gZiAvIC0xOwp9CgoKaGFsZjQgbWFpbihmbG9hdDIgeHkpCnsKCWhhbGY0IGNvbG9yID0gaUNodW5rLmV2YWwoeHkpOwoJCglpZiAoY29sb3IuYSA8IDEpIHsKCQlyZXR1cm4gY29sb3I7Cgl9CgkKCWlmIChpQ2h1bmtTaXplLnggKiBpQ2h1bmtTaXplLnkgPCBNSU5fQVJFQSkgewoJCXJldHVybiBjb2xvcjsKCX0KCglpZiAoaUNodW5rU2l6ZS55IDwgTUlOX1NUUklQIHx8IGlDaHVua1NpemUueCA8IE1JTl9TVFJJUCkgewoJCXJldHVybiBjb2xvcjsKCX0KCglpZiAoeHkueCA8IE1BUkdJTiB8fCB4eS54ID4gKGlDaHVua1NpemUueCAtIE1BUkdJTikgfHwKCSAgICB4eS55IDwgTUFSR0lOIHx8IHh5LnkgPiAoaUNodW5rU2l6ZS55IC0gTUFSR0lOKSkgewogICAgCXJldHVybiBjb2xvcjsgICAgCiAgICB9CgkKCWlmIChpQ2h1bmtTaXplLnggKiBpQ2h1bmtTaXplLnkgPiBUSFJFU0hPTERfQVJFQSkgewoJCWNvbG9yID0gaGFsZjQoUkdYTW9yZSh4eSksIDEpOwoJfSBlbHNlIHsKCQljb2xvciA9IGhhbGY0KFJHWCh4eSksIDEpOwoJfQoKCXJldHVybiBjb2xvcjsKfQo=));
+        }
+      
+    
+    :root {
+      
+      filter: -opera-shader(url(chrome-extension://fdmgckojopkigcbdkbfjddcafdiialdj/shader/matrix.txt) -opera-args(2 calc(env(-opera-gx-accent-color-r)/255) calc(env(-opera-gx-accent-color-g)/255) calc(env(-opera-gx-accent-color-b)/255) calc(env(-opera-gx-background-color-r)/255) calc(env(-opera-gx-background-color-g)/255) calc(env(-opera-gx-background-color-b)/255)));
+    
+    }
+    
+    
+    </style><style type="text/css">:root [href^="//x4pollyxxpush.com/"], :root zeus-ad, :root topadblock, :root span[id^="ezoic-pub-ad-placeholder-"], :root guj-ad, :root gpt-ad, :root div[id^="zergnet-widget"], :root div[id^="vuukle-ad-"], :root div[id^="sticky_ad_"], :root div[id^="rc-widget-"], :root div[id^="optidigital-adslot"], :root div[id^="gpt_ad_"], :root div[id^="ezoic-pub-ad-"], :root div[id^="div-gpt-"], :root div[id^="dfp-ad-"], :root div[id^="advads_ad_"], :root div[id^="adspot-"], :root div[id^="ads300_250-widget-"], :root div[id^="ads300_100-widget-"], :root div[id^="ads250_250-widget-"], :root div[id^="adrotate_widgets-"], :root div[id^="_vdo_ads_player_ai_"], :root div[id*="ScriptRoot"], :root div[id*="MarketGid"], :root div[data-native_ad], :root div[data-mini-ad-unit], :root div[data-insertion], :root div[data-id-advertdfpconf], :root div[data-google-query-id], :root hl-adsense, :root div[data-contentexchange-widget], :root div[data-content="Advertisement"], :root div[data-alias="300x250 Ad 2"], :root div[data-alias="300x250 Ad 1"], :root div[data-adzone], :root div[data-adunit-path], :root div[data-ad-wrapper], :root div[data-ad-placeholder], :root div[class^="native-ad-"], :root div[data-dfp-id], :root div[class^="kiwi-ad-wrapper"], :root div[class^="Adstyled__AdWrapper-"], :root div[aria-label="Ads"], :root display-ads, :root display-ad-component, :root bottomadblock, :root atf-ad-slot, :root aside[id^="adrotate_widgets-"], :root article.ad, :root ark-top-ad, :root app-advertisement, :root app-ad, :root amp-fx-flying-carpet, :root amp-embed[type="taboola"], :root amp-connatix-player, :root amp-ad-custom, :root amp-ad, :root a[style="width:100%;height:100%;z-index:10000000000000000;position:absolute;top:0;left:0;"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[href^="https://yogacomplyfuel.com/"], :root a[href^="https://www.sugarinstant.com/?partner_id="], :root a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"], :root a[href^="https://www.privateinternetaccess.com/"] > img, :root a[href^="https://www.onlineusershielder.com/"], :root a[href^="https://www.nutaku.net/signup/landing/"], :root a[href^="https://www.nudeidols.com/cams/"], :root a[href^="https://www.mypornstarcams.com/landing/click/"], :root a[href^="https://www.kingsoffetish.com/tour?partner_id="], :root a[href^="https://www.infowarsstore.com/"] > img, :root a[href^="https://www.highcpmrevenuenetwork.com/"], :root a[href^="https://www.googleadservices.com/pagead/aclk?"], :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root a[href^="https://www.get-express-vpn.com/offer/"], :root a[href^="https://www.financeads.net/tc.php?"], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root div[class^="Display_displayAd"], :root a[href^="https://www.sheetmusicplus.com/?aff_id="], :root a[href^="https://www.bang.com/?aff="], :root a[href^="https://www.adxsrve.com/"], :root a[href^="https://www.5mno3.com/"], :root a[href^="https://wirewar.website/"], :root a[href^="https://visit-website.com/"], :root a[href^="https://twinrdsyn.com/"], :root a[href^="https://twinrdsrv.com/"], :root a[href^="https://tsartech.g2afse.com/"], :root a[href^="https://trk.sportsflix4k.club/"], :root [href^="https://www.mypatriotsupply.com/"] > img, :root a[href^="https://trk.softonixs.xyz/"], :root a[href^="https://trk.nfl-online-streams.club/"], :root a[href^="https://tracking.avapartner.com/"], :root a[href^="https://track.wg-aff.com"], :root a[href^="https://track.afcpatrk.com/"], :root a[href^="https://torguard.net/aff.php"] > img, :root .OUTBRAIN[data-widget-id^="FMS_REELD_"], :root [data-role="tile-ads-module"], :root a[href^="https://adsrv4k.com/"], :root a[href^="https://go.xlviirdr.com"], :root a[href^="https://thaudray.com/"], :root a[href^="https://taghaugh.com/"], :root a[href^="https://click.candyoffers.com/"], :root [href^="https://zstacklife.com/"] img, :root a[href^="https://t.aslnk.link/"], :root a[href^="https://t.adating.link/"], :root a[href^="https://go.trackitalltheway.com/"], :root [href^="https://track.fiverr.com/visit/"] > img, :root a[href^="https://syndication.exoclick.com/"], :root a[href^="https://syndication.dynsrvtbg.com/"], :root a[href^="https://streamate.com/landing/click/"], :root a[href^="https://ad.doubleclick.net/"], :root a[href^="https://static.fleshlight.com/images/banners/"], :root a[href^="https://sTaRtGAMing.net/tienda/"], :root citrus-ad-wrapper, :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], :root a[href^="https://sTaRTgamInG.net/tienda/"], :root [data-adblockkey], :root a[href^="https://sTARtgamIng.net/tienda/"], :root a[href^="https://aweptjmp.com/"], :root a[href^="https://s.zlinkc.com/"], :root a[href^="https://www.mrskin.com/account/"], :root a[href^="https://s.optzsrv.com/"], :root a[data-obtrack^="http://paid.outbrain.com/network/redir?"], :root a[href^="https://reinstandpointdumbest.com/"], :root a[href^="https://go.strpjmp.com/"], :root a[href^="https://refpa4903566.top/"], :root a[href^="https://pubads.g.doubleclick.net/"], :root a[href^="https://prf.hn/click/"][href*="/camref:"] > img, :root a[href^="https://serve.awmdelivery.com/"], :root a[href^="https://prf.hn/click/"][href*="/adref:"] > img, :root a[href^="https://pb-track.com/"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root ps-connatix-module, :root div[id^="ad_position_"], :root a[href^="https://ovb.im/"], :root div[id^="ad-div-"], :root a[href^="https://newbinotracs.com/"], :root a[href^="https://natour.naughtyamerica.com/track/"], :root [href^="https://stvkr.com/"], :root a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"], :root a[href^="https://loboclick.com"], :root .nya-slot[style], :root a[href^="https://a.bestcontentweb.top/"], :root a[href^="https://lobimax.com/"], :root a[href^="https://lead1.pl/"], :root a[href^="https://refpa.top/"], :root a[href^="https://landing.brazzersnetwork.com/"], :root a[href^="https://safesurfingtoday.com/"][href*="?skip="], :root a[href^="https://ads.leovegas.com/redirect.aspx?"], :root a[href^="https://land.brazzersnetwork.com/landing/"], :root a[href^="https://track.adform.net/"], :root [data-css-class="dfp-inarticle"], :root .card-captioned.crd > .crd--cnt > .s2nPlayer, :root a[href^="https://go.tmrjmp.com"], :root a[href^="https://startgamIng.Net/tienda/"], :root a[href^="https://l.hyenadata.com/"], :root a[href^="https://juicyads.in/"], :root a[href^="https://mediaserver.gvcaffiliates.com/renderBanner.do?"], :root a[href^="https://join.dreamsexworld.com/"], :root a[href^="https://itubego.com/video-downloader/?affid="], :root a[href^="https://iqbroker.com/"][href*="?aff="], :root a[href^="https://incisivetrk.cvtr.io/click?"], :root [href^="https://www.herbanomic.com/"] > img, :root a[href^="https://maymooth-stopic.com/"], :root div[data-ad-targeting], :root a[href^="https://hotplaystime.life/"], :root a[href^="https://hot-growngames.life/"], :root [data-revive-zoneid], :root a[href^="https://googleads.g.doubleclick.net/pcs/click"], :root a[href^="https://clk.wrenchsound.store/"], :root a[href^="https://go.zybrdr.com"], :root [href^="http://join.michelle-austin.com/"], :root [class^="tile-picker__CitrusBannerContainer-sc-"], :root a[href^="https://go.xxxiijmp.com"], :root a[href^="https://go.xtbaffiliates.com/"], :root a[href^="https://ismlks.com/"], :root a[href^="//a.bestcontentfare.top/"], :root [href^="https://www.mypillow.com/"] > img, :root a[href^="https://azpresearch.club/"], :root a[href^="https://go.xlirdr.com"], :root a[href^="https://go.skinstrip.net"][href*="?campaignId="], :root a[href^="https://go.markets.com/visit/?bta="], :root a[href^="https://billing.purevpn.com/aff.php"] > img, :root a[href^="https://go.hpyrdr.com/"], :root a[href^="https://go.goaserv.com/"], :root a[href^="https://go.dmzjmp.com"], :root a[href^="https://go.admjmp.com/"], :root [href^="https://kingered-banctours.com/"], :root a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="] > img, :root a-ad, :root a[href^="https://affiliate.rusvpn.com/click.php?"], :root a[href^="https://geniusdexchange.com/"], :root a[href^="https://frameworkdeserve.com/"], :root a[href^="https://flirtandsweets.life/"], :root a[href^="https://www.mrskin.com/tour"], :root a[href^="https://financeads.net/tc.php?"], :root div[data-native-ad], :root a[href^="https://engine.trackingdesks.com/"], :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root [href^="https://www.reimageplus.com/"], :root a[href^="https://engine.phn.doublepimp.com/"], :root a[href^="https://engine.blueistheneworanges.com/"], :root a[href^="https://dl-protect.net/"], :root [href="//jjgirls.com/sex/ChaturbateCams"], :root a[href^="https://datingoffers30.info/"], :root a[href^="https://clixtrac.com/"], :root a[href^="https://click.linksynergy.com/fs-bin/"] > img, :root ad-shield-ads, :root a[href^="https://sTartGAMinG.net/tienda/"], :root AD-TRIPLE-BOX, :root a[href^="https://click.hoolig.app/"], :root a[href^="https://track.totalav.com/"], :root img[src^="https://images.purevpnaffiliates.com"], :root a[href^="https://porntubemate.com/"], :root a[href^="http://www.gfrevenge.com/landing/"], :root a[href^="https://clickadilla.com/"], :root a[href^="https://click.dtiserv2.com/"], :root a[href^="https://go.xlvirdr.com"], :root a[href^="http://www.iyalc.com/"], :root a[href^="https://claring-loccelkin.com/"], :root [class^="s2nPlayer"], :root a[href^="https://chaturbate.jjgirls.com/?track="], :root a[href^="https://chaturbate.com/in/?track="], :root a[href^="https://chaturbate.com/in/?tour="], :root a[href^="https://cams.imagetwist.com/in/?track="], :root a[href^="https://go.gldrdr.com/"], :root a[href^="https://buqkrzbrucz.com/"], :root a[href^="https://affcpatrk.com/"], :root a[href^="https://bongacams2.com/track?"], :root a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="], :root a[href^="https://bngpt.com/"], :root a[href^="https://bluedelivery.pro/"], :root a[href^="https://black77854.com/"], :root a[href^="https://bc.game/"], :root a[href^="https://ndt5.net/"], :root a[href^="https://batheunits.com/"], :root a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"], :root a[href^="https://banners.livepartners.com/"], :root a[href^="//whulsaux.com/"], :root a[href^="https://m.do.co/c/"] > img, :root [href="https://masstortfinancing.com"] img, :root a[href^="https://bongacams10.com/track?"], :root a[href^="https://albionsoftwares.com/"], :root a[href^="https://t.hrtye.com/"], :root a[href^="https://go.etoro.com/"] > img, :root a[href^="https://convertmb.com/"], :root a[href^="https://join.sexworld3d.com/track/"], :root a[href^="https://intenseaffiliates.com/redirect/"], :root a[href^="https://ads.ad4game.com/"], :root [id^="google_ads_iframe"], :root a[href^="https://syndication.optimizesrv.com/"], :root a[href^="https://affpa.top/"], :root a[href^="https://adnetwrk.com/"], :root a[href^="https://adjoincomprise.com/"], :root [href^="http://misslinkvocation.com/"], :root a[href^="https://adclick.g.doubleclick.net/"], :root a[href^="https://www.bet365.com/"][href*="affiliate="], :root [href^="https://r.kraken.com/"], :root a[href^="https://mmwebhandler.aff-online.com/"], :root a[href^="https://go.nordvpn.net/aff"] > img, :root [href^="http://clicks.totemcash.com/"], :root a[href^="https://misspkl.com/"], :root a[href^="https://ad.zanox.com/ppc/"] > img, :root a[href^="https://ad.kubiccomps.icu/"], :root div[data-adname], :root a[href^="https://thechleads.pro/"], :root a[href^="https://ab.advertiserurl.com/aff/"], :root a[href^="https://a2.adform.net/"], :root a[href^="https://iactrivago.ampxdirect.com/"], :root a[href^="https://a.medfoodhome.com/"], :root a[href^="https://adultfriendfinder.com/go/"], :root a[href^="https://a.bestcontentoperation.top/"], :root a[href^="http://static.fleshlight.com/images/banners/"], :root a[href^="https://a.adtng.com/"], :root [data-m-ad-id], :root a[href^="https://sTartgAminG.net/tienda/"], :root a[href^="https://a-ads.com/"], :root a[href^="https://join.virtualtaboo.com/track/"], :root a[href^="https://StarTGAminG.net/tienda/"], :root a[href^="https://STaRTgamINg.net/tienda/"], :root a[href^="https://cpmspace.com/"], :root [href^="https://freecourseweb.com/"] > .sitefriend, :root a[href^="https://prf.hn/click/"][href*="/creativeref:"] > img, :root a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="], :root a[href^="https://1betandgonow.com/"], :root [href="https://ourgoldguy.com/contact/"] img, :root a[href^="https://brightadnetwork.com/"], :root [href^="https://www.avantlink.com/click.php"] img, :root a[href^="http://www.onwebcam.com/random?t_link="], :root a[href^="http://www.mrskin.com/tour"], :root a[href^="https://agacelebir.com/"], :root a[href^="https://spygasm.com/track?"], :root a[href^="http://d2.zedo.com/"], :root a[href^="http://www.friendlyduck.com/AF_"], :root a[href^="http://trk.globwo.online/"], :root a[href^="http://traffic.tc-clicks.com/"], :root a[href^="http://tour.mrskin.com/"], :root a[href^="https://funkydaters.com/"], :root [id^="ad_sky"], :root a[href^="http://https://www.get-express-vpn.com/offer/"], :root div[id^="google_dfp_"], :root a[href^="http://googleads.g.doubleclick.net/pcs/click"], :root [href^="http://go.cm-trk2.com/"], :root a[href^="http://click.payserve.com/"], :root a[href^="https://porngames.adult/?SID="], :root a[href^="https://landing1.brazzersnetwork.com"], :root #slashboxes > .deals-rail, :root [href^="http://globsads.com/"], :root [href^="https://www.brighteonstore.com/products/"] img, :root a[href^="http://bc.vc/?r="], :root a[href^="https://mityneedn.com/"], :root [href^="http://homemoviestube.com/"], :root a[href^="http://ad.doubleclick.net/"], :root a[href^="//zunsoach.com/"], :root a[href^="//pubads.g.doubleclick.net/"], :root a[href^="https://femglobal.app/"], :root a[href^="//go.eabids.com/"], :root a[data-url^="http://paid.outbrain.com/network/redir?"] + .author, :root [href^="https://join.playboyplus.com/track/"], :root a[href^="//ardslediana.com/"], :root [data-d-ad-id], :root a[href*=".engine.adglare.net/"], :root [href^="https://awbbjmp.com/"], :root a[href^="https://tracker.loropartners.com/"], :root #kt_player > a[target="_blank"], :root a[href*=".cfm?fp="][href*="&maxads="], :root [data-ad-width], :root a[href^="http://bodelen.com/"], :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root [href^="https://cpa.10kfreesilver.com/"], :root a[href^="https://a.bestcontentfood.top/"], :root a[href^="http://wct.link/"], :root [href^="https://goldforyourfuture.com/clk.trk"] img, :root [onclick^="location.href='http://www.reimageplus.com"], :root [id^="section-ad-banner"], :root a[href^="https://go.julrdr.com/"], :root .trc_rbox_div .syndicatedItemUB, :root [href^="https://zone.gotrackier.com/"], :root [href^="https://detachedbates.com/"], :root [href^="https://www.targetingpartner.com/"], :root a[href^="https://fourwhenstatistics.com/"], :root [href^="https://www.restoro.com/"], :root a[href^="https://yourperfectdating.life/"], :root a[href^="https://join.virtuallust3d.com/"], :root .section-subheader > .section-hotel-prices-header, :root [href^="https://go.affiliatexe.com/"], :root [href^="https://www.hostg.xyz/"] > img, :root [href^="https://ilovemyfreedoms.com/landing-"], :root a[href^="https://staRTgaming.net/tienda/"], :root a[href^="https://STaRtgAmInG.net/tienda/"], :root a[href^="http://adultfriendfinder.com/go/"], :root a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="], :root a[href^="https://tour.mrskin.com/"], :root div[id^="ad-position-"], :root a[href^="http://affiliate.glbtracker.com/"], :root a[href^="https://leg.xyz/?track="], :root div[id^="crt-"][style], :root a[href^="http://adultgames.xxx/"], :root [href^="https://shiftnetwork.infusionsoft.com/go/"] > img, :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"], :root [href^="https://secure.bmtmicro.com/servlets/"], :root a[href^="https://losingoldfry.com/"], :root .scroll-fixable.rail-right > .deals-rail, :root [href^="https://routewebtk.com/"], :root a[href^="https://oackoubs.com/"], :root a[href^="https://ak.psaltauw.net/"], :root a[href^="https://go.cmtaffiliates.com/"], :root [data-name="adaptiveConstructorAd"], :root [href^="https://optimizedelite.com/"] > img, :root a[href^="https://awptjmp.com/"], :root a[href^="https://go.goasrv.com/"], :root [href^="http://mypillow.com/"] > img, :root a[href^="http://bongacams.com/track?"], :root a[href^="https://fleshlight.sjv.io/"], :root [data-ad-manager-id], :root a[href^="https://promo-bc.com/"], :root a[href^="https://clicks.pipaffiliates.com/"], :root [href^="https://noqreport.com/"] > img, :root a[href^="https://www.highperformancecpmgate.com/"], :root a[href^="https://t.grtyi.com/"], :root [href^="https://mylead.global/stl/"] > img, :root [href^="https://mypatriotsupply.com/"] > img, :root [data-freestar-ad], :root a[href^="https://fc.lc/ref/"], :root .vid-present > .van_vid_carousel__padding, :root span[data-ez-ph-id], :root [href^="https://track.aftrk1.com/"], :root div[id^="adngin-"], :root [data-rc-widget], :root a[href^="https://go.xxxijmp.com"], :root [href^="https://istlnkcl.com/"], :root [href^="https://go.xlrdr.com"], :root [href^="https://go.4rabettraff.com/"], :root a[href^="https://tm-offers.gamingadult.com/"], :root [href^="https://charmingdatings.life/"], :root [href^="https://glersakr.com/"], :root ins.adsbygoogle, :root a[href^="https://1startfiledownload1.com/"], :root .trc_rbox_border_elm .syndicatedItem, :root div[id^="pa_sticky_ad_box_middle_"], :root a[href^="http://www.onclickmega.com/jump/next.php?"], :root a[href^="https://italarizege.xyz/"], :root a[href^="https://wittered-mainging.com/"], :root [href^="https://engine.gettopple.com/"], :root [data-id^="div-gpt-ad"], :root a[href^="https://k2s.cc/pr/"], :root [href^="https://affect3dnetwork.com/track/"], :root a[href^="https://camfapr.com/landing/click/"], :root [href="//sexcams.plus/"], :root a[href^="https://go.currency.com/"], :root .resultsList > div > div > div.G-5c[role="tab"][tabindex="0"], :root [href^="http://www.mypillow.com/"] > img, :root div[id^="div-ads-"], :root [href^="https://rapidgator.net/article/premium/ref/"], :root [href^="https://join3.bannedsextapes.com"], :root div[data-spotim-slot], :root [href^="https://antiagingbed.com/discount/"] > img, :root a[href^="https://go.247traffic.com/"], :root [href^="https://join.girlsoutwest.com/"], :root [href^="http://trafficare.net/"], :root a[href^="https://tc.tradetracker.net/"] > img, :root a[href^="https://adserver.adreactor.com/"], :root [href^="http://join.shemalesfromhell.com/"], :root [id^="ad_slider"], :root #searchResultsList > div > div[onclick$="'inline.ad'});"], :root [data-adbridg-ad-class], :root a[href^="http://www.adultdvdempire.com/?partner_id="][href*="&utm_"], :root [href^="http://join.shemale.xxx/"], :root a[href^="https://ads.betfair.com/redirect.aspx?"], :root [href^="http://www.fleshlightgirls.com/"], :root [href^="http://join.trannies-fuck.com/"], :root .trc_rbox .syndicatedItem, :root a[href^="http://cam4com.go2cloud.org/aff_c?"], :root a[href^="https://thefacux.com/"], :root a[href^="https://ads.planetwin365affiliate.com/redirect.aspx?"], :root [href^="http://join.rodneymoore.com/"], :root [href^="https://shrugartisticelder.com"], :root a[href^="https://staRTgamIng.net/tienda/"], :root div[id^="lazyad-"], :root a[href^="http://com-1.pro/"], :root [name^="google_ads_iframe"], :root [href="https://www.masstortfinancing.com/"] > img, :root .ob_container .item-container-obpd, :root [id^="div-gpt-ad"], :root a[href^="https://www.geekbuying.com/dynamic-ads/"], :root a[href^="https://lnkxt.bannerator.com/"], :root [href="https://jdrucker.com/gold"] > img, :root [href^="https://v.investologic.co.uk/"], :root [href^="https://cipledecline.buzz/"], :root a[href^="https://go.xxxjmp.com"], :root #leader-companion > a[href], :root [data-desktop-ad-id], :root [href^="https://wct.link/"], :root div[recirculation-ad-container], :root [href^="https://traffserve.com/"], :root [data-type="ad-vertical"], :root a[href^="https://u.expresstech.io/"], :root [href^="https://mypillow.com/"] > img, :root [href^="https://ad.admitad.com/"], :root [data-testid="ad_testID"], :root a[href^="https://track.ultravpn.com/"], :root [href^="https://goldcometals.com/clk.trk"], :root a[href^="https://go.hpyjmp.com"], :root [href^="https://mystore.com/"] > img, :root [data-mobile-ad-id], :root a[href^="http://tc.tradetracker.net/"] > img, :root a[href^="http://affiliates.thrixxx.com/"], :root div[id^="yandex_ad"], :root a[href^="https://pb-imc.com/"], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root [data-template-type="nativead"], :root [data-ad-name], :root [data-ez-name], :root a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"], :root [data-dynamic-ads], :root a[href^="http://go.xtbaffiliates.com/"], :root a[href^="https://consali.com/"], :root .grid > .container > #aside-promotion, :root DFP-AD, :root .trc_related_container div[data-item-syndicated="true"], :root a[href^="https://www.liquidfire.mobi/"], :root [href^="https://click2cvs.com/"], :root [href^="//mage98rquewz.com/"], :root a[href^="https://webroutetrk.com/"], :root a[href^="https://mercurybest.com/"], :root a[href^="https://startgAming.net/tienda/"], :root [href^="https://safer-redirection.com"], :root [onclick*="content.ad/"], :root AMP-AD, :root a[href^="https://sTartGAMiNG.net/tienda/"], :root [data-ad-cls], :root [id^="ad-wrap-"], :root div[id^="taboola-stream-"], :root [href^="https://go.astutelinks.com/"], :root [class^="amp-ad-"], :root [href^="https://affiliate.fastcomet.com/"] > img, :root [class^="adDisplay-module"], :root AD-SLOT, :root .ob_dual_right > .ob_ads_header ~ .odb_div, :root [href^="http://join.shemalepornstar.com/"], :root a[href^="https://go.xlviiirdr.com"], :root .trc_rbox_div .syndicatedItem, :root div[data-adunit], :root app-large-ad, :root [href^="https://turtlebids.irauctions.com/"] img, :root a[href^="https://www.adskeeper.com"], :root [href^="https://totlnkcl.com/"], :root [data-ad-module], :root .plistaList > .itemLinkPET, :root [href^="https://gmxvmvptfm.com/"], :root [href^="https://trackfin.asia/"], :root .plistaList > .plista_widget_underArticle_item[data-type="pet"], :root a[href*="//lkstrck2.com/"], :root a[href^="https://bs.serving-sys.com"], :root [href^="http://residenceseeingstanding.com/"], :root a[href^="https://traffdaq.com/"], :root [class^="div-gpt-ad"], :root a[href^="https://ggbetpromo.com/"], :root a[href^="http://partners.etoro.com/"], :root [data-advadstrackid], :root a[href^="https://refpazkjixes.top/"], :root #mgb-container > #mgb, :root [href^="https://www.cloudways.com/en/?id"], :root a[href^="https://tweakostensibleinstaller.com/"], :root a[href^="https://go.xlivrdr.com"], :root a[href^="https://cam4com.go2cloud.org/"], :root a[href^="http://li.blogtrottr.com/click?"] { display: none !important; }</style><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3815/editor/apps/modules/runtime/18.8d9b98557bf3839e9c87.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3815/editor/apps/modules/runtime/23.3f8119279af00b87e45f.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3815/editor/apps/modules/runtime/1.38a874f31d2d8986b8b0.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3815/editor/apps/modules/runtime/7.9a94a74e30026a70bc4d.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3815/editor/apps/modules/runtime/runtime-module-anchors.8069350c1321599c430f.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3815/editor/apps/modules/runtime/3.837e97ee3698267e2a54.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3815/editor/apps/modules/runtime/5.34eda7c245c12af87bb1.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3815/editor/apps/modules/runtime/8.20c25f8b84fd357fa245.js"></script></head>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <body id="dmRoot" data-page-alias="home" class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody pcCustomScrollbar d1SiteBody dmBodyNoIscroll fullyLoaded" style="padding:0;margin:0;">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- ========= Site Content ========= -->
+    <div id="dm" class="dmwr">
+        
+        <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+             <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true" desktop-global-classes="header-over-content" tablet-global-classes="header-over-content" mobile-global-classes=""> <div dmtemplateid="StandardLayoutMultiD" class="standardHeaderLayout dm-bfs dm-layout-home hasAnimations rows-1200 inMiniHeaderMode hasStickyHeader hamburger-reverse header-over-content dmPageBody dmFreeHeader d-page-1716942098 runtime-module-container" id="dm-outer-wrapper" data-page-class="1716942098" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div> <div id="iscrollBody"> <div id="site_content"> <div class="dmHeaderContainer fHeader d-header-wrapper"> <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer" freeheader="true" headerlayout="b58ba5b5703b4cd7b5f5f7951565dc87===horizontal-layout-5" layout="78f5c343822e4eb3aac27f4ad5d13812===header" data-scrollable-target="body" data-scrollable-target-threshold="1" data-scroll-responder-id="1" logo-size-target="66%"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="dmRespRow dmDefaultListContentRow u_1779638299 fullBleedChanged fullBleedMode mini-header-hide-row" style="text-align:center" id="1779638299"> <div class="dmRespColsWrapper" id="1927180310"> <div class="u_1095623786 small-12 dmRespCol medium-12 large-12 has-one-widget-only" id="1095623786"> <div class="u_1302323967 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1302323967" data-binding="W3siYmluZGluZ05hbWUiOiJpbWFnZSIsInZhbHVlIjoic2l0ZV9pbWFnZXMubG9nbyJ9XQ==" editablewidget="true"> <a id="1942730262" href="/" file="false"><img src="https://irp.cdn-website.com/c8fe7d10/dms3rep/multi/Strada_logo_white-da9a3a53.svg" alt="" id="1286339202" class="" data-dm-image-path="https://irp.cdn-website.com/c8fe7d10/dms3rep/multi/Strada_logo_white-da9a3a53.svg" data-diy-image="" onerror="handleImageLoadError(this)"></a> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+     <div class="stickyHeaderSpacer" id="stickyHeaderSpacer" data-new="true"></div> 
+     <div class="dmRespRow dmRespRowStable dmRespRowNoPadding dmPageTitleRow "> <div class="dmRespColsWrapper"> <div class="large-12 dmRespCol"> <div id="innerBar" class="innerBar lineInnerBar dmDisplay_None"> <div class="titleLine display_None"><hr></div> 
+    <!-- Page title is hidden in css for new responsive sites. It is left here only so we don't break old sites. Don't copy it to new layouts --> <div id="pageTitleText"></div> 
+     <div class="titleLine display_None"><hr></div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+     <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_home dm-home-page" themewaschanged="true" desktop-global-classes="header-over-content" tablet-global-classes="header-over-content" mobile-global-classes=""> <div id="allWrapper" class="allWrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent"> <div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl dmRespRowsWrapperSize1" id="1716942098"> <div class="u_1243667655 dmRespRow" style="text-align: center; opacity: 1; visibility: visible !important; transition-delay: unset !important; transition-duration: unset !important; animation-delay: unset !important; animation-duration: unset !important; transition-property: none !important;" id="1243667655" data-anim-desktop="fadeIn"> <div class="dmRespColsWrapper" id="1173148036"> <div class="u_1620106714 dmRespCol small-12 large-7 medium-7" id="1620106714"> <span id="1479169930"></span> 
+     <div class="u_1944216572 dmNewParagraph" data-element-type="paragraph" id="1944216572" data-anim-desktop="fadeIn" data-version="5" style="opacity: 1; visibility: visible !important; transition-delay: unset !important; transition-duration: unset !important; animation-delay: unset !important; animation-duration: unset !important; transition-property: none !important;"> <h4><span style="display: initial;">Um projeto perfeito para comunicações.</span></h4> 
+    </div> 
+     <div class="u_1374156377 dmNewParagraph" data-element-type="paragraph" id="1374156377" data-anim-desktop="fadeIn" data-version="5" style="text-align: left; display: block; opacity: 1; visibility: visible !important; transition-delay: unset !important; transition-duration: unset !important; animation-delay: unset !important; animation-duration: unset !important; transition-property: none !important;"> <h1 class="text-align-justify"><span style="display: initial;">O PGPP é um projeto criado por nós&nbsp; do senai para ajudar a comunicação da sua empresa.</span></h1> 
+    </div> 
+     <div class="u_1740270548 dmRespRow" id="1740270548" data-anim-desktop="fadeIn" style="opacity: 1; visibility: visible !important; transition-delay: unset !important; transition-duration: unset !important; animation-delay: unset !important; animation-duration: unset !important; transition-property: none !important;"> <div class="dmRespColsWrapper" id="1517829696"> <div class="u_1054683596 dmRespCol small-12 large-11 medium-11" id="1054683596"> <a data-display-type="block" class="u_1625516534 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="/contact" data-element-type="dButtonLinkId" id="1625516534"> <span class="iconBg" id="1243043561"> <span class="icon hasFontIcon icon-star" id="1704500990"></span> 
+    </span> 
+     <span class="text" id="1537303340">Contate-nos</span> 
+    </a> 
+    </div> 
+     <div class="u_1052959001 dmRespCol small-12 large-1 medium-1" id="1052959001"> <div data-element-type="spacer" class="dmSpacer" id="1871789217"></div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+     <div class="u_1011576767 dmRespCol small-12 large-5 medium-5" id="1011576767"> <div class="u_1135158882 imageWidget align-center hasFullWidth" data-element-type="image" data-widget-type="image" id="1135158882" data-anim-desktop="fadeIn" editablewidget="true" style="opacity: 1; visibility: visible !important; transition-delay: unset !important; transition-duration: unset !important; animation-delay: unset !important; animation-duration: unset !important; transition-property: none !important;"> <a id="1469948485"><img src="https://irt-cdn.multiscreensite.com/79c53b2aecf041a68f7a8ed5df40861d/dms3rep/multi/hero_img_mockup_project.png" alt="" id="1933942501" class="" data-dm-image-path="https://irt-cdn.multiscreensite.com/79c53b2aecf041a68f7a8ed5df40861d/dms3rep/multi/hero_img_mockup_project.png" onerror="handleImageLoadError(this)"></a> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+     <div class="dmRespRow u_1224154304" id="1224154304"> <div class="dmRespColsWrapper" id="1486907522"> <div class="dmRespCol small-12 u_1630572435 large-2.4 medium-2.4 medium-4 large-4" id="1630572435"> <div class="u_1488772257 graphicWidget" data-element-type="graphic" data-widget-type="graphic" id="1488772257"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="1991775855" class="svg u_1991775855" data-icon-name="li_tools"> <path d="M84.9,63.5c-2.3-2.3-5.3-3.6-8.6-3.6c-2.9,0-5.6,1-7.7,2.9L55.8,50l21.3-21.3l0.8,0.8l7.8-7.8l-3.1-3.1l-7.8,7.8l0.8,0.8
+        L54.2,48.4L41.4,35.6c1.8-2.2,2.9-4.9,2.9-7.7c0-3.2-1.3-6.3-3.6-8.6c-3-3-7.5-4.2-11.7-3.1l-1.9,0.5l7.3,7.3l-6.3,6.3l-7.3-7.3
+        l-0.5,1.9c-1.1,4.2,0.1,8.7,3.1,11.7c2.3,2.3,5.3,3.6,8.6,3.6l0,0c2.9,0,5.6-1,7.7-2.9L52.6,50L38.3,64.3l-3.9-3.9L21.9,72.9
+        c-1.3,1.3-1.9,2.9-1.9,4.7c0,1.8,0.7,3.4,1.9,4.7c1.3,1.3,2.9,1.9,4.7,1.9c1.8,0,3.4-0.7,4.7-1.9l12.5-12.5l-3.9-3.9l14.3-14.3
+        L67,64.4c-1.8,2.2-2.9,4.9-2.9,7.7c0,3.2,1.3,6.3,3.6,8.6c2.3,2.3,5.3,3.5,8.5,3.5c1.1,0,2.1-0.1,3.2-0.4l1.9-0.5L74,76l6.2-6.3
+        l7.3,7.3l0.5-1.9C89.1,71,87.9,66.5,84.9,63.5z M32.1,37.8L32.1,37.8c-2.7,0-5.2-1-7-2.9c-2-2-3-4.7-2.9-7.6l6,6l9.4-9.4l-6-6
+        c2.8-0.2,5.6,0.9,7.5,2.9c1.9,1.9,2.9,4.4,2.9,7c0,2.7-1,5.2-2.9,7C37.2,36.8,34.7,37.8,32.1,37.8z M29.7,80.7
+        c-1.7,1.7-4.6,1.7-6.2,0c-0.8-0.8-1.3-1.9-1.3-3.1c0-1.2,0.5-2.3,1.3-3.1l10.9-10.9l6.3,6.3L29.7,80.7z M80.2,66.6L70.8,76l6,6
+        c-0.2,0-0.4,0-0.6,0c-2.6,0-5.1-1-7-2.9c-1.9-1.9-2.9-4.4-2.9-7c0-2.7,1-5.2,2.9-7c1.9-1.9,4.4-2.9,7-2.9c2.7,0,5.2,1,7,2.9
+        c2,2,3,4.7,2.9,7.6L80.2,66.6z"></path> 
+    </svg> 
+    </div> 
+     <div class="dmNewParagraph text-align-center" data-element-type="paragraph" id="1086782505" style="transition: opacity 1s ease-in-out 0s; text-align: center;" data-version="5"> <h5><span style="display: initial;">Produção</span></h5> 
+    </div> 
+     <div class="dmNewParagraph" data-element-type="paragraph" id="1747545887" style="transition:opacity 1s ease-in-out 0s;line-height:initial;" data-version="5"> <h6 class="text-align-center"><span style="display: initial;">Treinamentos básicos e avançados para trabalhadores de cada setor da empresa.</span></h6> 
+    </div> 
+    </div> 
+     <div class="dmRespCol small-12 u_1782085720 large-2.4 medium-2.4 medium-4 large-4" id="1782085720"> <div class="u_1681895388 graphicWidget" data-element-type="graphic" data-widget-type="graphic" id="1681895388"> <a id="1452900892" class=""> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" id="1249085268" class="svg u_1249085268" data-icon-name="wp-heart_beat_thin"> <path d="M49.3,10.4c-1-0.2-2.1-0.4-3.1-0.4c-5.9,0-9.6,4.1-11.2,6.4c-1.6-2.2-5.3-6.4-11.1-6.4c-1,0-2.1,0.1-3.1,0.4
+        C14.4,11.9,10,18.8,10,27.3c0,2.6,0.5,5.3,1.4,8l0.9,2.2c0.5,1.2,1.2,2.5,1.9,3.6c6.6,10.5,18.4,17.5,19.7,18.3l0.7,0.4
+        C34.7,60,34.8,60,35,60c0.2,0,0.3,0,0.5-0.1l0.7-0.4c1.3-0.8,13.1-7.8,19.7-18.3c0.8-1.2,1.4-2.4,2-3.8l0.8-2.2
+        c0.9-2.6,1.3-5.2,1.3-7.9C60,18.8,55.6,11.9,49.3,10.4z M35.2,57.7L35,57.8l-0.2-0.1c-1.3-0.7-12.6-7.5-19-17.7
+        c-0.4-0.7-0.8-1.4-1.2-2.1H26c0.4,0,0.7-0.2,0.9-0.6l1-2.1l2.2,5c0.2,0.4,0.6,0.6,1,0.6c0.4,0,0.8-0.3,0.9-0.8l2.9-11.8L38,43.2
+        c0.1,0.4,0.5,0.8,0.9,0.8c0,0,0,0,0.1,0c0.4,0,0.8-0.3,0.9-0.7l3.1-9.2l1.1,3.2c0.1,0.4,0.5,0.7,0.9,0.7h10.3
+        c-0.4,0.7-0.7,1.4-1.2,2.1C47.8,50.2,36.4,57,35.2,57.7z M56.8,34.5L56.2,36H45.7l-1.8-5.3C43.8,30.3,43.4,30,43,30
+        s-0.8,0.3-0.9,0.7l-2.8,8.5L36,23.8c-0.1-0.5-0.5-0.8-1-0.8c-0.4,0-0.9,0.3-1,0.8l-3.3,13.1l-1.8-4.3C28.8,32.2,28.4,32,28,32
+        c-0.4,0-0.7,0.2-0.9,0.6L25.4,36H13.8l-0.5-1.4c-0.8-2.5-1.2-4.9-1.2-7.3c0-7.5,3.8-13.7,9.2-15c0.9-0.2,1.8-0.3,2.6-0.3
+        c6.6,0,10.2,6.7,10.3,6.8c0.2,0.3,0.5,0.5,0.9,0.5c0.4,0,0.7-0.2,0.9-0.5C36,18.4,39.5,12,46.2,12c0.9,0,1.7,0.1,2.6,0.3
+        c5.4,1.3,9.2,7.4,9.2,15C58,29.7,57.6,32.1,56.8,34.5z"></path> 
+    </svg> 
+    </a> 
+    </div> 
+     <div class="dmNewParagraph text-align-center" data-element-type="paragraph" id="1704559014" style="transition: opacity 1s ease-in-out 0s; text-align: center;" data-version="5"> <h5><span style="display: initial;">Segurança</span></h5> 
+    </div> 
+     <div class="dmNewParagraph" data-element-type="paragraph" id="1052892587" style="transition: opacity 1s ease-in-out 0s;" data-version="5"> <h6 class="text-align-center"><span style="display: initial;">Informações sobre a utilização de equipamentos de proteção no ambiente de trabalho.</span></h6> 
+    </div> 
+    </div> 
+     <div class="dmRespCol small-12 u_1541008272 large-2.4 medium-2.4 medium-4 large-4" id="1541008272"> <div class="u_1778200189 graphicWidget" data-element-type="graphic" data-widget-type="graphic" id="1778200189"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="1564452844" class="svg u_1564452844" data-icon-name="li-shop_front"> <g> <path d="M54.5,62.3H68V48.9H54.5V62.3z M56.7,51.1h9v9h-9V51.1z"></path> 
+     <path d="M15.2,15.2v23.6c0,3.3,2.4,6.1,5.6,6.6v39.4h58.4V45.4c3.2-0.5,5.6-3.3,5.6-6.6V15.2H15.2z M28.7,17.5h9v21.3
+            c0,2.5-2,4.5-4.5,4.5c-2.5,0-4.5-2-4.5-4.5V17.5z M39.9,17.5h9v21.3c0,2.5-2,4.5-4.5,4.5c-2.5,0-4.5-2-4.5-4.5V17.5z M51.1,17.5h9
+            v21.3c0,2.5-2,4.5-4.5,4.5c-2.5,0-4.5-2-4.5-4.5V17.5z M62.3,17.5h9v21.3c0,2.5-2,4.5-4.5,4.5c-2.5,0-4.5-2-4.5-4.5V17.5z
+             M17.5,38.8V17.5h9v21.3c0,2.5-2,4.5-4.5,4.5C19.5,43.3,17.5,41.3,17.5,38.8z M48.9,82.5H34.3V51.1h14.6V82.5z M51.1,82.5V48.9H32
+            v33.7h-9V45.4c1.9-0.3,3.5-1.4,4.5-2.9c1.2,1.8,3.3,3,5.6,3c2.3,0,4.4-1.2,5.6-3c1.2,1.8,3.3,3,5.6,3c2.3,0,4.4-1.2,5.6-3
+            c1.2,1.8,3.3,3,5.6,3c2.3,0,4.4-1.2,5.6-3c1.2,1.8,3.3,3,5.6,3c2.3,0,4.4-1.2,5.6-3c1,1.5,2.6,2.6,4.5,2.9v37.2H51.1z M78.1,43.3
+            c-2.5,0-4.5-2-4.5-4.5V17.5h9v21.3C82.5,41.3,80.5,43.3,78.1,43.3z"></path> 
+    </g> 
+    </svg> 
+    </div> 
+     <div class="dmNewParagraph text-align-center" data-element-type="paragraph" id="1873911045" style="transition: opacity 1s ease-in-out 0s; text-align: center;" data-version="5"> <h5><span style="display: initial;">Logistica</span></h5> 
+    </div> 
+     <div class="dmNewParagraph" data-element-type="paragraph" id="1689109656" style="transition: opacity 1s ease-in-out 0s;" data-version="5"> <h6 class="text-align-center"><span style="display: initial;">Ajudamos a desenvolver a comunicação com seus sócios e fronecedores.</span></h6> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+     <div class="dmRespRow u_1395565982" id="1395565982"> <div class="dmRespColsWrapper" id="1185648402"> <div class="dmRespCol empty-column large-12 medium-12 small-12 u_1321474444" id="1321474444"></div> 
+    </div> 
+    </div> 
+     <div class="u_1888419227 dmRespRow fullBleedChanged fullBleedMode" id="1888419227"> <div class="dmRespColsWrapper" id="1152449646"> <div class="u_1096468313 dmRespCol small-12 large-3 medium-3" id="1096468313" data-anim-desktop="fadeInLeft" style="opacity: 1; transform: translate3d(0%, 0%, 0px); visibility: visible !important; transition-delay: unset !important; transition-duration: unset !important; animation-delay: unset !important; animation-duration: unset !important; transition-property: none !important;"> <div data-element-type="spacer" class="u_1303792506 dmSpacer" id="1303792506"></div> 
+    </div> 
+     <div class="u_1699574896 dmRespCol small-12 large-7 medium-7" id="1699574896"> <div class="u_1548006304 dmNewParagraph" data-element-type="paragraph" id="1548006304" data-anim-desktop="fadeInUp" data-version="5" style="text-align: left; display: block; opacity: 1; transform: translate3d(0%, 0%, 0px); visibility: visible !important; transition-delay: unset !important; transition-duration: unset !important; animation-delay: unset !important; animation-duration: unset !important; transition-property: none !important;"> <h5 class="text-align-justify"><span style="display: initial;">O Projeto Oruocetyn foi desenvolvido com o intuito de aprimorar a comunicação e promover a eficiência nos processos internos da empresa.</span></h5> 
+     <h5 class="text-align-justify"><span style="display: initial;"><br></span></h5> 
+     <h5 class="text-align-justify"><span style="display: initial;"><br></span></h5> 
+     <h5 class="text-align-justify"><span style="display: initial;"><br></span></h5> 
+     <h5 class="text-align-justify"><span style="display: initial;"><br></span></h5> 
+     <h5 class="text-align-justify"><span class="" style="display: initial;"><span style="display: initial;">Com um site dedicado exclusivamente à empresa, nossos funcionários terão acesso facilitado às informações essenciais de cada departamento, otimizando a troca de conhecimentos e agilizando a tomada de decisões.</span> 
+    </span></h5> 
+     <h5 class="text-align-justify"><span style="display: initial;"><br></span></h5> 
+     <h5 class="text-align-justify"><span style="display: initial;"><br></span></h5> 
+     <h5 class="text-align-justify"><span style="display: initial;"><br></span></h5> 
+     <h5 class="text-align-justify"><span style="display: initial;"><br></span></h5> 
+     <h5 class="text-align-justify"><span style="display: initial;"><br></span></h5> 
+     <h5 class="text-align-justify"><span style="display: initial;">Através dessa plataforma, a empresa Oruocetyn busca fortalecer os laços entre seus colaboradores, garantindo uma comunicação eficaz e aprimorando a qualidade dos serviços oferecidos. Investimos no aperfeiçoamento dos processos padronizados para alcance de melhores resultados, sempre com o foco na excelência e profissionalismo que nos caracteriza.</span></h5> 
+    </div> 
+     <div class="u_1176634133 imageWidget align-center hide-for-small" data-element-type="image" data-widget-type="image" id="1176634133" editablewidget="true"> <a id="1149453560"><img src="https://irt-cdn.multiscreensite.com/79c53b2aecf041a68f7a8ed5df40861d/dms3rep/multi/Vertical_purple_line.png" alt="" id="1834112614" class="" data-dm-image-path="https://irt-cdn.multiscreensite.com/79c53b2aecf041a68f7a8ed5df40861d/dms3rep/multi/Vertical_purple_line.png" onerror="handleImageLoadError(this)"></a> 
+    </div> 
+     <div class="u_1098554134 imageWidget align-center hide-for-small" data-element-type="image" data-widget-type="image" id="1098554134" editablewidget="true"> <a id="1782589258"><img src="https://irt-cdn.multiscreensite.com/79c53b2aecf041a68f7a8ed5df40861d/dms3rep/multi/Vertical_purple_line.png" alt="" id="1457026505" class="" data-dm-image-path="https://irt-cdn.multiscreensite.com/79c53b2aecf041a68f7a8ed5df40861d/dms3rep/multi/Vertical_purple_line.png" onerror="handleImageLoadError(this)"></a> 
+    </div> 
+    </div> 
+     <div class="u_1263630412 dmRespCol small-12 hide-for-small large-2 medium-2" id="1263630412" data-anim-desktop="fadeInRight" style="opacity: 1; transform: translate3d(0%, 0%, 0px); visibility: visible !important; transition-delay: unset !important; transition-duration: unset !important; animation-delay: unset !important; animation-duration: unset !important; transition-property: none !important;"> <div data-element-type="spacer" class="u_1326698254 dmSpacer hide-for-small" id="1326698254"></div> 
+     <div data-element-type="spacer" class="u_1494147417 dmSpacer" id="1494147417"></div> 
+    </div> 
+    </div> 
+    </div> 
+     <div class="dmRespRow fullBleedChanged fullBleedMode u_1018379646" id="1018379646"> <div class="dmRespColsWrapper" id="1396857553"> <div class="dmRespCol large-12 medium-12 small-12" id="1060679010"> <div class="u_1122719344 imageWidget align-center hasFullWidthMobile" data-element-type="image" data-widget-type="image" id="1122719344" editablewidget="true"> <a id="1249529459"><img src="https://irt-cdn.multiscreensite.com/79c53b2aecf041a68f7a8ed5df40861d/dms3rep/multi/triangle.svg" alt="" id="1363532218" class="" data-dm-image-path="https://irt-cdn.multiscreensite.com/79c53b2aecf041a68f7a8ed5df40861d/dms3rep/multi/triangle.svg" onerror="handleImageLoadError(this)"></a> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+     <div class="dmRespRow u_1781206378" id="1781206378"> <div class="dmRespColsWrapper" id="1908118879"> <div class="dmRespCol large-12 medium-12 small-12 u_1519065817" id="1519065817"> <div class="u_1513871653 dmNewParagraph" data-element-type="paragraph" id="1513871653" style="opacity: 1; visibility: visible !important; transition-delay: unset !important; transition-duration: unset !important; animation-delay: unset !important; animation-duration: unset !important; transition-property: none !important;" data-anim-desktop="fadeIn" data-version="5"> <h4 class="text-align-center"><span style="display: initial;" class="font-size-24"><span class="ql-cursor">﻿</span></span><span style="display: initial;">A equipe</span></h4> 
+    </div> 
+     <div class="u_1806206658 dmNewParagraph" data-element-type="paragraph" id="1806206658" data-anim-desktop="fadeIn" data-version="5" style="text-align: center; opacity: 1; visibility: visible !important; transition-delay: unset !important; transition-duration: unset !important; animation-delay: unset !important; animation-duration: unset !important; transition-property: none !important;"> <h2 style="line-height: 1.1;"><span style="display: initial;">A comunicação virtual aproxima quem está distante e distancia quem está próximo.</span></h2> 
+    </div> 
+     <div class="u_1107487393 dmRespRow" id="1107487393" data-anim-desktop="fadeInUp" style="opacity: 1; transform: translate3d(0%, 0%, 0px); visibility: visible !important; transition-delay: unset !important; transition-duration: unset !important; animation-delay: unset !important; animation-duration: unset !important; transition-property: none !important;"> <div class="dmRespColsWrapper" id="1514512493"> <div class="dmRespCol small-12 medium-6 large-6" id="1488182889"> <div class="u_1239630308 imageWidget align-center hasFullWidth" data-element-type="image" data-widget-type="image" id="1239630308" editablewidget="true"> <a id="1122015641"><img src="https://lirp.cdn-website.com/c8fe7d10/dms3rep/multi/opt/Imagem+do+WhatsApp+de+2023-10-05+%C3%A0%28s%29+19.14.28_e7bbbe25-1920w.jpg" alt="" id="1964756441" class="" data-dm-image-path="https://irp.cdn-website.com/c8fe7d10/dms3rep/multi/Imagem+do+WhatsApp+de+2023-10-05+%C3%A0%28s%29+19.14.28_e7bbbe25.jpg" data-hover-effect="zoomout" width="1200" height="1200" onerror="handleImageLoadError(this)"></a> 
+    </div> 
+     <div class="u_1851744540 dmNewParagraph" data-element-type="paragraph" id="1851744540" style="transition: none 0s ease 0s; display: block;" data-version="5"> <h3 class="text-align-left"><span style="display: initial;">André Giovani</span></h3> 
+    </div> 
+     <div class="u_1541699271 dmNewParagraph" data-element-type="paragraph" id="1541699271" style="transition: none 0s ease 0s; display: block;" data-version="5"> <h6 class="text-align-left"><span style="display: initial;">Idealizador e Desenvolvedor</span></h6> 
+    </div> 
+    </div> 
+     <div class="dmRespCol small-12 medium-6 large-6" id="1890974503"> <div class="u_1726841490 imageWidget align-center hasFullWidth" data-element-type="image" data-widget-type="image" id="1726841490" editablewidget="true"> <a id="1029876051"><img src="https://lirp.cdn-website.com/c8fe7d10/dms3rep/multi/opt/Imagem+do+WhatsApp+de+2023-10-05+%C3%A0%28s%29+19.19.29_944c4947-1920w.jpg" alt="" id="1099571281" class="" data-dm-image-path="https://irp.cdn-website.com/c8fe7d10/dms3rep/multi/Imagem+do+WhatsApp+de+2023-10-05+%C3%A0%28s%29+19.19.29_944c4947.jpg" data-hover-effect="zoomout" width="886" height="886" onerror="handleImageLoadError(this)"></a> 
+    </div> 
+     <div class="u_1306679721 dmNewParagraph" data-element-type="paragraph" id="1306679721" style="transition: opacity 1s ease-in-out 0s;" data-version="5"> <h3 class="text-align-left"><span style="display: initial;">Samuel Gonçalves</span></h3> 
+    </div> 
+     <div class="u_1957809948 dmNewParagraph" data-element-type="paragraph" id="1957809948" style="transition: none 0s ease 0s; display: block;" data-version="5"> <h6 class="text-align-left"><span style="display: initial;">Idealizador e Designer</span></h6> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+     <a data-display-type="block" class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient u_1231873188" file="false" href="/about#Theteam" data-element-type="dButtonLinkId" id="1231873188"> <span class="iconBg" id="1643879028"> <span class="icon hasFontIcon icon-star" id="1655068470"></span> 
+    </span> 
+     <span class="text" id="1281827812">Mais sobre nós</span> 
+    </a> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+     <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="dmRespRow fullBleedChanged fullBleedMode u_1186924857" id="1186924857"> <div class="dmRespColsWrapper" id="1085598653"> <div class="dmRespCol large-12 medium-12 small-12 u_1177627163" id="1177627163"> <div class="u_1314360889 dmNewParagraph" data-element-type="paragraph" id="1314360889" data-anim-desktop="fadeIn" data-version="5" style="opacity: 1; visibility: visible !important; transition-delay: unset !important; transition-duration: unset !important; animation-delay: unset !important; animation-duration: unset !important; transition-property: none !important;"><h4 style="" class="text-align-center"><span style="display: initial;">CONTATE-NOS</span></h4></div> 
+     <div class="u_1170016284 dmNewParagraph" data-element-type="paragraph" id="1170016284" data-anim-desktop="fadeIn" data-version="5" style="opacity: 1; visibility: visible !important; transition-delay: unset !important; transition-duration: unset !important; animation-delay: unset !important; animation-duration: unset !important; transition-property: none !important;"><h1 style="color:rgba(255, 255, 255, 0.6);" class="text-align-center"><span style="color: rgba(255, 255, 255, 0.6); font-weight: 300; display: initial; font-family: Montserrat;">Quer mais informações?</span></h1></div> 
+     <div class="u_1766855260 dmform default native-inputs running-animation-W0BXW3PN" data-element-type="dContactUsRespId" data-captcha-position="bottomleft" id="1766855260" data-layout="layout-4" data-anim-desktop="fadeIn" captcha="true" data-require-captcha="true" style="visibility: hidden; opacity: 1; transition-delay: unset !important; transition-duration: unset !important; animation-delay: unset !important; animation-duration: unset !important; transition-property: none !important;"> <h3 class="dmform-title dmwidget-title" id="1651717295" hide="true">Contate-nos</h3> 
+     <div class="dmform-wrapper" id="1967592429" captcha-lang="pt"> <form method="post" class="dmRespDesignRow" locale="ENGLISH" id="1889245077"> <div class="dmforminput required  small-12 dmRespDesignCol medium-6 large-6" id="1599836423"> <label for="1759059695" id="1615988282" data-dm-for="dmform-0">Nome</label> 
+    <input type="text" class="" name="dmform-0" id="1759059695"><input type="hidden" name="label-dmform-0" value="Nome" id="1840328411"></div> 
+     <div class="dmforminput required  small-12 dmRespDesignCol medium-6 large-6" id="1902151346"> <label for="1178496125" id="1788617196" data-dm-for="dmform-1">E-mail</label> 
+    <input type="email" class="" name="dmform-1" id="1178496125"><input type="hidden" name="label-dmform-1" value="E-mail" id="1146335214"></div> 
+     <div class="dmforminput large-12 medium-12 dmRespDesignCol small-12" id="1921556855"> <label for="1120110152" id="1230028544" data-dm-for="dmform-3">Mensagem</label> 
+     <textarea name="dmform-3" id="1120110152"></textarea> 
+    <input type="hidden" name="label-dmform-3" value="Mensagem" id="1905832454"></div> 
+     <span id="1132064023" class="dmWidgetClear"></span> 
+     <div class="dmformsubmit dmWidget R" id="1993488055"><input class="" name="submit" type="submit" value="Entre em Contato" id="1880061104"></div> 
+    <input name="dmformsendto" type="hidden" value="O0wrseIfFLvCSqegJceBf8IdYJCfBY7v7hjNcD+REFb9qzMEcmcbJBSD+CCuxNJslYLMj4nHEnk=" id="1940463808" data-dec="true"><input class="dmActionInput" type="hidden" name="action" value="/_dm/s/rt/widgets/dmform.submit.jsp" id="1586275304"><input name="dmformsubject" type="hidden" value="Mensagem do Formulário" id="1918212166"><input name="dmformfrom" type="hidden" value="" id="1982646161"><input name="dmformsubmitparams" type="hidden" value="8mpKnCSiNQXK/d9M7IDrSx8wBjjyNRaB5aAH93CD4jPQE3A+UfHn6ZNjakHnvcHy7ycH42Ept+D1DeqSs1deGTRndSDnOmf2sBEoyFKx2SYbjoDlfb9gRj87cs8++BRwwBhsYqm23xvbixkCZ/+52jLcdxN/4Fs9+llE/fDQel98yWCp38cqpOufRWgRmY7cJg7L7RUy9hUW+xt1PZS0dAlXo8IvNGxq/aszBHJnGySqRWkCzCypKg==" data-dec="true"></form> 
+    </div> 
+     <div class="dmform-success" style="display:none" id="1419846187">Obrigado por entrar em contato. Retornaremos assim que possível.</div> 
+     <div class="dmform-error" style="display:none" id="1387393753">Opa! Parece que houve um erro ao enviar sua mensagem. Tente novamente mais tarde.</div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+     <div class="u_1948690297 dmRespRow fullBleedChanged fullBleedMode" style="text-align: center;" id="1948690297"> <div class="dmRespColsWrapper" id="1105242483"> <div class="u_1066552370 dmRespCol small-12 medium-4 large-4" id="1066552370"> <div class="u_1034569665 dmNewParagraph" id="1034569665" data-element-type="paragraph" style="line-height:initial;" data-version="5"><h3 style="color:rgb(255, 255, 255);" class="text-align-left"><span style="display: initial; font-weight: 700; color: rgb(255, 255, 255);">Venha nos ver pessoalmente</span></h3></div> <div class="u_1494073461 dmNewParagraph" id="1494073461" data-element-type="paragraph" data-version="5" data-binding="W3siYmluZGluZ05hbWUiOiJ0ZXh0IiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsIn1d" data-diy-text="">SENAI Ponte Nova, Rua Doutor Cristiano De Freitas Castro, 928 Ponte Nova Ponte Nova-MG 35430-037 Brasil</div></div> 
+     <div class="u_1995400058 dmRespCol small-12 medium-4 large-4" id="1995400058"> <div class="u_1517192844 dmNewParagraph" id="1517192844" data-element-type="paragraph" style="line-height:initial;" data-version="5"><h3 style="color:rgb(255, 255, 255);" class="text-align-left"><span style="display: initial; font-weight: 700; color: rgb(255, 255, 255);">Contate-nos</span></h3></div> <div class="u_1967897611 dmNewParagraph" id="1967897611" style="display: block;" data-element-type="paragraph" data-version="5" data-binding="W3siYmluZGluZ05hbWUiOiJ0ZXh0IiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsLmVtYWlsLm15IGVtYWlsIn1d" data-diy-text="">oruocetyn@gmail.com</div> <div class="u_1014241012 dmNewParagraph" id="1014241012" style="display: block;" data-element-type="paragraph" data-version="5" data-binding="W3siYmluZGluZ05hbWUiOiJ0ZXh0IiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsLnBob25lLm9mZmljZSJ9XQ==" data-diy-text="">31 98204-5501</div></div> 
+     <div class="u_1819446246 dmRespCol small-12 medium-4 large-4" id="1819446246"> <div class="u_1730193405 imageWidget align-center hide-for-small" data-element-type="image" data-widget-type="image" id="1730193405" editablewidget="true"> <a id="1353659459"><img src="https://irt-cdn.multiscreensite.com/79c53b2aecf041a68f7a8ed5df40861d/dms3rep/multi/wide+line.svg" alt="" id="1175253691" class="" data-dm-image-path="https://irt-cdn.multiscreensite.com/79c53b2aecf041a68f7a8ed5df40861d/dms3rep/multi/wide+line.svg" onerror="handleImageLoadError(this)"></a> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+     <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    
+        </div>
+    </div>
+    <!--  Add full CSS and Javascript before the close tag of the body if needed -->
+    <!-- ========= JS Section ========= -->
+    
+    <script>
+        var isWLR = true;
+    
+        window.customWidgetsFunctions = {};
+        window.customWidgetsStrings = {};
+        window.collections = {};
+        window.currentLanguage = "PORTUGUESE"
+        window.isSitePreview = false;
+    </script>
+    <script type="text/javascript">
+    
+        var d_version = "production_3815";
+        var build = "2023-10-05T12_49_35";
+        window['v' + 'ersion'] = d_version;
+    
+        function buildEditorParent() {
+            window.isMultiScreen = true;
+            window.editorParent = {};
+            window.previewParent = {};
+            window.assetsCacheQueryParam = "?version=2023-10-05T12_49_35";
+            try {
+                var _p = window.parent;
+                if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                    window.editorParent = _p;
+                } else if (_p.isSitePreview) {
+                    window.previewParent = _p;
+                }
+            } catch (e) {
+    
+            }
+        }
+    
+        buildEditorParent();
+    </script>
+    
+    <!-- Load jQuery -->
+        <script type="text/javascript" id="d-js-jquery" src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+        <!-- End Load jQuery -->
+    <!-- Injecting site-wide before scripts -->
+    <!-- End Injecting site-wide to the head -->
+    
+    
+    <script>
+        var _jquery = window.$;
+    
+        var jqueryAliases = ['$', 'jquery', 'jQuery'];
+    
+        jqueryAliases.forEach((alias) => {
+            Object.defineProperty(window, alias, {
+                get() {
+                    return _jquery;
+                },
+                set() {
+                    console.warn("Trying to over-write the global jquery object!");
+                }
+            });
+        });
+        window.jQuery.migrateMute = true;
+    </script>
+    <script>
+        window.cookiesNotificationMarkupPreview = 'null';
+    </script>
+    
+    <!-- HEAD RT JS Include -->
+    <script id="d-js-params">
+        window.INSITE = window.INSITE || {};
+        window.INSITE.device = "desktop";
+        window.rtCommonProps = {};
+        rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+        rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+        rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+        rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+        rtCommonProps["inlineEditGrid.snap"] =true;
+        rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+        rtCommonProps["rt.pushnotifs.force.button"] =true;
+    
+        rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+        rtCommonProps["common.mapbox.js.override"] =false;
+        rtCommonProps["common.opencage.token"] = '319e14f32bcce967ba55cd263478796d';
+        rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+        rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+        rtCommonProps["isCoverage.test"] =false;
+        rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+        rtCommonProps["feature.flag.mappy.kml"] =false;
+        rtCommonProps["common.resources.dist.cdn"] =true;
+        rtCommonProps["common.build.dist.folder"] = 'production/3815';
+        rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+        rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/3815';
+        rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+        rtCommonProps["feature.flag.runtime.photoswipe.fix"] =true;
+        rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+        rtCommonProps["feature.flag.runtime.newAnimation.respectCssAnimationProps.enabled"] =true;
+        rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+        rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+        rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+        rtCommonProps["feature.flag.addTargetBlankToExternalLinks"] =true;
+        rtCommonProps["unsuspendEcwidStoreOnRuntime.enabled"] =true;
+        rtCommonProps["keyboard.navigation.enabled"] =true;
+        rtCommonProps["scripts.widgetCount.enabled"] =true;
+        rtCommonProps["run.imageCount.script.enabled"] =false;
+        rtCommonProps["maps.cookiebot.enabled"] =true;
+    
+        
+        rtCommonProps['common.mapsProvider'] = 'mapbox';
+        
+        rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+        rtCommonProps['common.geocodeProvider'] = 'here';
+        rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+        rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+        rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+        rtCommonProps['common.map.defaults.strokeSize'] = '2';
+        rtCommonProps['server.for.resources'] = '';
+        rtCommonProps['feature.flag.lazy.widgets'] = true;
+        rtCommonProps['feature.flag.single.wow'] = false;
+        rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+        rtCommonProps['feature.flag.mark.anchors'] = true;
+        rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+        rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+        rtCommonProps["images.sizes.small"] =160;
+        rtCommonProps["images.sizes.mobile"] =640;
+        rtCommonProps["images.sizes.tablet"] =1280;
+        rtCommonProps["images.sizes.desktop"] =1920;
+        rtCommonProps["modules.resources.cdn"] =true;
+        rtCommonProps["import.images.storage.imageCDN"] = 'https://lirp.cdn-website.com/';
+        rtCommonProps["ecom.ecwid.categoryPage.modifyLinks"] = true;
+        rtCommonProps["ecom.ecwidNewUrlStructure.enabled"] = false;
+        rtCommonProps["facebook.api.version"] = '7.0';
+        rtCommonProps["feature.flag.photo.gallery.exact.size"] =false;
+        rtCommonProps["new.store.fix.ecwid.back.bug"] =true;
+        rtCommonProps["new.store.accountPage.ecwid.resetPassword.fix"] =true;
+        rtCommonProps["site.runtime.video.background.ssr"] =true;
+        rtCommonProps["geocode.search.localize"] =false;
+        rtCommonProps["facebook.runtime.widgets.upgrade"] =true;
+        rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+        rtCommonProps["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+        rtCommonProps["feature.flag.performance.logs"] =true;
+        rtCommonProps["site.contact.form.fix.for.attribute"] =true;
+        rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+        rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+        rtCommonProps["contact.form.date.format.enabled"] = true;
+        rtCommonProps["filestack.uploadToTempBucket.enabled"] = true;
+        rtCommonProps["platform.monolith.loginBar.getUserLoggedIn.enabled"] = true;
+        rtCommonProps["platform.monolith.loginBar.layout.enabled"] = true;
+    </script>
+    <script src="https://static.cdn-website.com/mnlt/production/3815/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js" id="d-js-core"></script>
+    <!-- End of HEAD RT JS Include -->
+    <script src="https://static.cdn-website.com/mnlt/production/3815/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js"></script>
+    <script>jQuery.DM.updateWidthAndHeight();
+    $(window).resize(function () {
+        
+    });
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+    </script>
+    <script type="text/javascript" id="d_track_campaign">
+    (function() {
+         var campaign = (/utm_campaign=([^&]*)/).exec(window.location.search);
+    
+         if (campaign && campaign != null && campaign.length > 1) {
+             campaign = campaign[1];
+             document.cookie = "_dm_rt_campaign=" + campaign + ";expires=" + new Date().getTime() + 24*60*60*1000 + ";domain=" + window.location.hostname + ";path=/";
+         }
+    }());
+    </script>
+    <script type="text/javascript">
+      var _dm_gaq = {};
+      var _gaq = _gaq || [];
+      var _dm_insite = [];
+    </script>
+    
+      
+    <script type="text/javascript" id="d_track_sp">
+    ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+    p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+    };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+    n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+    window.dmsnowplow  = window.snowplow;
+    
+    dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+      appId: 'c8fe7d10'
+    });
+    
+    dmsnowplow('trackPageView')
+    $.each(_dm_insite, function(idx, rule) {
+        //('trackStructEvent', 'category','action','label','property','value');
+                // Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+                // the tracking is in popup.js
+                if (rule.actionName !== "popup") {
+                    dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+                }
+                 $(document).ready(function(){
+                     $.DM.events.trigger('event-ruleTriggered', {value: rule})}
+                 );
+             });
+    </script>
+       <div style="display:none;" id="P6iryBW0Wu"></div>
+    
+    <!-- photoswipe markup -->
+    
+    
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    
+        <!-- Background of PhotoSwipe. 
+             It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+    
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+    
+            <!-- Container that holds slides. 
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+    
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+    
+                <div class="pswp__top-bar">
+    
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+    
+                    <div class="pswp__counter"></div>
+    
+                    <button class="pswp__button pswp__button--close" title="Fechar (Esc)"></button>
+    
+                    <button class="pswp__button pswp__button--share" title="Compartilhar"></button>
+    
+                    <button class="pswp__button pswp__button--fs" title="Alternar tela cheia "></button>
+    
+                    <button class="pswp__button pswp__button--zoom" title="Aumentar/diminuir zoom"></button>
+    
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                          <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div> 
+                </div>
+    
+                <button class="pswp__button pswp__button--arrow--left" title="Anterior (seta para esquerda)">
+                </button>
+    
+                <button class="pswp__button pswp__button--arrow--right" title="Próximo (seta para a direita)">
+                </button>
+    
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+    <div id="fb-root" data-locale="pt_PT"></div>
+    <!-- Alias: c8fe7d10 -->
+    <div class="dmPopupMask" id="dmPopupMask"></div>
+    <div id="dmPopup" class="dmPopup">
+        <div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+         <div class="dmPopupTitle"> <span></span> Share by:</div> 
+        <div class="data"></div>
+    </div><script id="d_track_personalization">
+    // Collects client data and updates cookies used by smart sites
+    var expireDays = 365,visitLength = 30 * 60000;
+    $.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), expireDays);
+    function setSmartSiteCookies() {
+        setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+    }
+    $.DM.events.on("afterAjax", setSmartSiteCookies);
+    setSmartSiteCookies();
+    </script>
+    <script type="text/javascript">
+        
+        Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+        
+        Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+        Parameters.HomeLinkText = 'Home';
+        </script>
+    <script>
+        jQuery(window).on('load', function () {
+            try {
+                jQuery.DM.updateIOSHeight();
+            } catch (e) {
+            }
+        });
+    </script>
+    <script>
+        dmAPI.loadScript(
+            window.rtCommonProps['common.resources.cdn.host'] + '/libs/lozad/1.15.0/lozad.min.js',
+            function () {
+                dmAPI.runOnReady('lozadInit', function () {
+                    window.document.querySelectorAll('img.lazy').forEach(function (img) {
+                        img.addEventListener('load', function (event) {
+                            var img = event.target;
+                            img.style.filter = 'blur(0)';
+                            setTimeout(function () {
+                                $(img).closest('.imageWidget').addClass('lazyLoaded');
+                            }, 250)
+                        });
+                    });
+                    lozad('.lazy', {
+                        threshold: 0.1,
+                        loaded: function (element) {
+                            if (element.getAttribute('data-background-image')) {
+                                element.style.setProperty(
+                                    'background-image',
+                                    "url('" + element.getAttribute('data-background-image') + "')",
+                                    "important"
+                                );
+                            }
+                        }
+                    }).observe();
+                });
+            }
+        );
+    </script>
+    <!--  End Script tags -->
+    
+    <!--  Site Wide Html Markup -->
+    <!--  Site Wide Html Markup -->
+    
+    
+    </body></html>
