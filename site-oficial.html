@@ -1,0 +1,1225 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="pointer skrollr skrollr-desktop"><head>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style id="customRules"></style><script async="" src="//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js"></script><script type="text/javascript">
+        window._currentDevice = 'desktop';
+        window.Parameters = window.Parameters || {
+            AjaxContainer: 'div.dmBody',
+            WrappingContainer: 'div.dmOuter',
+            HomeUrl: 'https://primeiro-testec2309ef4.multiscreensite.com/',
+            AccountUUID: '97451d54aa394d99abffb803a53d8bd3',
+            SystemID: 'US_DIRECT_PRODUCTION',
+            SiteAlias: 'a6f99510',
+            SiteType: atob('RFVEQU9ORQ=='),
+            PublicationDate: 'Sat Nov 11 17:54:42 UTC 2023',
+            ExternalUid: null,
+            IsSiteMultilingual: false,
+            InitialPostAlias: '',
+            InitialDynamicItem: '',
+            DynamicPageInfo: {
+                isDynamicPage: false,
+                base64JsonRowData: 'null',
+            },
+            InitialPageAlias: 'home',
+            InitialPageUuid: '5c33e83187564e5082d817bd2167d51d',
+            InitialPageId: '26999970',
+            InitialEncodedPageAlias: 'aG9tZQ==',
+            CurrentPageUrl: '',
+            IsCurrentHomePage: true,
+            AllowAjax: false,
+            AfterAjaxCommand: null,
+            HomeLinkText: 'Back To Home',
+            UseGalleryModule: false,
+            CurrentThemeName: 'Layout Theme',
+            ThemeVersion: '39130',
+            DefaultPageAlias: '',
+            RemoveDID: true,
+            WidgetStyleID: null,
+            IsHeaderFixed: false,
+            IsHeaderSkinny: false,
+            IsBfs: true,
+            StorePageAlias: 'null',
+            StorePagesUrls: 'e30=',
+            IsNewStore: 'false',
+            StorePath: '',
+            StoreId: 'null',
+            StoreVersion: 0,
+            StoreBaseUrl: '',
+            StoreCleanUrl: true,
+            StoreDisableScrolling: true,
+            IsStoreSuspended: false,
+            NotificationSubDomain: 'null',
+            HasCustomDomain: false,
+            showCookieNotification: false,
+            cookiesNotificationMarkup: 'null',
+            translatedPageUrl: '',
+            isFastMigrationSite: false,
+            sidebarPosition: 'NA',
+            currentLanguage: 'en',
+            currentLocale: 'en',
+            NavItems: '{}',
+            errors: {
+                general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+                password: 'Incorrect name/password combination',
+                tryAgain: 'Try again'
+            },
+            NavigationAreaParams: {
+                ShowBackToHomeOnInnerPages: true,
+                NavbarSize: -1,
+                NavbarLiveHomePage: 'https://primeiro-testec2309ef4.multiscreensite.com/',
+                BlockContainerSelector: '.dmBody',
+                NavbarSelector: '#dmNav:has(a)',
+                SubNavbarSelector: '#subnav_main'
+            },
+            hasCustomCode: false,
+            planID: '7',
+            customTemplateId: 'null',
+            siteTemplateId: 'null',
+            productId: 'DM_DIRECT',
+            disableTracking: false,
+            pageType: 'FROM_SCRATCH',
+            isRuntimeServer: true,
+            isInEditor: false,
+        };
+    
+        window.Parameters.LayoutID = {};
+        window.Parameters.LayoutID[window._currentDevice] = 6;
+        window.Parameters.LayoutVariationID = {};
+        window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Injecting site-wide to the head -->
+    
+    
+    
+    
+    <!-- End Injecting site-wide to the head -->
+    
+    <!-- Inject secured cdn script -->
+    
+    
+    <!-- ========= Meta Tags ========= -->
+    <!-- PWA settings -->
+    <script>
+        function toHash(str) {
+            var hash = 5381, i = str.length;
+            while (i) {
+                hash = hash * 33 ^ str.charCodeAt(--i)
+            }
+            return hash >>> 0
+        }
+    </script>
+    <script>
+        (function (global) {
+        //const cacheKey = global.cacheKey;
+        const isOffline = 'onLine' in navigator && navigator.onLine === false;
+        const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+        if (isOffline) {
+            console.log('offline mode');
+        }
+        if (!hasServiceWorkerSupport) {
+            console.log('service worker is not supported');
+        }
+        if (hasServiceWorkerSupport && !isOffline) {
+            window.addEventListener('load', function () {
+                const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+                navigator.serviceWorker
+                    .register(serviceWorkerPath, { scope: './' })
+                    .then(
+                        function (registration) {
+                            // Registration was successful
+                            console.log(
+                                'ServiceWorker registration successful with scope: ',
+                                registration.scope
+                            );
+                        },
+                        function (err) {
+                            // registration failed :(
+                            console.log('ServiceWorker registration failed: ', err);
+                        }
+                    )
+                    .catch(function (err) {
+                        console.log(err);
+                    });
+            });
+    
+            // helper function to refresh the page
+            var refreshPage = (function () {
+                var refreshing;
+                return function () {
+                    if (refreshing) return;
+                    // prevent multiple refreshes
+                    var refreshkey = 'refreshed' + location.href;
+                    var prevRefresh = localStorage.getItem(refreshkey);
+                    if (prevRefresh) {
+                        localStorage.removeItem(refreshkey);
+                        if (Date.now() - prevRefresh < 30000) {
+                            return; // dont go into a refresh loop
+                        }
+                    }
+                    refreshing = true;
+                    localStorage.setItem(refreshkey, Date.now());
+                    console.log('refereshing page');
+                    window.location.reload();
+                };
+            })();
+    
+            function messageServiceWorker(data) {
+                return new Promise(function (resolve, reject) {
+                    if (navigator.serviceWorker.controller) {
+                        var worker = navigator.serviceWorker.controller;
+                        var messageChannel = new MessageChannel();
+                        messageChannel.port1.onmessage = replyHandler;
+                        worker.postMessage(data, [messageChannel.port2]);
+                        function replyHandler(event) {
+                            resolve(event.data);
+                        }
+                    } else {
+                        resolve();
+                    }
+                });
+            }
+        }
+    })(window);
+    </script>
+    <!-- Add manifest -->
+    <!-- End PWA settings -->
+    
+    
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+    <meta charset="utf-8">
+    
+    <link rel="canonical" href="https://primeiro-testec2309ef4.multiscreensite.com/">
+    
+    <meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Home
+    </title>
+    
+    <!--Add favorites icons-->
+    
+    <link rel="icon" type="image/x-icon" href="https://static.cdn-website.com/runtime/favicon_d1_res.ico">
+    
+    <!-- End favorite icons -->
+    
+    <link rel="preconnect" href="https://lirp.cdn-website.com/" crossorigin="">
+    
+    
+    
+    <!-- render the required CSS and JS in the head section -->
+    <script>
+        window.SystemID = 'US_DIRECT_PRODUCTION';
+    
+        if(!window.dmAPI) {
+            window.dmAPI = {
+                registerExternalRuntimeComponent: function() {
+                },
+                getCurrentDeviceType: function() {
+                    return window._currentDevice;
+                }
+            };
+        }
+    
+        if (!window.requestIdleCallback) {
+            window.requestIdleCallback = function (fn) {
+                setTimeout(fn, 0);
+            }
+        }
+    </script>
+    <!-- loadCSS function -->
+    
+    
+    
+    <script id="d-js-load-css">
+    /**
+     * There are a few <link> tags with CSS resource in them that are preloaded in the page
+     * in each of those there is a "onload" handler which invokes the loadCSS callback
+     * defined here.
+     * We are monitoring 3 main CSS files - the runtime, the global and the page.
+     * When each load we check to see if we can append them all in a batch. If threre
+     * is no page css (which may happen on inner pages) then we do not wait for it
+     */
+    (function () {
+      let cssLinks = {};
+      function loadCssLink(link) {
+        link.onload = null;
+        link.rel = "stylesheet";
+        link.type = "text/css";
+      }
+      
+        function checkCss() {
+          const pageCssLink = document.querySelector("[id*='CssLink']");
+    
+            if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page)) {
+                const storedRuntimeCssLink = cssLinks.runtime;
+                const storedPageCssLink = cssLinks.page;
+                const storedGlobalCssLink = cssLinks.global;
+    
+                storedGlobalCssLink.disabled = true;
+                loadCssLink(storedGlobalCssLink);
+    
+                if (storedPageCssLink) {
+                    storedPageCssLink.disabled = true;
+                    loadCssLink(storedPageCssLink);
+                }
+    
+                storedRuntimeCssLink.disabled = true;
+                loadCssLink(storedRuntimeCssLink);
+    
+                requestAnimationFrame(() => {
+                    setTimeout(() => {
+                        storedRuntimeCssLink.disabled = false;
+                        storedGlobalCssLink.disabled = false;
+                        if (storedPageCssLink) {
+                          storedPageCssLink.disabled = false;
+                        }
+                        cssLinks = null;
+                    }, 0);
+                });
+            }
+        }
+      
+    
+      function loadCSS(link) {
+        try {
+          var urlParams = new URLSearchParams(window.location.search);
+          var noCSS = !!urlParams.get("nocss");
+          var cssTimeout = urlParams.get("cssTimeout") || 0;
+    
+          if (noCSS) {
+            return;
+          }
+          if (link.href.includes("d-css-runtime")) {
+            cssLinks.runtime = link;
+            checkCss();
+          } else if (link.id === "siteGlobalCss") {
+            cssLinks.global = link;
+            checkCss();
+          } 
+          
+          else if(link.id.includes("CssLink")) {
+            cssLinks.page = link;
+            checkCss();
+          }  
+          
+          else {
+            requestIdleCallback(function () {
+              window.setTimeout(function () {
+                loadCssLink(link);
+              }, parseInt(cssTimeout, 10));
+            });
+          }
+        } catch (e) {
+          throw e
+        }
+      }
+      window.loadCSS = window.loadCSS || loadCSS;
+    })();
+    </script>
+    
+    <script data-role="deferred-init" type="text/javascript">
+        /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+        function Def(){this.promise=new Promise((function(a,b){this.resolve=a,this.reject=b}).bind(this))}
+        const defs={};
+        window.getDeferred=function(a){return null==defs[a]&&(defs[a]=new Def),defs[a]}
+        window.waitForDeferred = function (b, a, c) {
+          let d = window?.getDeferred?.(b);
+          d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+            ? setTimeout(a, 1)
+            : c
+            ? document.addEventListener("DOMContentLoaded", a)
+            : console.error(`Deferred  does not exist`);
+        };
+    </script>
+    <style id="forceCssIncludes">
+        /* This file is auto-generated from a `scss` file with the same name */
+    
+    .videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}
+    </style>
+    <style id="cssVariables" type="text/css">
+        
+    </style>
+    
+    
+    <style id="hideAnimFix">
+      .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+        visibility: hidden;
+      }
+      .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+        visibility: hidden !important;
+      }
+    </style>
+    
+    
+    
+    <style id="criticalCss">
+        
+        @charset "UTF-8";
+        
+        .display_None,.dmPopupMask{display:none}@font-face{font-family:'Abril Fatface';font-style:normal;font-weight:400;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/abrilfatface/v23/zOL64pLDlL1D99S8g8PtiKchq-dmjQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Yeseva One';font-style:normal;font-weight:400;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/yesevaone/v22/OpNJno4ck8vc-xYpwWWxli1VWw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Work Sans';font-style:normal;font-weight:100 900;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/worksans/v19/QGYsz_wNahGAdqQ43Rh_fKDp.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Work Sans';font-style:italic;font-weight:100 900;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/worksans/v19/QGYqz_wNahGAdqQ43Rh_eZDrv_0.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Fjalla One';font-style:normal;font-weight:400;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/fjallaone/v15/Yq6R-LCAWCX3-6Ky7FAFrOF6kg.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}:root{--btn-text-font-size:16px}}.dmInner{min-height:100vh!important;position:relative;min-width:768px!important}.dmDisplay_None{display:none!important}.clearfix:after{clear:both;visibility:hidden;line-height:0;height:0}.clearfix:after,.clearfix:before{content:' ';display:table}.clearfix,ul.listWidgetContainer .listText .itemText{display:inline-block}.dmDesktopBody .shadowEffectToChildren li{box-shadow:none!important}#dm .dmWidget .icon{font-size:26px}body.dmRoot #dm .dmOuter .dmInner .dmWidget .icon.hasFontIcon{height:26px;margin-top:-13px;line-height:normal;text-align:center;background-image:none}#dm .dmBody div.u_1011410717,.dmRoot .hasFontIcon{background-image:none!important}.dmPopupMask{position:fixed;margin:0;width:10px;z-index:1000000999;top:0;left:0}#dmRoot .dmPopup,.dmPopup,.dmPopupClose:before,[data-display-type=block]{display:block}.dmPopup{padding:10px;text-align:left;position:fixed;margin:0 10px;top:10px;left:0;width:93%;z-index:1000009999!important;box-sizing:border-box;background:#f5f5f5;overflow-y:auto;height:100%}.dmPopup .dmPopupTitle{text-align:left;font:700 19px Helvetica,Arial;margin:20px 20px 35px;color:#999}#dmPopup{opacity:0}.dmPopupClose,.dmPopupClose:before{position:absolute;visibility:visible}.dmPopupClose{border-radius:25px;width:27px;height:27px;z-index:1;background-color:rgba(255,255,255,.4);top:12px;right:12px}.dmPopupClose:before{font-size:20px;color:#000;top:3px;right:3px}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar{width:5px;height:5px}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar-track{background:rgba(0,0,0,.1)}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar-thumb{background:#c8c8c8;box-shadow:inset 0 1px 2px #454545;border-radius:45px}.dmRespRow.fullBleedMode>.dmRespColsWrapper{width:100%!important;max-width:100%!important}.dmRespRow.fullBleedMode{padding-left:0!important;padding-right:0!important}#dm .dmRespRow .dmRespColsWrapper{display:flex}.pswp{z-index:9999999999!important}#dm .dmInner .dmWidget.align-center,.align-center{margin-left:auto;margin-right:auto}.text-align-center{text-align:center}body.fix-mobile-scrolling{overflow:initial}#dmRoot{text-decoration-skip-ink:none}body{-webkit-overflow-scrolling:touch}@media (min-width:768px) and (max-width:1024px){.button_2,:root{--btn-text-font-size:16px}}html{font-family:Source Sans Pro;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}hr{box-sizing:content-box;height:0}img{border:0;max-width:100%;-ms-interpolation-mode:bicubic;display:inline-block}button{font-family:inherit;font-size:100%;margin:0;line-height:normal;text-transform:none;-webkit-appearance:button}button::-moz-focus-inner{border:0;padding:0}*,:after,:before{box-sizing:border-box}.dmRespRow.dmRespRowNoPadding{padding:0}.dmRespRow{padding-top:15px;padding-bottom:15px}.dmRespRow:after,.dmRespRow:before{content:' ';display:table}.dmRespRow:after{clear:both}.dmRespRow,.dmRespRow .dmRespColsWrapper{max-width:960px;position:relative;margin:0 auto;width:100%}@media screen and (min-width:1200px){.rows-1200 .dmRespRow:not(.fullBleedMode) .dmRespColsWrapper{max-width:1200px}}.dmRespRow .dmRespCol{position:relative;width:100%;display:inline-block;vertical-align:top;float:left}.dmRespRow .dmRespCol>*{max-width:100%}.dmDesktopBody .dmRespRow .large-2{position:relative;width:16.66667%}.dmDesktopBody .dmRespRow .large-3{position:relative;width:25%}.dmDesktopBody .dmRespRow .large-7{position:relative;width:58.33333%}.dmDesktopBody .dmRespRow .large-12{position:relative;width:100%}[class*=' dm-common-icons-']{speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:dm-common-icons!important}.dm-common-icons-close:before{content:'\e901'}#dm div.dmContent [class*=' icon-'],[class*=' icon-']{font-family:FontAwesome!important;font-weight:400;font-style:normal;text-decoration:inherit;-webkit-font-smoothing:antialiased}[class*=' icon-']:before{text-decoration:none;display:inline-block;speak:none}a [class*=' icon-']{display:inline}[class*=' icon-']{display:inline;width:auto;height:auto;line-height:normal;vertical-align:baseline;background-image:none;background-position:0 0;background-repeat:repeat;margin-top:0}.icon-star:before{content:'\f005'}.icon-angle-down:before{content:'\f107'}#dm .dmRespRow .dmRespCol>.dmWidget{overflow:initial}.pswp,.pswp__item,.pswp__scroll-wrap{overflow:hidden}@media (min-width:768px){#dm .dmRespRow .dmRespCol>.dmWidget{width:280px;max-width:100%}#dm .dmRespRow .dmRespCol.large-3>.dmWidget{width:100%}}@media (max-width:767px){#dm .dmInner .dmWidget{width:100%}}#dm .dmInner .dmWidget:not(.displayNone){display:inline-block}#dm .dmInner .dmWidget:not(.displayNone)[data-display-type=block]{display:block}#dm .dmInner .dmWidget{text-decoration:none;margin:10px 0;clear:both;position:relative;text-align:center;line-height:22px;box-shadow:none;background-image:none;padding:0;height:auto;border-style:solid;white-space:nowrap}#dm .dmInner .dmWidget:after{content:'';display:inline-block;height:100%;vertical-align:middle;width:0;margin-right:-.25em}#dm .dmInner .dmWidget .iconBg{position:absolute;left:0;width:50px;top:50%;margin-top:-13px}#dm .dmWidget .text{display:inline-block;vertical-align:middle;font-size:1.125em;line-height:normal;white-space:normal;padding:10px 7px;max-width:98%}p.rteBlock{margin:0}html:not(.ios-preview) #dm .hasStickyHeader .dmInner div.dmHeaderContainer{position:fixed!important;z-index:101;width:100%;min-width:768px}.dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:30vh}.imageWidget a{font-style:italic;text-align:center}.imageWidget img[width][height]{height:auto}.pswp,.pswp__bg,.pswp__scroll-wrap{width:100%;height:100%;top:0;left:0;position:absolute}.dmNewParagraph[data-version]{line-height:initial}.dmNewParagraph[data-version] .text-align-center{text-align:center!important}.dmNewParagraph[data-version] h2,.dmNewParagraph[data-version] p{margin-top:0;margin-bottom:0}@media (max-width:767px){.dmRoot .dmNewParagraph[data-version] .m-text-align-center{text-align:center!important}}.pswp{display:none;-ms-touch-action:none;touch-action:none;-webkit-text-size-adjust:100%;-webkit-backface-visibility:hidden;outline:0}.pswp *{-webkit-box-sizing:border-box;box-sizing:border-box}.pswp__bg{background:#000;opacity:0;-webkit-backface-visibility:hidden;will-change:opacity}.pswp__container{-webkit-touch-callout:none;-ms-touch-action:none;touch-action:none;position:absolute;left:0;right:0;top:0;bottom:0;-webkit-backface-visibility:hidden;will-change:transform}.pswp__item{position:absolute;left:0;right:0;top:0;bottom:0}.pswp__button{position:relative;overflow:visible;-webkit-appearance:none;display:block;border:0;padding:0;margin:0;float:right;opacity:.75;-webkit-box-shadow:none;box-shadow:none}.pswp__button::-moz-focus-inner{padding:0;border:0}.pswp__button,.pswp__button--arrow--left:before,.pswp__button--arrow--right:before{background:url(/_dm/s/rt/scripts/vendor/photoswipe4/icons/default-skin.png) no-repeat;background-size:264px 88px;width:44px;height:44px}.pswp__button--close{background-position:0 -44px}.pswp__button--share{background-position:-44px -44px}.pswp__button--fs{display:none}.pswp__button--zoom{display:none;background-position:-88px 0}.pswp__button--arrow--left,.pswp__button--arrow--right{background:0 0;top:50%;margin-top:-50px;width:70px;height:100px;position:absolute}.pswp__button--arrow--left{left:0}.pswp__button--arrow--right{right:0}.pswp__button--arrow--left:before,.pswp__button--arrow--right:before{content:'';top:35px;background-color:rgba(0,0,0,.3);height:30px;width:32px;position:absolute}.pswp__button--arrow--left:before{left:6px;background-position:-138px -44px}.pswp__button--arrow--right:before{right:6px;background-position:-94px -44px}.pswp__share-modal{display:block;background:rgba(0,0,0,.5);width:100%;height:100%;top:0;left:0;padding:10px;position:absolute;z-index:1600;opacity:0;-webkit-backface-visibility:hidden;will-change:opacity}.pswp__share-modal--hidden{display:none}.pswp__share-tooltip{z-index:1620;position:absolute;background:#FFF;top:56px;border-radius:2px;display:block;width:auto;right:44px;-webkit-box-shadow:0 2px 5px rgba(0,0,0,.25);box-shadow:0 2px 5px rgba(0,0,0,.25);-webkit-transform:translateY(6px);-ms-transform:translateY(6px);transform:translateY(6px);-webkit-backface-visibility:hidden;will-change:transform}.pswp__counter,.pswp__preloader{height:44px;position:absolute;top:0}.pswp__counter{left:0;font-size:13px;line-height:44px;color:#FFF;opacity:.75;padding:0 10px}.pswp__caption{position:absolute;left:0;bottom:0;width:100%;min-height:44px}.pswp__caption__center{max-width:95%;margin:0 auto;font-size:16px;padding:10px;line-height:20px;color:#CCC;width:960px;font-weight:700;text-align:center}.pswp__preloader{width:44px;left:50%;margin-left:-22px;opacity:0;will-change:opacity}.pswp__preloader__icn{width:20px;height:20px;margin:12px}@media screen and (max-width:1024px){.pswp__preloader{position:relative;left:auto;top:auto;margin:0;float:right}}.pswp__ui{-webkit-font-smoothing:auto;visibility:visible;opacity:1;z-index:1550}.pswp__top-bar{position:absolute;left:0;top:0;height:44px;width:100%}.pswp__caption,.pswp__top-bar{-webkit-backface-visibility:hidden;will-change:opacity;background-color:rgba(0,0,0,.5)}.pswp__ui--hidden .pswp__button--arrow--left,.pswp__ui--hidden .pswp__button--arrow--right,.pswp__ui--hidden .pswp__caption,.pswp__ui--hidden .pswp__top-bar{opacity:.001}.dmPhotoGallery{margin:10px 0;width:100%;overflow:hidden;min-height:1px;clear:both}.dmPhotoGallery .dmPhotoGalleryHolder .photoGalleryThumbs .image-container{height:100%}.dmPhotoGallery .dmPhotoGalleryHolder .photoGalleryThumbs{width:58px;height:58px;margin:2px;display:inline-block;vertical-align:middle;text-align:center;overflow:hidden}.dmPhotoGalleryResp.dmPhotoGallery .dmPhotoGalleryHolder .photoGalleryThumbs img{box-shadow:0 0 3px #888}.dmPhotoGalleryResp.dmPhotoGallery .dmPhotoGalleryHolder .photoGalleryThumbs{margin:0;padding:10px}.dmPhotoGalleryHolder{text-align:center}.dmPhotoGallery .dmPhotoGalleryHolder .photoGalleryThumbs img{display:inline!important;margin:0!important;vertical-align:middle;text-align:center;position:relative}.dmPhotoGallery .image-container{position:relative}.dmPhotoGallery.newPhotoGallery .photoGalleryThumbs .caption-container .caption-inner h3,.dmPhotoGallery.newPhotoGallery .photoGalleryThumbs .caption-container .caption-inner p{margin:0;line-height:normal;text-align:center}.dmPhotoGallery.newPhotoGallery .photoGalleryThumbs .caption-container .caption-inner h3{font-size:21px}.dmPhotoGallery.newPhotoGallery .photoGalleryThumbs .caption-container .caption-inner div{text-align:center}.dmPhotoGallery.newPhotoGallery .photoGalleryThumbs .caption-container .caption-inner p{font-size:14px}.dmPhotoGallery.newPhotoGallery .photoGalleryThumbs .caption-container .caption-inner .caption-text,.dmPhotoGallery.newPhotoGallery .photoGalleryThumbs .caption-container .caption-inner .caption-title{max-width:100%}#dm .dmPhotoGallery.newPhotoGallery li{list-style:none}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .caption-container .caption-inner{align-items:center;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;z-index:1;background-color:rgba(255,255,255,.9);color:#333;padding:15px;height:100%;box-sizing:border-box}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .caption-container .caption-inner div,#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .caption-container .caption-inner h3,#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .caption-container .caption-inner p{text-align:center}#dm .dmPhotoGallery.newPhotoGallery .photoGalleryViewAll{box-shadow:0 0!important;font-size:inherit!important;margin:0!important}#dm .dmPhotoGallery.newPhotoGallery .dmPhotoGalleryHolder{width:100%;padding:0;display:none}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs{position:relative}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .image-container{overflow:hidden}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .image-container a{background-repeat:no-repeat;background-position:center}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .caption-container .caption-inner .rteBlock{font-size:14px}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .caption-container .caption-inner .caption-button{margin:10px auto;max-width:100%}#dm .dmPhotoGallery.newPhotoGallery li.photoGalleryThumbs .caption-container .caption-inner .caption-button .text{padding:10px 20px!important}#dm .dmRespRow.dmRespRowNoPadding,.dmContent,.dmInner ul:not(.defaultList),DIV.dmBody{padding:0}#dm .dmPhotoGallery.newPhotoGallery[data-image-hover-effect=zoomout] .photoGalleryThumbs .image-container{-webkit-mask-image:-webkit-radial-gradient(#fff,#000)}img[width][height]{height:auto}*{border:0 solid #333;scrollbar-arrow-color:#fff;scrollbar-track-color:#F2F2F2;scrollbar-face-color:silver;scrollbar-highlight-color:silver;scrollbar-3dlight-color:silver;scrollbar-shadow-color:silver;scrollbar-darkshadow-color:silver;scrollbar-width:12px}body{width:100%;overflow:hidden;-webkit-text-size-adjust:100%!important;-ms-text-size-adjust:100%!important}A IMG{border:none}h2,h3,ul{margin-left:0;margin-right:0}.dmInner *{-webkit-font-smoothing:antialiased}.clearfix,a,img,li,ul{vertical-align:top}#iscrollBody,#site_content{position:relative}.dmOuter{word-wrap:break-word}.dmInner{font-size:16px;background:#fff;color:#666}.dmDesktopBody .dmInner{min-width:960px}.dmInner a{color:#463939}.dmHeader{background:#68ccd1;color:#666;text-align:center;position:relative;width:100%;max-width:100%}DIV.dmBody{clear:both}.dmContent{margin:0}#site_content ul:not(.defaultList){-webkit-padding-start:0;-moz-padding-start:0;list-style-position:inside}#innerBar{position:relative;height:36px;width:100%;font-size:20px;margin:0;z-index:80}.dmRespRowsWrapper{max-width:960px;margin:0 auto}.dmLargeBody .imageWidget:not(.displayNone){display:inline-block;max-width:100%}.imageWidget:not(.displayNone) img{width:100%}h3{font-weight:400;font-size:23px}#dm .dmRespColsWrapper{display:block}.dmNewParagraph{text-align:left;margin:8px 0;padding:2px 0}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol,.dmLargeBody .fHeader .dmRespRow .dmRespCol{padding-left:.75%;padding-right:.75%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:first-child,.dmLargeBody .fHeader .dmRespRow .dmRespCol:first-child{padding-left:0;padding-right:1.5%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:last-child,.dmLargeBody .fHeader .dmRespRow .dmRespCol:last-child{padding-right:0;padding-left:1.5%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:only-child{padding-left:0;padding-right:0}#innerBar.lineInnerBar{display:table;width:100%;box-shadow:none;-webkit-box-shadow:none;-moz-box-shadow:none;font-size:20px;margin-top:30px;margin-bottom:30px;background-color:transparent;color:#666}#innerBar .titleLine{display:table-cell;vertical-align:middle;width:50%}.dmPageTitleRow:not(#innerBar){display:none}.titleLine hr{min-height:1px;background-color:rgba(102,102,102,.2)}.dmStandardDesktop{display:block;margin:0 auto}.standardHeaderLayout .dmHeader{float:none;display:block;height:auto}.dmInner a{outline:0;vertical-align:inherit}#dm h3.dmwidget-title[hide=true]{display:none}#dm .dmwidget-title{margin:10px 0;font-size:23px;text-shadow:none;text-align:left;text-transform:capitalize;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;word-wrap:normal}.dmPhotoGalleryHolder{font-size:medium!important;margin:0;list-style:none}#dm .dmPhotoGallery .dmPhotoGalleryHolder,#dm .dmPhotoGallery .dmPhotoGalleryHolder>li{width:100%;padding:0}#dm .dmPhotoGallery .dmPhotoGalleryHolder .photoGalleryThumbs{background:url(https://dd-cdn.multiscreensite.com/runtime-img/galleryLoader.gif) 50% 50% no-repeat #eee;float:left;clear:none;padding:0;margin:0;width:100%}#dm .dmPhotoGallery .dmPhotoGalleryHolder .photoGalleryThumbs img{display:none!important}.dmDesktopBody .dmPhotoGallery .photoGalleryViewAll{background:0 0;border:none;padding:3px 0;font-size:16px;width:auto;height:auto;line-height:normal;box-shadow:0 -2px 0 0;display:block;margin:40px 0;text-align:left}div.dmPrettyList{width:100%;clear:both}ul.listWidgetContainer{display:block;list-style:none;padding:0;margin:0}.listWidgetContainer li.listItem{width:100%;overflow:hidden;position:relative;margin:10px 0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}ul.listWidgetContainer li.listItem:first-child{margin-top:0}ul.listWidgetContainer li.listItem *{max-height:100%;max-width:100%;display:block;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box}ul.listWidgetContainer li.listItem a.biglink{width:100%;height:100%;display:block;position:relative;text-decoration:none}ul.listWidgetContainer div.listImage{background-size:cover;background-position:50% 49%;background-repeat:no-repeat;background-color:#fff}ul.listWidgetContainer .listText{margin:0;overflow:hidden;padding:10px 15px;font-size:14px}ul.listWidgetContainer .listText .itemText{display:inline-block}ul.listWidgetContainer .listText span.itemName{display:inline;font-weight:700;width:100%}.dmLargeBody .listWidgetContainer div.listImage{background-position:50%}.dmLargeBody ul.listWidgetContainer .listText{text-align:left;width:100%;font-size:16px;padding:0}.dmLargeBody ul.listWidgetContainer .listText span.itemName{font-weight:400;width:100%;display:block;font-size:23px;margin:0 0 20px}.dmDesktopBody div[layout=layoutA] ul.listWidgetContainer li.listItem{border-bottom:1px solid #666;margin:30px 0}.dmDesktopBody .large-12 div[layout=layoutA] ul.listWidgetContainer li.listItem{padding-bottom:20px}div[layout=layoutA] span.link span.itemName{display:none}div[layout=layoutA] .listText{height:100%;min-height:112px}.dmDesktopBody div[layout=layoutA] ul.listWidgetContainer li.listItem a.biglink{width:100%;height:100%;display:block;position:relative;min-height:195px;text-decoration:none;padding:4px 0}div[layout=layoutA] div.listImage{background-image:url(https://dd-cdn.multiscreensite.com/runtime-img/imgPlaceholder2.png);height:195px;width:195px;position:absolute}.dmDesktopBody div[layout=layoutA] .listText{float:none;padding:0 15px 0 230px;min-height:166px;background:0 0}.dmPrettyList{width:100%}body{background-color:#eee}.dmPhotoGallery:not(.dmFacebookGallery) .dmPhotoGalleryHolder:not(.ready) li.photoGalleryThumbs{display:inline!important;visibility:hidden}div.dmPrettyList.ed-version h3{line-height:normal}div.dmPrettyList.ed-version ul.listWidgetContainer li.listItem .listText .itemText{width:100%}.dmDesktopBody div.dmPrettyList.ed-version[layout^=layoutA] ul.listWidgetContainer li.listItem{margin:20px 0}.dmDesktopBody .large-12 div.dmPrettyList.ed-version[layout^=layoutA] ul.listWidgetContainer li.listItem{padding-bottom:20px}div.dmPrettyList.ed-version[layout^=layoutA] span.link span.itemName{display:none}.dmDesktopBody div.dmPrettyList.ed-version[layout^=layoutA] ul.listWidgetContainer li.listItem a.biglink{width:100%;height:100%;position:relative;min-height:195px;text-decoration:none}div.dmPrettyList.ed-version[layout^=layoutA] div.listImage{background-image:url(https://dd-cdn.multiscreensite.com/runtime-img/imgPlaceholder2.png);height:195px;width:195px;position:absolute}.dmDesktopBody div.dmPrettyList.ed-version[layout^=layoutA] .listText{float:none;padding:0 15px 0 230px;min-height:166px;background:0 0}.dmDesktopBody div.dmPrettyList.ed-version[layout^=layoutA] ul.listWidgetContainer li.listItem a.biglink{display:flex;-js-display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;padding:0;text-align:left}#dm .button_2 .dmWidget:not([data-buttonstyle]) .iconBg,#dm .dmWidget.button_2:not([data-buttonstyle]) .iconBg,#dm .dmWidget:not([data-buttonstyle]) .iconBg,.main-navigation.unifiednav .unifiednav__container .unifiednav__item:not(.unifiednav__item_has-sub-nav) .icon{display:none}.dmDesktopBody div.dmPrettyList.ed-version[layout^=layoutA] ul.listWidgetContainer li.listItem a.biglink .listText{height:auto;min-height:0;flex:1 1 auto}.dmDesktopBody div[layout^=layoutA] ul.listWidgetContainer li.listItem{border-bottom:1px solid #666}#dm div.dmPrettyList.ed-version .listText .itemText,.dmPhotoGallery li.photoGalleryThumbs .caption-container .caption-inner p{white-space:pre-line}#dm .dmBody .dmRespRowsWrapper{max-width:none;background-color:transparent}.dmLargeBody .dmRespRow{width:100%;max-width:none;margin-left:0;margin-right:0;padding-left:40px;padding-right:40px}.dm-bfs.dm-layout-home div.dmInner{background-color:#fff}.dmStandardDesktop .dmHeader{background-color:#68ccd1;max-width:100%}#dm div.dmRespCol>*{line-height:2}#dm div.dmContent h3{color:#fff}#dm div.dmInner{line-height:initial}#dm div.dmInner h2,#dm div.dmInner h3{font-family:Montserrat,"Montserrat Fallback"}#dm div.dmContent h2{color:#333;font-size:30px}#dm DIV.dmInner{background-repeat:no-repeat;background-image:url(https://irt-cdn.multiscreensite.com/ce0bb35f932b47bb809d0e37905542ba/dms3rep/multi/site_background_education-2087x1173.jpg);background-size:cover;background-position:50% 0}#dm div.dmOuter div.dmInner{background-position:center center;background-repeat:repeat;background-size:auto}#dm div.dmInner,#dm div.dmInner .dmRespCol,.dmPrettyList .itemName,.dmPrettyList .listText{font-weight:300;font-size:16px}.dmLargeBody .dmBody .dmRespRowsWrapper{background-color:transparent}#dm .dmRespCol div.dmNewParagraph,#dm div.dmInner,#dm div.dmInner .dmRespCol,.dmPhotoGallery .caption-text.caption-text,.dmPrettyList .itemName,.dmPrettyList .listText{font-family:"Work Sans","Work Sans Fallback";color:rgba(0,17,103,1)}#dm div.dmContent h2,#dm div.dmContent h3{font-family:"Fjalla One","Fjalla One Fallback";color:rgba(0,17,103,1);font-weight:400;line-height:initial}.newPhotoGallery .photoGalleryViewAll.link{color:rgba(141,161,254,1);text-decoration:none}#dm DIV.dmOuter DIV.dmInner{background-image:none;background-color:rgba(255,255,255,1)}#dm div.dmContent h3{font-size:25px}#dm .dmContent .dmRespRow{padding-top:15px}@media all{:root{--btn-text-direction:ltr;--btn-border-r-color:var(--btn-border-color);--btn-border-l-color:var(--btn-border-color);--btn-border-b-width:var(--btn-border-width);--btn-border-width:2px;--btn-border-radius:0px;--btn-border-t-width:var(--btn-border-width);--btn-border-tl-radius:var(--btn-border-radius);--btn-border-br-radius:var(--btn-border-radius);--btn-border-bl-radius:var(--btn-border-radius);--btn-bg-color:rgba(0, 0, 0, 0);--btn-border-color:rgb(0, 17, 103);--btn-border-tr-radius:var(--btn-border-radius);--btn-border-r-width:var(--btn-border-width);--btn-bg-image:none;--btn-border-b-color:var(--btn-border-color);--btn-border-l-width:var(--btn-border-width);--btn-border-t-color:var(--btn-border-color);--btn-text-align:center;--btn-text-color:rgb(0, 17, 103);--btn-text-decoration:none;--btn-text-font-weight:400;--btn-icon-color:rgb(247, 247, 247);--btn-icon-fill:rgb(247, 247, 247);--btn-icon-wrpr-display:none;--btn-hover-border-b-color:var(--btn-hover-border-color);--btn-hover-bg:rgb(15, 35, 115);--btn-hover-border-t-color:var(--btn-hover-border-color);--btn-hover-border-r-color:var(--btn-hover-border-color);--btn-hover-border-l-color:var(--btn-hover-border-color);--btn-hover-border-color:rgba(0, 0, 0, 0);--btn-hover-text-color:rgb(255, 255, 255);--btn-hover-text-font-weight:var(--btn-text-font-weight);--btn-hover-text-decoration:var(--btn-text-decoration);--btn-hover-text-font-style:var(--btn-text-font-style)}.button_2{--btn-text-direction:ltr;--btn-border-r-color:var(--btn-border-color);--btn-border-l-color:var(--btn-border-color);--btn-border-b-width:var(--btn-border-width);--btn-border-width:2px;--btn-border-radius:0px;--btn-border-t-width:var(--btn-border-width);--btn-border-tl-radius:var(--btn-border-radius);--btn-border-br-radius:var(--btn-border-radius);--btn-border-bl-radius:var(--btn-border-radius);--btn-bg-color:rgb(0, 17, 103);--btn-border-color:rgba(0, 0, 0, 0);--btn-border-tr-radius:var(--btn-border-radius);--btn-border-r-width:var(--btn-border-width);--btn-bg-image:none;--btn-border-b-color:var(--btn-border-color);--btn-border-l-width:var(--btn-border-width);--btn-border-t-color:var(--btn-border-color);--btn-text-align:center;--btn-text-color:rgb(255, 255, 255);--btn-text-decoration:none;--btn-text-font-weight:400;--btn-icon-color:rgb(247, 247, 247);--btn-icon-fill:rgb(247, 247, 247);--btn-icon-wrpr-display:none;--btn-hover-border-b-color:var(--btn-hover-border-color);--btn-hover-bg:rgb(15, 35, 115);--btn-hover-border-t-color:var(--btn-hover-border-color);--btn-hover-border-r-color:var(--btn-hover-border-color);--btn-hover-border-l-color:var(--btn-hover-border-color);--btn-hover-border-color:rgba(0, 0, 0, 0);--btn-hover-text-color:rgb(255, 255, 255);--btn-hover-text-font-weight:var(--btn-text-font-weight);--btn-hover-text-decoration:var(--btn-text-decoration);--btn-hover-text-font-style:var(--btn-text-font-style)}}@media (min-width:0px) and (max-width:767px){.button_2,:root{--btn-text-font-size:16px}}#dm .button_2 .dmWidget:not([data-buttonstyle]),#dm .dmWidget.button_2:not([data-buttonstyle]),#dm .dmWidget:not([data-buttonstyle]){overflow:initial;background-clip:border-box;border-radius:1px}#dm .button_2 .dmWidget:not([data-buttonstyle]) .text,#dm .dmWidget.button_2:not([data-buttonstyle]) .text,#dm .dmWidget:not([data-buttonstyle]) .text{padding:16px 0}@media (min-width:768px){#dm .dmRespRow .dmRespCol>.dmWidget,#dm .dmRespRow .dmRespCol>.dmWidget.button_2{width:222px}}#dm div.dmInner #site_content .dmWidget,#dm div.dmInner .dmHeader .dmWidget{background-color:var(--btn-bg-color);background-image:var(--btn-bg-image);border-color:var(--btn-border-color);border-bottom-color:var(--btn-border-b-color);border-left-color:var(--btn-border-l-color);border-right-color:var(--btn-border-r-color);border-top-color:var(--btn-border-t-color);border-radius:var(--btn-border-radius);border-bottom-left-radius:var(--btn-border-bl-radius);border-bottom-right-radius:var(--btn-border-br-radius);border-top-left-radius:var(--btn-border-tl-radius);border-top-right-radius:var(--btn-border-tr-radius);border-width:var(--btn-border-width);border-bottom-width:var(--btn-border-b-width);border-left-width:var(--btn-border-l-width);border-right-width:var(--btn-border-r-width);border-top-width:var(--btn-border-t-width);direction:var(--btn-text-direction);text-align:var(--btn-text-align)}#dm .dmInner div.u_hcontainer,#dm .p_hfcontainer a.u_1995646696,#dm .p_hfcontainer div.u_1279469903{text-align:center!important;min-width:0!important;float:none!important;top:0!important;left:0!important;position:relative!important;max-width:100%!important}#dm div.dmInner #site_content .dmWidget span.text{color:var(--btn-text-color);font-size:var(--btn-text-font-size);font-weight:var(--btn-text-font-weight);text-decoration:var(--btn-text-decoration)}#dm div.dmInner #site_content .dmWidget span.icon,#dm div.dmInner .dmHeader .dmWidget span.icon{color:var(--btn-icon-color);fill:var(--btn-icon-fill)}#dm div.dmInner #site_content .dmWidget:not([data-buttonstyle]) .iconBg,#dm div.dmInner .dmHeader .dmWidget:not([data-buttonstyle]) .iconBg{display:var(--btn-icon-wrpr-display)}#dm .dmInner div.dmHeader,#dm .dmInner div.dmHeader.u_hcontainer,#dm .dmInner div.u_hcontainer{background-color:rgba(0,0,0,0)!important;box-shadow:none!important;-moz-box-shadow:none!important;-webkit-box-shadow:none!important}#dm .p_hfcontainer div.u_1279469903 img{border-radius:0!important;-moz-border-radius:0!important;-webkit-border-radius:0!important}#dm .p_hfcontainer .u_1279469903{width:100%!important}#dm .dmInner div.u_hcontainer{width:100%!important;height:auto!important;padding:25px 0 20px!important;margin:0 auto!important}#dm .dmInner div.dmHeader.u_hcontainer{padding-bottom:20px!important;padding-top:25px!important}.fHeader #hcontainer.dmHeader[freeheader=true]{padding-top:initial!important;padding-bottom:initial!important}#dm .dmInner div.fHeader .dmHeader[freeheader=true]{margin-top:0!important;margin-bottom:0!important;padding:0!important}#dm .p_hfcontainer div.u_1963455243{padding-left:10px!important}#dm .p_hfcontainer div.u_1677204495{border-style:solid!important;border-width:0!important;box-shadow:rgba(0,0,0,.25) 0 3px 11px 0!important;-moz-box-shadow:rgba(0,0,0,.25) 0 3px 11px 0!important;-webkit-box-shadow:rgba(0,0,0,.25) 0 3px 11px 0!important;width:auto!important;padding:5px 40px!important;margin:0!important}#dm .p_hfcontainer div.u_1279469903{width:167.64px!important;display:block!important;height:auto!important;padding:0!important;margin:0 auto!important}#dm .p_hfcontainer a.u_1995646696{border-style:solid!important;border-width:0!important;display:block!important;width:222px!important;height:129px!important;padding:0!important;margin:10px 0 10px auto!important}#dm .p_hfcontainer a.u_1995646696 span.text{font-family:'Yeseva One'!important;font-size:24px!important}#dm .p_hfcontainer div.u_1194156943{padding:0 1px 0 0!important;margin:0!important}.stickyHeaderSpacer{height:170px!important}#dm .dmBody div.u_1011410717{background-color:rgba(255,255,255,1)!important}#dm .dmBody div.u_1859901413 .caption-inner{background-color:rgba(0,17,103,.3)!important}#dm .dmBody .u_1613622183,#dm .dmBody .u_1745388996{display:block!important}#dm .dmBody div.u_1382984280 li.listItem{border-bottom-width:0!important;border-bottom-style:solid!important}#dm .dmBody .u_1382984280 ul li{box-shadow:none!important}#dm .dmBody div.u_1859901413 .caption-container .caption-text,#dm .dmBody div.u_1859901413 .caption-container .caption-text .rteBlock{color:rgba(255,255,255,1)!important;font-family:'Fjalla One'!important}#dm .dmBody div.u_1382984280 .listText .itemName{font-family:'Fjalla One'!important;font-weight:400!important;font-size:25px!important}#dm .dmBody div.u_1859901413 .caption-button span.text{font-family:'Yeseva One'!important}#dm .dmBody div.u_1824407760{background-image:url(https://lirp.cdn-website.com/a6f99510/dms3rep/multi/opt/WhatsApp-Image-2022-10-24-at-14.48.14-1920w.jpeg),url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TpUUqHSwo4pChOlkQFemoVShChVArtOpgcukXNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APEzc1J0UVK/F9aaBHjwXE/3t173L0DhEaFaVbPBKDptplOJsRsblUMvEJAGEEMIi4zy5iTpBQ8x9c9fHy9i/Es73N/jn41bzHAJxLPMsO0iTeIZzZtg/M+cYSVZJX4nHjcpAsSP3JdafEb56LLAs+MmJn0PHGEWCx2sdLFrGRqxNPEUVXTKV/ItljlvMVZq9RY+578haG8vrLMdZojSGIRS5AgQkENZVRgI0arToqFNO0nPPzDrl8il0KuMhg5FlCFBtn1g//B726twtRkKymUAHpfHOdjFAjsAs2643wfO07zBPA/A1d6x19tAPFP0usdLXoEhLeBi+uOpuwBlzvA0JMhm7Ir+WkKhQLwfkbflAMGboG+tVZv7X2cPgAZ6ip1AxwcAmNFyl73eHewu7d/z7T7+wFwJnKmZ9+MiwAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+UCDwksLkLIPkkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAC0lEQVQI12NgAAIAAAUAAeImBZsAAAAASUVORK5CYII=)!important}#dm .dmBody .u_1382984280 .itemText,#dm .dmBody .u_1382984280 .itemText .rteBlock{text-align:LEFT!important}#dm .d-page-1716942098 DIV.dmInner{background-repeat:no-repeat!important;background-size:cover!important;background-attachment:fixed!important;background-position:50% 50%!important}#dm .dmBody div.u_1011410717{float:none!important;top:0!important;left:0!important;width:100%!important;position:relative!important;height:auto!important;max-width:none!important;min-width:0!important;text-align:center!important;background-position:50% 50%!important;background-repeat:no-repeat!important;background-size:cover!important;padding:0!important;margin:0!important}#dm .dmBody .u_1859901413 .caption-inner{-webkit-border-top-right-radius:0!important;-webkit-border-bottom-right-radius:0!important;-webkit-border-bottom-left-radius:0!important;-webkit-border-top-left-radius:0!important;border-radius:0!important;-moz-border-radius:0!important;-webkit-border-radius:0!important;padding-left:40px!important;padding-right:40px!important}#dm .dmBody div.u_1768417135{padding-top:0!important}#dm .dmBody div.u_1859901413{padding:0!important;margin:0!important}#dm .dmBody div.u_1859901413 .caption-container .caption-text,#dm .dmBody div.u_1859901413 .caption-container .caption-text .rteBlock{font-size:60px!important}#dm .dmBody div.u_1859901413 .caption-container .caption-title{color:rgba(255,255,255,1)!important;font-weight:400!important;font-size:25px!important}#dm .dmBody div.u_1382984280{float:none!important;top:0!important;left:0!important;width:calc(100% - 0px)!important;position:relative!important;height:auto!important;max-width:100%!important;min-width:25px!important;text-align:start!important;display:block!important;padding:0!important;margin:31px 0 0!important}#dm .dmBody div.u_1243667655,#dm .dmBody div.u_1770759162{float:none!important;top:0!important;left:0!important;position:relative!important;min-width:0!important}#dm .dmBody .u_1859901413 .photoGalleryThumbs .image-container a{padding-top:560px!important}#dm .dmBody div.u_1243667655{width:100%!important;height:auto!important;max-width:none!important;text-align:center!important;margin:0!important;padding:0 0 30px!important}#dm .dmBody div.u_1859901413 .caption-button{direction:rtl!important;height:49px!important;width:200px!important}#dm .dmBody div.u_1620106714{border-style:solid!important;border-width:6px!important;padding:0 50px!important}#dm .dmBody div.u_1770759162{width:381px!important;height:auto!important;max-width:100%!important;display:block!important;padding:2px 0!important;margin:8px auto!important}#dm .dmBody div.u_1933402313{width:auto!important;padding:16px 40px 0!important;margin:0!important}.font-size-18,.size-18{font-size:18px!important}
+        .dmDesktopBody [data-anim-desktop]:not([data-anim-desktop='none']) {
+          visibility: hidden;
+        }
+        
+    </style>
+    
+    
+    
+    <style id="fontFallbacks">
+        @font-face {
+      font-family: "Roboto Fallback";
+      src: local('Arial');
+      ascent-override: 92.6709%;
+      descent-override: 24.3871%;
+      size-adjust: 100.1106%;
+      line-gap-override: 0%;
+     }@font-face {
+      font-family: "Montserrat Fallback";
+      src: local('Arial');
+      ascent-override: 84.9466%;
+      descent-override: 22.0264%;
+      size-adjust: 113.954%;
+      line-gap-override: 0%;
+     }@font-face {
+      font-family: "Abril Fatface Fallback";
+      src: local('Arial');
+      ascent-override: 102.6391%;
+      descent-override: 28.2306%;
+      size-adjust: 103.0796%;
+      line-gap-override: 0%;
+     }@font-face {
+      font-family: "Fjalla One Fallback";
+      src: local('Arial');
+      ascent-override: 114.9994%;
+      descent-override: 28.2767%;
+      size-adjust: 87.7212%;
+      line-gap-override: 0%;
+     }@font-face {
+      font-family: "Yeseva One Fallback";
+      src: local('Arial');
+      ascent-override: 79.0385%;
+      descent-override: 20.7314%;
+      size-adjust: 115.7664%;
+      line-gap-override: 0%;
+     }@font-face {
+      font-family: "Work Sans Fallback";
+      src: local('Arial');
+      ascent-override: 82.1016%;
+      descent-override: 21.4523%;
+      size-adjust: 113.2743%;
+      line-gap-override: 0%;
+     }
+    </style>
+    
+    
+    <!-- End render the required css and JS in the head section -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <link type="application/rss+xml" rel="alternate" href="https://primeiro-testec2309ef4.multiscreensite.com//feed/rss2">
+      <link type="application/atom+xml" rel="alternate" href="https://primeiro-testec2309ef4.multiscreensite.com//feed/atom">
+      <meta property="og:type" content="website">
+    
+      <meta name="twitter:card" content="summary">
+    
+    
+    
+    
+    <!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+    <script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3913/editor/apps/modules/runtime/16.c2fbe3dcf3dee295e28f.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3913/editor/apps/modules/runtime/21.0bf6759b07aeff413864.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3913/editor/apps/modules/runtime/2.bb72b5e7f8fd98bc3088.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3913/editor/apps/modules/runtime/8.e862fd7d143f131cc4b5.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3913/editor/apps/modules/runtime/runtime-module-anchors.310620cbfd37cdb290b3.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3913/editor/apps/modules/runtime/4.f27a0e156562c19d3620.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3913/editor/apps/modules/runtime/6.b5eecdc045a8a6695dec.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3913/editor/apps/modules/runtime/9.e228a24d1f2f64462512.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3913/editor/apps/modules/runtime/20.4cfae9a65a031966931c.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3913/editor/apps/modules/runtime/3.f545370a746b49f4b518.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3913/editor/apps/modules/runtime/25.6a6b94a6b374afe1bd73.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3913/editor/apps/modules/runtime/24.05a80ecf7f9f94b000a3.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3913/editor/apps/modules/runtime/1.eb4e355e415d298dedc2.js"></script><style type="text/css">/*! PhotoSwipe Default UI CSS by Dmitry Semenov | photoswipe.com | MIT license */.pswp__button{width:44px;height:44px;position:relative;background:none;cursor:pointer;overflow:visible;-webkit-appearance:none;display:block;border:0;padding:0;margin:0;float:right;opacity:0.75;transition:opacity 0.2s;box-shadow:none}.pswp__button:focus,.pswp__button:hover{opacity:1}.pswp__button:active{outline:none;opacity:0.9}.pswp__button::-moz-focus-inner{padding:0;border:0}.pswp__ui--over-close .pswp__button--close{opacity:1}.pswp__button,.pswp__button--arrow--left:before,.pswp__button--arrow--right:before{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AAAB6klEQVR4Ae3bsWpUQRTG8YkkanwCa7GzVotsI/gEgk9h4Vu4ySLYmMYgbJrc3lrwZbJwC0FMt4j7F6Y4oIZrsXtgxvx/1c0ufEX4cnbmLCmSJEmSJEmSJEmSJP3XCBPvbJU+8doWmDFwyZpLBmYlNJebz0KwzykwsuSYJSNwykEJreV2BaBMaLIQZ2xYcFgqDlmw4ayE/FwL0dDk4Qh4W37DAjgqIT+3HRbigjH+iikVdxgZStgyN0Su2sXIeTwTT+esdpcbIlfNAuZ/TxresG4zV8kYWSZNiKUTokMMSWeIwTNEn4fK2TW3gRNgVkJLuVksROA9G+bEvoATNlBCa7nZXEwdxEZxzpKRKFh+bsv8LmPFmhX1OwfIz81jIRJQ5eeqG9B+riRJkiRJkiRJkiRJkiRJkiRJUkvA/8RQoEpKlJWINFkJ62AlrEP/mNBibnv2yz/A3t7Uq3LcpoxP8COjC1T5vxoAD5VdoEqdDrd5QuW1swtUSaueh3zkiuBiqgtA2OlkeMcP/uDqugsJdbjHF65VdPMKwS0+WQc/MgKvrIOHysB9vgPwk8+85hmPbnQdvHZyDMAFD7L3EOpgMcVdvnHFS0/vlatrXvCVx0U9gt3fxvnA0/hB4nmRJEmSJEmSJEmSJGmHfgFLaDPoMu5xWwAAAABJRU5ErkJggg==) 0 0 no-repeat;background-size:264px 88px;width:44px;height:44px}@media (min-resolution: 105dpi), (min-resolution: 1.1dppx){.pswp--svg .pswp__button,.pswp--svg .pswp__button--arrow--left:before,.pswp--svg .pswp__button--arrow--right:before{background-image:url(https://static.cdn-website.com/mnlt/production/3913/editor/apps/modules/runtime/b257fa9c5ac8c515ac4d77a667ce2943.svg)}.pswp--svg .pswp__button--arrow--left,.pswp--svg .pswp__button--arrow--right{background:none}}.pswp__button--close{background-position:0 -44px}.pswp__button--share{background-position:-44px -44px}.pswp__button--fs{display:none}.pswp--supports-fs .pswp__button--fs{display:block}.pswp--fs .pswp__button--fs{background-position:-44px 0}.pswp__button--zoom{display:none;background-position:-88px 0}.pswp--zoom-allowed .pswp__button--zoom{display:block}.pswp--zoomed-in .pswp__button--zoom{background-position:-132px 0}.pswp--touch .pswp__button--arrow--left,.pswp--touch .pswp__button--arrow--right{visibility:hidden}.pswp__button--arrow--left,.pswp__button--arrow--right{background:none;top:50%;margin-top:-50px;width:70px;height:100px;position:absolute}.pswp__button--arrow--left{left:0}.pswp__button--arrow--right{right:0}.pswp__button--arrow--left:before,.pswp__button--arrow--right:before{content:'';top:35px;background-color:rgba(0,0,0,0.3);height:30px;width:32px;position:absolute}.pswp__button--arrow--left:before{left:6px;background-position:-138px -44px}.pswp__button--arrow--right:before{right:6px;background-position:-94px -44px}.pswp__counter,.pswp__share-modal{-webkit-user-select:none;-ms-user-select:none;user-select:none}.pswp__share-modal{display:block;background:rgba(0,0,0,0.5);width:100%;height:100%;top:0;left:0;padding:10px;position:absolute;z-index:1600;opacity:0;transition:opacity 0.25s ease-out;-webkit-backface-visibility:hidden;will-change:opacity}.pswp__share-modal--hidden{display:none}.pswp__share-tooltip{z-index:1620;position:absolute;background:#FFF;top:56px;border-radius:2px;display:block;width:auto;right:44px;box-shadow:0 2px 5px rgba(0,0,0,0.25);-ms-transform:translateY(6px);transform:translateY(6px);transition:transform 0.25s;-webkit-backface-visibility:hidden;will-change:transform}.pswp__share-tooltip a{display:block;padding:8px 12px;color:#000;text-decoration:none;font-size:14px;line-height:18px}.pswp__share-tooltip a:hover{text-decoration:none;color:#000}.pswp__share-tooltip a:first-child{border-radius:2px 2px 0 0}.pswp__share-tooltip a:last-child{border-radius:0 0 2px 2px}.pswp__share-modal--fade-in{opacity:1}.pswp__share-modal--fade-in .pswp__share-tooltip{-ms-transform:translateY(0);transform:translateY(0)}.pswp--touch .pswp__share-tooltip a{padding:16px 12px}a.pswp__share--facebook:before{content:'';display:block;width:0;height:0;position:absolute;top:-12px;right:15px;border:6px solid rgba(0,0,0,0);border-bottom-color:#FFF;-webkit-pointer-events:none;-moz-pointer-events:none;pointer-events:none}a.pswp__share--facebook:hover{background:#3E5C9A;color:#FFF}a.pswp__share--facebook:hover:before{border-bottom-color:#3E5C9A}a.pswp__share--twitter:hover{background:#55ACEE;color:#FFF}a.pswp__share--pinterest:hover{background:#CCC;color:#CE272D}a.pswp__share--download:hover{background:#DDD}.pswp__counter{position:absolute;left:0;top:0;height:44px;font-size:13px;line-height:44px;color:#FFF;opacity:0.75;padding:0 10px}.pswp__caption{position:absolute;left:0;bottom:0;width:100%;min-height:44px}.pswp__caption small{font-size:11px;color:#BBB}.pswp__caption__center{text-align:left;max-width:420px;margin:0 auto;font-size:13px;padding:10px;line-height:20px;color:#CCC}.pswp__caption--empty{display:none}.pswp__caption--fake{visibility:hidden}.pswp__preloader{width:44px;height:44px;position:absolute;top:0;left:50%;margin-left:-22px;opacity:0;transition:opacity 0.25s ease-out;will-change:opacity}.pswp__preloader__icn{width:20px;height:20px;margin:12px}.pswp__preloader--active{opacity:1}.pswp__preloader--active .pswp__preloader__icn{background:url(https://static.cdn-website.com/mnlt/production/3913/editor/apps/modules/runtime/e34aafbb485a96eaf2a789b2bf3af6fe.gif) 0 0 no-repeat}.pswp--css_animation .pswp__preloader--active{opacity:1}.pswp--css_animation .pswp__preloader--active .pswp__preloader__icn{animation:clockwise 500ms linear infinite}.pswp--css_animation .pswp__preloader--active .pswp__preloader__donut{animation:donut-rotate 1000ms cubic-bezier(0.4, 0, 0.22, 1) infinite}.pswp--css_animation .pswp__preloader__icn{background:none;opacity:0.75;width:14px;height:14px;position:absolute;left:15px;top:15px;margin:0}.pswp--css_animation .pswp__preloader__cut{position:relative;width:7px;height:14px;overflow:hidden}.pswp--css_animation .pswp__preloader__donut{box-sizing:border-box;width:14px;height:14px;border:2px solid #FFF;border-radius:50%;border-left-color:transparent;border-bottom-color:transparent;position:absolute;top:0;left:0;background:none;margin:0}@media screen and (max-width: 1024px){.pswp__preloader{position:relative;left:auto;top:auto;margin:0;float:right}}@keyframes clockwise{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes donut-rotate{0%{transform:rotate(0)}50%{transform:rotate(-140deg)}100%{transform:rotate(0)}}.pswp__ui{-webkit-font-smoothing:auto;visibility:visible;opacity:1;z-index:1550}.pswp__top-bar{position:absolute;left:0;top:0;height:44px;width:100%}.pswp__caption,.pswp__top-bar,.pswp--has_mouse .pswp__button--arrow--left,.pswp--has_mouse .pswp__button--arrow--right{-webkit-backface-visibility:hidden;will-change:opacity;transition:opacity 333ms cubic-bezier(0.4, 0, 0.22, 1)}.pswp--has_mouse .pswp__button--arrow--left,.pswp--has_mouse .pswp__button--arrow--right{visibility:visible}.pswp__top-bar,.pswp__caption{background-color:rgba(0,0,0,0.5)}.pswp__ui--fit .pswp__top-bar,.pswp__ui--fit .pswp__caption{background-color:rgba(0,0,0,0.3)}.pswp__ui--idle .pswp__top-bar{opacity:0}.pswp__ui--idle .pswp__button--arrow--left,.pswp__ui--idle .pswp__button--arrow--right{opacity:0}.pswp__ui--hidden .pswp__top-bar,.pswp__ui--hidden .pswp__caption,.pswp__ui--hidden .pswp__button--arrow--left,.pswp__ui--hidden .pswp__button--arrow--right{opacity:0.001}.pswp__ui--one-slide .pswp__button--arrow--left,.pswp__ui--one-slide .pswp__button--arrow--right,.pswp__ui--one-slide .pswp__counter{display:none}.pswp__element--disabled{display:none !important}.pswp--minimal--dark .pswp__top-bar{background:none}
+    </style><style type="text/css">/*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */.pswp{display:none;position:absolute;width:100%;height:100%;left:0;top:0;overflow:hidden;-ms-touch-action:none;touch-action:none;z-index:1500;-webkit-text-size-adjust:100%;-webkit-backface-visibility:hidden;outline:none}.pswp *{box-sizing:border-box}.pswp img{max-width:none}.pswp--animate_opacity{opacity:0.001;will-change:opacity;transition:opacity 333ms cubic-bezier(0.4, 0, 0.22, 1)}.pswp--open{display:block}.pswp--zoom-allowed .pswp__img{cursor:zoom-in}.pswp--zoomed-in .pswp__img{cursor:grab}.pswp--dragging .pswp__img{cursor:grabbing}.pswp__bg{position:absolute;left:0;top:0;width:100%;height:100%;background:#000;opacity:0;-webkit-backface-visibility:hidden;will-change:opacity}.pswp__scroll-wrap{position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden}.pswp__container,.pswp__zoom-wrap{-ms-touch-action:none;touch-action:none;position:absolute;left:0;right:0;top:0;bottom:0}.pswp__container,.pswp__img{-webkit-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-touch-callout:none}.pswp__zoom-wrap{position:absolute;width:100%;-ms-transform-origin:left top;transform-origin:left top;transition:transform 333ms cubic-bezier(0.4, 0, 0.22, 1)}.pswp__bg{will-change:opacity;transition:opacity 333ms cubic-bezier(0.4, 0, 0.22, 1)}.pswp--animated-in .pswp__bg,.pswp--animated-in .pswp__zoom-wrap{transition:none}.pswp__container,.pswp__zoom-wrap{-webkit-backface-visibility:hidden;will-change:transform}.pswp__item{position:absolute;left:0;right:0;top:0;bottom:0;overflow:hidden}.pswp__img{position:absolute;width:auto;height:auto;top:0;left:0;transition:opacity 0.15s}.pswp__img--placeholder{-webkit-backface-visibility:hidden}.pswp__img--placeholder--blank{background:#222}.pswp--ie .pswp__img{width:100%;height:auto;left:0;top:0}.pswp__error-msg{position:absolute;left:0;top:50%;width:100%;text-align:center;font-size:14px;line-height:16px;margin-top:-8px;color:#CCC}.pswp__error-msg a{color:#CCC;text-decoration:underline}
+    </style></head>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <body id="dmRoot" data-page-alias="home" class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody pcCustomScrollbar d1SiteBody dmBodyNoIscroll fullyLoaded" style="padding:0;margin:0;">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- ========= Site Content ========= -->
+    <div id="dm" class="dmwr">
+        
+        <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+             <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true"> <div dmtemplateid="StandardLayoutMultiD" class="standardHeaderLayout dm-bfs dm-layout-home hasAnimations hasStickyHeader inMiniHeaderMode rows-1200 dmPageBody dmFreeHeader d-page-1716942098 runtime-module-container" id="dm-outer-wrapper" data-page-class="1716942098" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div> <div id="iscrollBody"> <div id="site_content"> <div class="dmHeaderContainer fHeader d-header-wrapper"> <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer" freeheader="true" headerlayout="b58ba5b5703b4cd7b5f5f7951565dc87===horizontal-layout-5" data-scrollable-target="body" data-scrollable-target-threshold="1" data-scroll-responder-id="1" preserve-sticky-header="true" logo-size-target="80%" layout="f014fc9487554eb885e18628ee6309e9===header" mini-header-show-only-navigation-row="true"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="dmRespRow dmDefaultListContentRow u_1677204495 fullBleedChanged fullBleedMode mini-header-hide-row" style="text-align:center" id="1677204495"> <div class="dmRespColsWrapper" id="1667580217"> <div class="u_1194156943 small-12 dmRespCol large-2 medium-2 has-one-widget-only" id="1194156943"> <div class="u_1279469903 imageWidget align-center" data-widget-type="image" id="1279469903" data-element-type="image" editablewidget="true"> <a href="/" id="1435134406"><img src="https://lirp.cdn-website.com/a6f99510/dms3rep/multi/opt/Imagem+do+WhatsApp+de+2023-11-05+%C3%A0%28s%29+08.47.23_87293f4d-201w.jpg" id="1431613130" class="" data-dm-image-path="https://irp.cdn-website.com/a6f99510/dms3rep/multi/Imagem+do+WhatsApp+de+2023-11-05+%C3%A0%28s%29+08.47.23_87293f4d.jpg" width="1024" height="576" onerror="handleImageLoadError(this)"></a> 
+    </div> 
+    </div> 
+     <div class="u_1963455243 dmRespCol small-12 large-7 medium-7 has-one-widget-only" id="1963455243"> <span id="1862372974"></span> 
+     <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1788677966" data-styletopreserve="{" background-image":""}"=""><p class="m-size-14 text-align-center size-18"><span class="m-font-size-14 font-size-18" style="color:rgb(0, 0, 0);display:unset;font-family:'Abril Fatface', 'Abril Fatface Fallback';">Seja bem-vindo novamente!</span></p><p class="text-align-center"></p><p class="m-size-14 text-align-center size-18"><span class="m-font-size-14 font-size-18" style="color:rgb(0, 0, 0);display:unset;font-family:'Abril Fatface', 'Abril Fatface Fallback';">Veja as novas atualizações ao lado...</span></p><p class="text-align-center"></p></div> 
+    </div> 
+     <div class="u_1093681472 dmRespCol small-12 large-3 medium-3 has-one-widget-only" id="1093681472"> <a data-display-type="block" class="u_1995646696 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient button_2" file="false" href="/admissions" data-element-type="dButtonLinkId" id="1995646696"> <span class="iconBg" id="1979600637"> <span class="icon hasFontIcon icon-star" id="1725943435"></span> 
+    </span> 
+     <span class="text" id="1436649469">Atualizações</span> 
+    </a> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+     <div class="stickyHeaderSpacer" id="stickyHeaderSpacer" data-new="true"></div> 
+     <div class="dmRespRow dmRespRowStable dmRespRowNoPadding dmPageTitleRow "> <div class="dmRespColsWrapper"> <div class="large-12 dmRespCol"> <div id="innerBar" class="innerBar lineInnerBar dmDisplay_None"> <div class="titleLine display_None"><hr></div> 
+    <!-- Page title is hidden in css for new responsive sites. It is left here only so we don't break old sites. Don't copy it to new layouts --> <div id="pageTitleText"></div> 
+     <div class="titleLine display_None"><hr></div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+     <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_home dm-home-page" themewaschanged="true"> <div id="allWrapper" class="allWrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent"> <div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl dmRespRowsWrapperSize1" id="1716942098"> <div class="u_1243667655 dmRespRow fullBleedChanged fullBleedMode mobile-columns-reversed" style="text-align: center;" id="1243667655"> <div class="dmRespColsWrapper" id="1173148036"> <div class="u_1620106714 dmRespCol small-12 medium-12 large-12" id="1620106714"> <span id="1479169930"></span> 
+     <div class="u_1770759162 dmNewParagraph" data-element-type="paragraph" id="1770759162" style="transition: none 0s ease 0s; text-align: left;" data-version="5"><p class="text-align-center m-text-align-center"><span style="display: initial;">Escolha abaixo a área</span></p></div></div> 
+    </div> 
+    </div> 
+     <div class="u_1011410717 dmRespRow fullBleedChanged fullBleedMode" style="text-align: center;" id="1011410717"> <div class="dmRespColsWrapper" id="1628121342"> <div class="dmRespCol small-12 medium-12 large-12 u_1768417135" id="1768417135"> <span id="1509872097"></span> 
+     <div class="u_1859901413 dmPhotoGallery newPhotoGallery dmPhotoGalleryResp button_2 text-layout-fixed captionAlignment-center_left photo-gallery-done" galleryoptionsparams="{thumbnailsPerRow: 3, rowsToShow: 3, imageScaleMethod: true}" data-desktop-layout="square" data-desktop-columns="2" data-element-type="dPhotoGalleryId" data-desktop-text-layout="fixed" id="1859901413" data-rows-to-show="100" data-desktop-caption-alignment="center_left" data-tablet-text-layout="fixed" data-tablet-caption-alignment="center_left" data-mobile-text-layout="fixed" data-mobile-caption-alignment="center_left" data-mobile-columns="1" data-image-hover-effect="zoomout" editablewidget="true" data-widget-type="photoGallery"> <ul class="dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow" id="1308509857">  
+      
+    </ul> 
+     <div class="layout-container square"><div class="photogallery-row" data-index="0"><div class="photogallery-column  column-2" data-index="0"><li index="0" class="photoGalleryThumbs animated null" id="1136841663" data-index="0"> <div class="thumbnailInnerWrapper" style="opacity: 1;"><div class="image-container revealed" id="1559802795"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/a6f99510/dms3rep/multi/Captura+de+tela+2023-11-11+141111.png" id="1524757694" class="u_1524757694" style="background-image: url(&quot;https://lirp.cdn-website.com/a6f99510/dms3rep/multi/opt/Captura+de+tela+2023-11-11+141111-640w.png&quot;);"><img data-src="https://lirp.cdn-website.com/a6f99510/dms3rep/multi/opt/Captura+de+tela+2023-11-11+141111-1920w.png" irh="1" irw="2" id="1525481878" class="" onerror="handleImageLoadError(this)"></a> 
+    </div><div class="caption-container  u_1745388996" id="1745388996"> <span class="caption-inner" id="1730548854"> <div class="caption-text u_1989465261" id="1989465261"><p class="rteBlock">Afiliados</p></div> <a class="caption-button dmWidget clearfix u_1068958984" id="1068958984" href="/admissions" file="false" link-modified="true" style=""> <span class="iconBg" id="1635701776"> <span class="icon hasFontIcon icon-star" id="1144885649"></span> 
+    </span> 
+     <span class="text" id="1102506709">Clique aqui</span> 
+    </a> 
+    </span> 
+    </div></div> 
+      
+    </li></div><div class="photogallery-column  column-2" data-index="1"><li index="1" class="photoGalleryThumbs animated null" id="1609150099" data-index="1"> <div class="thumbnailInnerWrapper" style="opacity: 1;"><div class="image-container revealed" id="1461326569"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/a6f99510/dms3rep/multi/Captura+de+tela+2023-11-11+141050.png" id="1787696319" class="u_1787696319" style="background-image: url(&quot;https://lirp.cdn-website.com/a6f99510/dms3rep/multi/opt/Captura+de+tela+2023-11-11+141050-640w.png&quot;);"><img data-src="https://lirp.cdn-website.com/a6f99510/dms3rep/multi/opt/Captura+de+tela+2023-11-11+141050-1920w.png" irh="2" irw="3" id="1078201919" class="" onerror="handleImageLoadError(this)"></a> 
+    </div><div class="caption-container  u_1613622183" id="1613622183"> <span class="caption-inner" id="1982769952"> <div class="caption-text u_1675914641" id="1675914641"><p class="rteBlock">Trabalhadores</p></div> <a class="caption-button dmWidget clearfix u_1393099421" id="1393099421" href="/admissions" file="false" link-modified="true" style=""> <span class="iconBg" id="1353787715"> <span class="icon hasFontIcon icon-star" id="1924012400"></span> 
+    </span> 
+     <span class="text" id="1854957511">Clique aqui</span> 
+    </a> 
+    </span> 
+    </div></div> 
+      
+    </li></div></div></div><div class="photoGalleryViewAll link" isall="true" data-viewall="View more" data-viewless="View less" style="display:none;" id="1495363486"></div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+     <div class="dmRespRow u_1933402313" id="1933402313"> <div class="dmRespColsWrapper" id="1743570878"> <div class="dmRespCol large-12 medium-12 small-12 u_1209884452" id="1209884452"> <div class="u_1454735257 dmNewParagraph" data-element-type="paragraph" id="1454735257" style="transition: none 0s ease 0s; display: block;" data-version="5"> <h2 class="m-text-align-center"><span style="display: initial;">Eventos</span></h2> 
+    </div> <div class="u_1382984280 dmPrettyList ed-version" data-element-type="dListId" layout="layoutA" id="1382984280"> <h3 class="dmwidget-title" hide="true" id="1477092340">List of Services</h3> 
+     <ul class="listWidgetContainer" id="1272744383"> <li class="listItem" id="1596910954"> <a class="biglink clearfix" href="/news#UpcomingEvents" id="1867323558" file="false"> <div class="listImage u_1824407760" id="1824407760"></div> 
+     <div class="listText" id="1016699730"> <span class="itemName" id="1625112181">14 de Dezembro</span> 
+     <div class="itemText" id="1478926503"><p class="rteBlock">Aniversário da empresa,planejamos uma festa comemorativa,esse convite é para todos afiliados e trabalhadores!</p></div></div> 
+     <span class="link" id="1076487749"> <span class="buttonText" id="1926901476">more</span> 
+     <span class="itemName" id="1504320197">List Item  1</span> 
+    </span> 
+    </a> 
+    </li> 
+     <li class="listItem" id="1230237047"> <a class="biglink clearfix" href="/news#UpcomingEvents" id="1755998691" file="false"> <div class="listImage u_1366736437" id="1366736437"></div> 
+     <div class="listText" id="1715903899"> <span class="itemName" id="1196389700" style="">27 de Dezembro</span> 
+     <div class="itemText" id="1322849238" style=""><p class="rteBlock">Essa reunião será para todos os trabalhadores a respeito do aumento do salário. (Será dividido por cada área da empresa)</p></div></div> 
+     <span class="link" id="1246518333"> <span class="buttonText" id="1867519665">More</span> 
+     <span class="itemName" id="1464565120">List Item  2</span> 
+    </span> 
+    </a> 
+    </li> 
+    </ul> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+     <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="dmRespRow u_1559754532 hasBackgroundOverlay dmSectionParallaxNew skrollable skrollable-before" id="1559754532" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" style="background-position: 50% 100px;"> <div class="dmRespColsWrapper" id="1702341032"> <div class="u_1656401533 dmRespCol small-12 medium-12 large-12" id="1656401533"> <a data-display-type="block" class="u_1098985606 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient button_2" file="false" href="/contact" data-element-type="dButtonLinkId" id="1098985606"> <span class="iconBg" id="1213864930"> <span class="icon hasFontIcon icon-star" id="1440634265"></span> 
+    </span> 
+     <span class="text" id="1855608757">Nossos meios de comunicação abaixo</span> 
+    </a> 
+    </div> 
+    </div> 
+    </div> 
+     <div class="dmRespRow u_1650086929" id="1650086929"> <div class="dmRespColsWrapper" id="1060620406"> <div class="u_1284143877 dmRespCol small-12 medium-12 large-12" id="1284143877"> <div class="dmRespRow u_1758812627" id="1758812627"> <div class="dmRespColsWrapper" id="1666998599"> <div class="dmRespCol small-12 medium-6 large-6" id="1594957106"> <div class="u_1338058134 dmNewParagraph" data-element-type="paragraph" id="1338058134" style="transition: opacity 1s ease-in-out 0s;" data-version="5"> <h5 class="text-align-left"><span style="color: rgb(255, 255, 255); display: initial;">Entre em contato</span></h5> 
+    </div> <div class="u_1869827869 dmNewParagraph" data-element-type="paragraph" id="1869827869" style="transition:opacity 1s ease-in-out 0s;line-height:initial;" data-version="5"><p class="text-align-left size-14" style="line-height: 2;"><span style="display: initial; color: rgb(255, 255, 255); font-weight: 400;" class="font-size-14">+55 31 98204-5501</span></p><p class="text-align-left size-14" style="line-height: 2;"><span style="display: initial; color: rgb(255, 255, 255); font-weight: 400;" class="font-size-14">oruocyttin@gmail.com&nbsp;</span></p><p class="text-align-left" style="line-height: 2;"><span style="display: initial; color: rgb(255, 255, 255);">Av. Dr. Cristiano de Freitas Castro, 928 - Triângulo, Pte. Nova - MG, 35430-221</span></p></div></div> 
+     <div class="dmRespCol small-12 medium-6 large-6" id="1469169532"> <div class="u_1074111458 dmNewParagraph" data-element-type="paragraph" id="1074111458" style="transition: opacity 1s ease-in-out 0s;" data-version="5"> <h5 class="m-text-align-left"><span style="color: rgb(255, 255, 255); display: initial;">ABOUT</span></h5> 
+    </div> <nav class="u_1350377411 unifiednav_vertical effect-text-fill main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="vertical_nav_layout_4" layout-sub="" data-show-vertical-sub-items="HOVER" id="1350377411" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="https://irp.cdn-website.com/md/dmtmpl/b9ecee8b-13d6-4e47-ac8f-a202fd42ea97/dms3rep/multi/desktop/univ-blueArtboard+3.svg" alt="" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a class="unifiednav__item" target="_blank" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="Nosso site" data-auto="page-text-style">Nosso site<span class="icon icon-angle-down"></span> 
+    </span> 
+    </a> 
+    </li> 
+    </ul> 
+    </nav> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+     <div class="dmRespRow u_1868111225" id="1868111225"> <div class="dmRespColsWrapper" id="1439238700"> <div class="dmRespCol large-12 medium-12 small-12" id="1266159166"> <div class="u_1904205345 dmDividerWrapper clearfix" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1904205345"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1920670889"></div> 
+    </div> 
+    </div> 
+    </div> 
+     <div class="dmRespRow u_1656237447" id="1656237447"> <div class="dmRespColsWrapper" id="1949907636"> <div class="u_1695958245 dmRespCol small-12 medium-6 large-6" id="1695958245"> <div class="u_1697241427 imageWidget align-center" data-widget-type="image" id="1697241427" data-element-type="image" editablewidget="true"> <a href="/" id="1317798839"><img src="https://lirp.cdn-website.com/a6f99510/dms3rep/multi/opt/Imagem+do+WhatsApp+de+2023-11-05+%C3%A0%28s%29+08.47.23_87293f4d-314w.jpg" id="1102783763" class="" data-dm-image-path="https://irp.cdn-website.com/a6f99510/dms3rep/multi/Imagem+do+WhatsApp+de+2023-11-05+%C3%A0%28s%29+08.47.23_87293f4d.jpg" width="1024" height="576" onerror="handleImageLoadError(this)"></a> 
+    </div> 
+    </div> 
+     <div class="u_1480391678 dmRespCol small-12 large-6 medium-6" id="1480391678"> <div class="u_1644468536 widget-1f5975 dmCustomWidget" data-lazy-load="" data-title="" id="1644468536" dmle_extension="custom_extension" data-element-type="custom_extension" wr="false" icon="false" surround="false" data-widget-id="1f5975986930429f819d4cd2154b5c4a" data-widget-version="22" data-widget-config="eyJjb3B5cmlnaHRUZXh0IjoiPHAgY2xhc3M9XCJydGVCbG9ja1wiPlRvZG9zIG9zIGRpcmVpdG9zIHJlc2VydmFkb3MgfCBPcnVvY3l0dGluPC9wPiJ9"> <div class="copyright"> <div>© 2023&nbsp;</div> 
+     <div><p class="rteBlock">Todos os direitos reservados | Oruocyttin</p></div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+     <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    
+        </div>
+    </div>
+    <!--  Add full CSS and Javascript before the close tag of the body if needed -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Google Fonts Include -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- loadCSS function -->
+    
+    
+    
+    <script id="d-js-load-css">
+    /**
+     * There are a few <link> tags with CSS resource in them that are preloaded in the page
+     * in each of those there is a "onload" handler which invokes the loadCSS callback
+     * defined here.
+     * We are monitoring 3 main CSS files - the runtime, the global and the page.
+     * When each load we check to see if we can append them all in a batch. If threre
+     * is no page css (which may happen on inner pages) then we do not wait for it
+     */
+    (function () {
+      let cssLinks = {};
+      function loadCssLink(link) {
+        link.onload = null;
+        link.rel = "stylesheet";
+        link.type = "text/css";
+      }
+      
+        function checkCss() {
+          const pageCssLink = document.querySelector("[id*='CssLink']");
+    
+            if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page)) {
+                const storedRuntimeCssLink = cssLinks.runtime;
+                const storedPageCssLink = cssLinks.page;
+                const storedGlobalCssLink = cssLinks.global;
+    
+                storedGlobalCssLink.disabled = true;
+                loadCssLink(storedGlobalCssLink);
+    
+                if (storedPageCssLink) {
+                    storedPageCssLink.disabled = true;
+                    loadCssLink(storedPageCssLink);
+                }
+    
+                storedRuntimeCssLink.disabled = true;
+                loadCssLink(storedRuntimeCssLink);
+    
+                requestAnimationFrame(() => {
+                    setTimeout(() => {
+                        storedRuntimeCssLink.disabled = false;
+                        storedGlobalCssLink.disabled = false;
+                        if (storedPageCssLink) {
+                          storedPageCssLink.disabled = false;
+                        }
+                        cssLinks = null;
+                    }, 0);
+                });
+            }
+        }
+      
+    
+      function loadCSS(link) {
+        try {
+          var urlParams = new URLSearchParams(window.location.search);
+          var noCSS = !!urlParams.get("nocss");
+          var cssTimeout = urlParams.get("cssTimeout") || 0;
+    
+          if (noCSS) {
+            return;
+          }
+          if (link.href.includes("d-css-runtime")) {
+            cssLinks.runtime = link;
+            checkCss();
+          } else if (link.id === "siteGlobalCss") {
+            cssLinks.global = link;
+            checkCss();
+          } 
+          
+          else if(link.id.includes("CssLink")) {
+            cssLinks.page = link;
+            checkCss();
+          }  
+          
+          else {
+            requestIdleCallback(function () {
+              window.setTimeout(function () {
+                loadCssLink(link);
+              }, parseInt(cssTimeout, 10));
+            });
+          }
+        } catch (e) {
+          throw e
+        }
+      }
+      window.loadCSS = window.loadCSS || loadCSS;
+    })();
+    </script>
+    
+    <link rel="stylesheet" href="https://irp.cdn-website.com/fonts/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Abril+Fatface:ital,wght@0,400&amp;family=Fjalla+One:ital,wght@0,400&amp;family=Yeseva+One:ital,wght@0,400&amp;family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;subset=latin-ext&amp;display=swap" as="style" fetchpriority="low" onload="loadCSS(this)" type="text/css">
+    
+    
+    
+    
+    
+    <!-- RT CSS Include d-css-runtime-desktop-one-package-structured-global-->
+    <link rel="stylesheet" as="style" fetchpriority="low" onload="loadCSS(this)" href="https://static.cdn-website.com/mnlt/production/3913/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" type="text/css">
+    
+    <!-- End of RT CSS Include -->
+    
+    
+    <link rel="stylesheet" href="https://irp.cdn-website.com/WIDGET_CSS/production_3913/9bb7e135227471b210fe49a31df8dd11.css" id="widgetCSS" as="style" fetchpriority="low" onload="loadCSS(this)" type="text/css">
+    
+    
+    <!-- Support `img` size attributes -->
+    <style>img[width][height] {
+      height: auto;
+    }</style>
+    
+    <!-- Support showing sticky element on page only -->
+    <style>
+      body[data-page-alias="home"] #dm [data-show-on-page-only="home"] {
+        display: block !important;
+      }
+    </style>
+    
+    <!-- This is populated in Ajax navigation -->
+    <style id="pageAdditionalWidgetsCss" type="text/css">
+    </style>
+    
+    
+    
+    
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="https://irp.cdn-website.com/a6f99510/files/a6f99510_withFlex_1.min.css?v=20" id="siteGlobalCss" as="style" fetchpriority="low" onload="loadCSS(this)" type="text/css">
+    
+    
+    
+    <style id="customWidgetStyle" type="text/css">
+        
+        .widget-1f5975 .copyright {
+        font-size: 13px;
+        display: flex;
+        text-align: left;
+        justify-content: flex-start;
+    }
+        
+    </style>
+    <style id="innerPagesStyle" type="text/css">
+        
+    </style>
+    
+    
+    <style id="additionalGlobalCss" type="text/css">
+    </style>
+    
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="https://irp.cdn-website.com/a6f99510/files/a6f99510_home_withFlex_1.min.css?v=20" id="homeCssLink" as="style" fetchpriority="low" onload="loadCSS(this)" type="text/css">
+    
+    <style id="pagestyle" type="text/css">
+        
+    </style>
+    
+    <style id="pagestyleDevice" type="text/css">
+        
+    </style>
+    
+    <!-- Flex Sections CSS -->
+    
+    
+    
+    
+    
+    <style id="globalFontSizeStyle" type="text/css">
+        .font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }
+    </style>
+    <style id="pageFontSizeStyle" type="text/css">
+    </style>
+    
+    <!-- ========= JS Section ========= -->
+    
+    <script>
+        var isWLR = true;
+    
+        window.customWidgetsFunctions = {};
+        window.customWidgetsStrings = {};
+        window.collections = {};
+        window.currentLanguage = "ENGLISH"
+        window.isSitePreview = false;
+    </script>
+    <script type="text/javascript">
+    
+        var d_version = "production_3913";
+        var build = "2023-11-09T11_49_20";
+        window['v' + 'ersion'] = d_version;
+    
+        function buildEditorParent() {
+            window.isMultiScreen = true;
+            window.editorParent = {};
+            window.previewParent = {};
+            window.assetsCacheQueryParam = "?version=2023-11-09T11_49_20";
+            try {
+                var _p = window.parent;
+                if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                    window.editorParent = _p;
+                } else if (_p.isSitePreview) {
+                    window.previewParent = _p;
+                }
+            } catch (e) {
+    
+            }
+        }
+    
+        buildEditorParent();
+    </script>
+    
+    <!-- Load jQuery -->
+        <script type="text/javascript" id="d-js-jquery" src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+        <!-- End Load jQuery -->
+    <!-- Injecting site-wide before scripts -->
+    <!-- End Injecting site-wide to the head -->
+    
+    
+    <script>
+        var _jquery = window.$;
+    
+        var jqueryAliases = ['$', 'jquery', 'jQuery'];
+    
+        jqueryAliases.forEach((alias) => {
+            Object.defineProperty(window, alias, {
+                get() {
+                    return _jquery;
+                },
+                set() {
+                    console.warn("Trying to over-write the global jquery object!");
+                }
+            });
+        });
+        window.jQuery.migrateMute = true;
+    </script>
+    <script>
+        window.cookiesNotificationMarkupPreview = 'null';
+    </script>
+    
+    <!-- HEAD RT JS Include -->
+    <script id="d-js-params">
+        window.INSITE = window.INSITE || {};
+        window.INSITE.device = "desktop";
+        window.rtCommonProps = {};
+        rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+        rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+        rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+        rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+        rtCommonProps["inlineEditGrid.snap"] =true;
+        rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+        rtCommonProps["rt.pushnotifs.force.button"] =true;
+    
+        rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+        rtCommonProps["common.mapbox.js.override"] =false;
+        rtCommonProps["common.opencage.token"] = '319e14f32bcce967ba55cd263478796d';
+        rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+        rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+        rtCommonProps["isCoverage.test"] =false;
+        rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+        rtCommonProps["feature.flag.mappy.kml"] =false;
+        rtCommonProps["common.resources.dist.cdn"] =true;
+        rtCommonProps["common.build.dist.folder"] = 'production/3913';
+        rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+        rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/3913';
+        rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+        rtCommonProps["feature.flag.runtime.photoswipe.fix"] =true;
+        rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+        rtCommonProps["feature.flag.runtime.newAnimation.respectCssAnimationProps.enabled"] =true;
+        rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+        rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+        rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+        rtCommonProps["feature.flag.addTargetBlankToExternalLinks"] =true;
+        rtCommonProps["unsuspendEcwidStoreOnRuntime.enabled"] =true;
+        rtCommonProps["keyboard.navigation.enabled"] =true;
+        rtCommonProps["scripts.widgetCount.enabled"] =true;
+        rtCommonProps["run.imageCount.script.enabled"] =false;
+        rtCommonProps["maps.cookiebot.enabled"] =true;
+    
+        
+        rtCommonProps['common.mapsProvider'] = 'mapbox';
+        
+        rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+        rtCommonProps['common.geocodeProvider'] = 'here';
+        rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+        rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+        rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+        rtCommonProps['common.map.defaults.strokeSize'] = '2';
+        rtCommonProps['server.for.resources'] = '';
+        rtCommonProps['feature.flag.lazy.widgets'] = true;
+        rtCommonProps['feature.flag.single.wow'] = false;
+        rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+        rtCommonProps['feature.flag.mark.anchors'] = true;
+        rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+        rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+        rtCommonProps["images.sizes.small"] =160;
+        rtCommonProps["images.sizes.mobile"] =640;
+        rtCommonProps["images.sizes.tablet"] =1280;
+        rtCommonProps["images.sizes.desktop"] =1920;
+        rtCommonProps["modules.resources.cdn"] =true;
+        rtCommonProps["import.images.storage.imageCDN"] = 'https://lirp.cdn-website.com/';
+        rtCommonProps["ecom.ecwid.categoryPage.modifyLinks"] = true;
+        rtCommonProps["ecom.ecwidNewUrlStructure.enabled"] = false;
+        rtCommonProps["ecom.ecwid.fallBackInCaseLinksNotFound.enabled"] = true;
+        rtCommonProps["facebook.api.version"] = '7.0';
+        rtCommonProps["feature.flag.photo.gallery.exact.size"] =false;
+        rtCommonProps["new.store.fix.ecwid.back.bug"] =true;
+        rtCommonProps["new.store.accountPage.ecwid.resetPassword.fix"] =true;
+        rtCommonProps["site.runtime.video.background.ssr"] =true;
+        rtCommonProps["geocode.search.localize"] =false;
+        rtCommonProps["facebook.runtime.widgets.upgrade"] =true;
+        rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+        rtCommonProps["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+        rtCommonProps["feature.flag.performance.logs"] =true;
+        rtCommonProps["site.contact.form.fix.for.attribute"] =true;
+        rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+        rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+        rtCommonProps["contact.form.date.format.enabled"] = true;
+        rtCommonProps["filestack.uploadToTempBucket.enabled"] = true;
+        rtCommonProps["platform.monolith.loginBar.getUserLoggedIn.enabled"] = true;
+        rtCommonProps["platform.monolith.loginBar.layout.enabled"] = true;
+        rtCommonProps["ecom.ecwid.solve.url.modifications"] = false;
+    </script>
+    <script src="https://static.cdn-website.com/mnlt/production/3913/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js" id="d-js-core"></script>
+    <!-- End of HEAD RT JS Include -->
+    <script src="https://static.cdn-website.com/mnlt/production/3913/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js"></script>
+    <script>jQuery.DM.updateWidthAndHeight();
+    $(window).resize(function () {
+        
+    });
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+    </script>
+    <script type="text/javascript" id="d_track_campaign">
+    (function() {
+         var campaign = (/utm_campaign=([^&]*)/).exec(window.location.search);
+    
+         if (campaign && campaign != null && campaign.length > 1) {
+             campaign = campaign[1];
+             document.cookie = "_dm_rt_campaign=" + campaign + ";expires=" + new Date().getTime() + 24*60*60*1000 + ";domain=" + window.location.hostname + ";path=/";
+         }
+    }());
+    </script>
+    <script type="text/javascript">
+      var _dm_gaq = {};
+      var _gaq = _gaq || [];
+      var _dm_insite = [];
+    </script>
+    
+      
+    <script type="text/javascript" id="d_track_sp">
+    ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+    p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+    };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+    n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+    window.dmsnowplow  = window.snowplow;
+    
+    dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+      appId: 'a6f99510'
+    });
+    
+    dmsnowplow('trackPageView')
+    $.each(_dm_insite, function(idx, rule) {
+        //('trackStructEvent', 'category','action','label','property','value');
+                // Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+                // the tracking is in popup.js
+                if (rule.actionName !== "popup") {
+                    dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+                }
+                 $(document).ready(function(){
+                     $.DM.events.trigger('event-ruleTriggered', {value: rule})}
+                 );
+             });
+    </script>
+       <div style="display:none;" id="P6iryBW0Wu"></div>
+    
+    <!-- photoswipe markup -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    
+        <!-- Background of PhotoSwipe. 
+             It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+    
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+    
+            <!-- Container that holds slides. 
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+    
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+    
+                <div class="pswp__top-bar">
+    
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+    
+                    <div class="pswp__counter"></div>
+    
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+    
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+    
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+    
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+    
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                          <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div> 
+                </div>
+    
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+    
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+    
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+    <div id="fb-root" data-locale="en"></div>
+    <!-- Alias: a6f99510 -->
+    <div class="dmPopupMask" id="dmPopupMask"></div>
+    <div id="dmPopup" class="dmPopup">
+        <div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+         <div class="dmPopupTitle"> <span></span> Share by:</div> 
+        <div class="data"></div>
+    </div><script id="d_track_personalization">
+    // Collects client data and updates cookies used by smart sites
+    var expireDays = 365,visitLength = 30 * 60000;
+    $.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), expireDays);
+    function setSmartSiteCookies() {
+        setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+    }
+    $.DM.events.on("afterAjax", setSmartSiteCookies);
+    setSmartSiteCookies();
+    </script>
+    <script type="text/javascript">
+        
+        Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+        
+        Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+        Parameters.HomeLinkText = 'Home';
+        </script>
+    <script>
+        jQuery(window).on('load', function () {
+            try {
+                jQuery.DM.updateIOSHeight();
+            } catch (e) {
+            }
+        });
+    </script>
+    <script>
+        dmAPI.loadScript(
+            window.rtCommonProps['common.resources.cdn.host'] + '/libs/lozad/1.15.0/lozad.min.js',
+            function () {
+                dmAPI.runOnReady('lozadInit', function () {
+                    window.document.querySelectorAll('img.lazy').forEach(function (img) {
+                        img.addEventListener('load', function (event) {
+                            var img = event.target;
+                            img.style.filter = 'blur(0)';
+                            setTimeout(function () {
+                                $(img).closest('.imageWidget').addClass('lazyLoaded');
+                            }, 250)
+                        });
+                    });
+                    lozad('.lazy', {
+                        threshold: 0.1,
+                        loaded: function (element) {
+                            if (element.getAttribute('data-background-image')) {
+                                element.style.setProperty(
+                                    'background-image',
+                                    "url('" + element.getAttribute('data-background-image') + "')",
+                                    "important"
+                                );
+                            }
+                        }
+                    }).observe();
+                });
+            }
+        );
+    </script>
+    <!--  End Script tags -->
+    
+    <!--  Site Wide Html Markup -->
+    <!--  Site Wide Html Markup -->
+    
+    
+    </body></html>
