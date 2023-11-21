@@ -1,0 +1,1342 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" class="pointer"><head>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style id="customRules"></style><script async="" src="//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js"></script><script type="text/javascript">
+        window._currentDevice = 'desktop';
+        window.Parameters = window.Parameters || {
+            AjaxContainer: 'div.dmBody',
+            WrappingContainer: 'div.dmOuter',
+            HomeUrl: 'https://magnus.multiscreensite.com/',
+            AccountUUID: 'bdcef03ce82b4df680bb90770f862526',
+            SystemID: 'US_DIRECT_PRODUCTION',
+            SiteAlias: 'd04fce68',
+            SiteType: atob('RFVEQU9ORQ=='),
+            PublicationDate: 'Tue Nov 21 00:37:01 UTC 2023',
+            ExternalUid: null,
+            IsSiteMultilingual: false,
+            InitialPostAlias: '',
+            InitialDynamicItem: '',
+            DynamicPageInfo: {
+                isDynamicPage: false,
+                base64JsonRowData: 'null',
+            },
+            InitialPageAlias: 'gallery',
+            InitialPageUuid: 'b64dfae7920a41a7894662eff1386fe6',
+            InitialPageId: '27120747',
+            InitialEncodedPageAlias: 'Z2FsbGVyeQ==',
+            CurrentPageUrl: '',
+            IsCurrentHomePage: false,
+            AllowAjax: false,
+            AfterAjaxCommand: null,
+            HomeLinkText: 'Back To Home',
+            UseGalleryModule: false,
+            CurrentThemeName: 'Layout Theme',
+            ThemeVersion: '39410',
+            DefaultPageAlias: '',
+            RemoveDID: true,
+            WidgetStyleID: null,
+            IsHeaderFixed: false,
+            IsHeaderSkinny: false,
+            IsBfs: true,
+            StorePageAlias: 'null',
+            StorePagesUrls: 'e30=',
+            IsNewStore: 'false',
+            StorePath: '',
+            StoreId: 'null',
+            StoreVersion: 0,
+            StoreBaseUrl: '',
+            StoreCleanUrl: true,
+            StoreDisableScrolling: true,
+            IsStoreSuspended: false,
+            NotificationSubDomain: 'null',
+            HasCustomDomain: false,
+            showCookieNotification: false,
+            cookiesNotificationMarkup: 'null',
+            translatedPageUrl: '',
+            isFastMigrationSite: false,
+            sidebarPosition: 'NA',
+            currentLanguage: 'pt',
+            currentLocale: 'pt',
+            NavItems: '{}',
+            errors: {
+                general: 'Houve um erro ao conectar à página.<br/> Verifique se você não está off-line.',
+                password: 'Nome/combinação de senha incorreta',
+                tryAgain: 'Tente novamente'
+            },
+            NavigationAreaParams: {
+                ShowBackToHomeOnInnerPages: true,
+                NavbarSize: 4,
+                NavbarLiveHomePage: 'https://magnus.multiscreensite.com/',
+                BlockContainerSelector: '.dmBody',
+                NavbarSelector: '#dmNav:has(a)',
+                SubNavbarSelector: '#subnav_main'
+            },
+            hasCustomCode: false,
+            planID: '7',
+            customTemplateId: 'null',
+            siteTemplateId: 'null',
+            productId: 'DM_DIRECT',
+            disableTracking: false,
+            pageType: 'FROM_SCRATCH',
+            isRuntimeServer: true,
+            isInEditor: false,
+        };
+    
+        window.Parameters.LayoutID = {};
+        window.Parameters.LayoutID[window._currentDevice] = 6;
+        window.Parameters.LayoutVariationID = {};
+        window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Injecting site-wide to the head -->
+    
+    
+    
+    
+    <!-- End Injecting site-wide to the head -->
+    
+    <!-- Inject secured cdn script -->
+    
+    
+    <!-- ========= Meta Tags ========= -->
+    <!-- PWA settings -->
+    <script>
+        function toHash(str) {
+            var hash = 5381, i = str.length;
+            while (i) {
+                hash = hash * 33 ^ str.charCodeAt(--i)
+            }
+            return hash >>> 0
+        }
+    </script>
+    <script>
+        (function (global) {
+        //const cacheKey = global.cacheKey;
+        const isOffline = 'onLine' in navigator && navigator.onLine === false;
+        const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+        if (isOffline) {
+            console.log('offline mode');
+        }
+        if (!hasServiceWorkerSupport) {
+            console.log('service worker is not supported');
+        }
+        if (hasServiceWorkerSupport && !isOffline) {
+            window.addEventListener('load', function () {
+                const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+                navigator.serviceWorker
+                    .register(serviceWorkerPath, { scope: './' })
+                    .then(
+                        function (registration) {
+                            // Registration was successful
+                            console.log(
+                                'ServiceWorker registration successful with scope: ',
+                                registration.scope
+                            );
+                        },
+                        function (err) {
+                            // registration failed :(
+                            console.log('ServiceWorker registration failed: ', err);
+                        }
+                    )
+                    .catch(function (err) {
+                        console.log(err);
+                    });
+            });
+    
+            // helper function to refresh the page
+            var refreshPage = (function () {
+                var refreshing;
+                return function () {
+                    if (refreshing) return;
+                    // prevent multiple refreshes
+                    var refreshkey = 'refreshed' + location.href;
+                    var prevRefresh = localStorage.getItem(refreshkey);
+                    if (prevRefresh) {
+                        localStorage.removeItem(refreshkey);
+                        if (Date.now() - prevRefresh < 30000) {
+                            return; // dont go into a refresh loop
+                        }
+                    }
+                    refreshing = true;
+                    localStorage.setItem(refreshkey, Date.now());
+                    console.log('refereshing page');
+                    window.location.reload();
+                };
+            })();
+    
+            function messageServiceWorker(data) {
+                return new Promise(function (resolve, reject) {
+                    if (navigator.serviceWorker.controller) {
+                        var worker = navigator.serviceWorker.controller;
+                        var messageChannel = new MessageChannel();
+                        messageChannel.port1.onmessage = replyHandler;
+                        worker.postMessage(data, [messageChannel.port2]);
+                        function replyHandler(event) {
+                            resolve(event.data);
+                        }
+                    } else {
+                        resolve();
+                    }
+                });
+            }
+        }
+    })(window);
+    </script>
+    <!-- Add manifest -->
+    <!-- End PWA settings -->
+    
+    
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+    <meta charset="utf-8">
+    
+    <link rel="canonical" href="https://magnus.multiscreensite.com/gallery">
+    
+    <meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>GALERIA
+    </title>
+    
+    <!--Add favorites icons-->
+    
+    <link rel="icon" type="image/x-icon" href="https://static.cdn-website.com/runtime/favicon_d1_res.ico">
+    
+    <!-- End favorite icons -->
+    
+    <link rel="preconnect" href="https://lirp.cdn-website.com/" crossorigin="">
+    
+    
+    
+    <!-- render the required CSS and JS in the head section -->
+    <script>
+        window.SystemID = 'US_DIRECT_PRODUCTION';
+    
+        if(!window.dmAPI) {
+            window.dmAPI = {
+                registerExternalRuntimeComponent: function() {
+                },
+                getCurrentDeviceType: function() {
+                    return window._currentDevice;
+                }
+            };
+        }
+    
+        if (!window.requestIdleCallback) {
+            window.requestIdleCallback = function (fn) {
+                setTimeout(fn, 0);
+            }
+        }
+    </script>
+    <!-- loadCSS function -->
+    
+    
+    
+    <script id="d-js-load-css">
+    /**
+     * There are a few <link> tags with CSS resource in them that are preloaded in the page
+     * in each of those there is a "onload" handler which invokes the loadCSS callback
+     * defined here.
+     * We are monitoring 3 main CSS files - the runtime, the global and the page.
+     * When each load we check to see if we can append them all in a batch. If threre
+     * is no page css (which may happen on inner pages) then we do not wait for it
+     */
+    (function () {
+      let cssLinks = {};
+      function loadCssLink(link) {
+        link.onload = null;
+        link.rel = "stylesheet";
+        link.type = "text/css";
+      }
+      
+        function checkCss() {
+          const pageCssLink = document.querySelector("[id*='CssLink']");
+    
+            if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page)) {
+                const storedRuntimeCssLink = cssLinks.runtime;
+                const storedPageCssLink = cssLinks.page;
+                const storedGlobalCssLink = cssLinks.global;
+    
+                storedGlobalCssLink.disabled = true;
+                loadCssLink(storedGlobalCssLink);
+    
+                if (storedPageCssLink) {
+                    storedPageCssLink.disabled = true;
+                    loadCssLink(storedPageCssLink);
+                }
+    
+                storedRuntimeCssLink.disabled = true;
+                loadCssLink(storedRuntimeCssLink);
+    
+                requestAnimationFrame(() => {
+                    setTimeout(() => {
+                        storedRuntimeCssLink.disabled = false;
+                        storedGlobalCssLink.disabled = false;
+                        if (storedPageCssLink) {
+                          storedPageCssLink.disabled = false;
+                        }
+                        // (SUP-4179) Clear the accumulated cssLinks only when we're
+                        // sure that the document has finished loading and the document 
+                        // has been parsed.
+                        if(document.readyState === 'interactive') {
+                          cssLinks = null;
+                        }
+                    }, 0);
+                });
+            }
+        }
+      
+    
+      function loadCSS(link) {
+        try {
+          var urlParams = new URLSearchParams(window.location.search);
+          var noCSS = !!urlParams.get("nocss");
+          var cssTimeout = urlParams.get("cssTimeout") || 0;
+    
+          if (noCSS) {
+            return;
+          }
+          if (link.href.includes("d-css-runtime")) {
+            cssLinks.runtime = link;
+            checkCss();
+          } else if (link.id === "siteGlobalCss") {
+            cssLinks.global = link;
+            checkCss();
+          } 
+          
+          else if(link.id.includes("CssLink")) {
+            cssLinks.page = link;
+            checkCss();
+          }  
+          
+          else {
+            requestIdleCallback(function () {
+              window.setTimeout(function () {
+                loadCssLink(link);
+              }, parseInt(cssTimeout, 10));
+            });
+          }
+        } catch (e) {
+          throw e
+        }
+      }
+      window.loadCSS = window.loadCSS || loadCSS;
+    })();
+    </script>
+    
+    <script data-role="deferred-init" type="text/javascript">
+        /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+        function Def(){this.promise=new Promise((function(a,b){this.resolve=a,this.reject=b}).bind(this))}
+        const defs={};
+        window.getDeferred=function(a){return null==defs[a]&&(defs[a]=new Def),defs[a]}
+        window.waitForDeferred = function (b, a, c) {
+          let d = window?.getDeferred?.(b);
+          d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+            ? setTimeout(a, 1)
+            : c
+            ? document.addEventListener("DOMContentLoaded", a)
+            : console.error(`Deferred  does not exist`);
+        };
+    </script>
+    <style id="forceCssIncludes">
+        /* This file is auto-generated from a `scss` file with the same name */
+    
+    .videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}
+    </style>
+    <style id="cssVariables" type="text/css">
+        
+    </style>
+    
+    
+    <style id="hideAnimFix">
+      .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+        visibility: hidden;
+      }
+      .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+        visibility: hidden !important;
+      }
+    </style>
+    
+    
+    
+    <style id="criticalCss">
+        @charset "UTF-8";.display_None,.dmPopupMask{display:none}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:700;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}.dmInner{min-height:100vh!important;position:relative}.dmPopup,.dmPopupMask{position:fixed;left:0}.dmDisplay_None{display:none!important}.clearfix:after{clear:both;visibility:hidden;line-height:0;height:0}.clearfix:after,.clearfix:before{content:' ';display:table}.clearfix{display:inline-block}#dm .dmWidget .icon{font-size:26px}body.dmRoot #dm .dmOuter .dmInner .dmWidget .icon.hasFontIcon{height:26px;margin-top:-13px;line-height:normal;text-align:center;background-image:none}.dmRoot .hasFontIcon{background-image:none!important}.dmPopupMask{margin:0;width:10px;z-index:1000000999;top:0}#dmRoot .dmPopup,.dmPopup,.dmPopupClose:before,[data-display-type=block]{display:block}.dmPopup{padding:10px;text-align:left;margin:0 10px;top:10px;width:93%;z-index:1000009999!important;box-sizing:border-box;background:#f5f5f5;overflow-y:auto;height:100%}.dmPopup .dmPopupTitle{text-align:left;font:700 19px Helvetica,Arial;margin:20px 20px 35px;color:#999}div.dmInner,html{font-family:Source Sans Pro}#dmPopup{opacity:0}.dmPopupClose,.dmPopupClose:before{position:absolute;visibility:visible}.dmPopupClose{border-radius:25px;width:27px;height:27px;z-index:1;background-color:rgba(255,255,255,.4);top:12px;right:12px}.dmPopupClose:before{font-size:20px;color:#000;top:3px;right:3px}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar{width:5px;height:5px}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar-track{background:rgba(0,0,0,.1)}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar-thumb{background:#c8c8c8;box-shadow:inset 0 1px 2px #454545;border-radius:45px}#dm .dmRespRow .dmRespColsWrapper{display:flex}.pswp{display:none;z-index:9999999999!important}#dm .dmInner .dmWidget.align-center,.align-center{margin-left:auto;margin-right:auto}body.fix-mobile-scrolling{overflow:initial}#dmRoot{text-decoration-skip-ink:none}body{-webkit-overflow-scrolling:touch}@media (min-width:1025px){:root{--btn-text-font-size:18px}}@media (min-width:768px) and (max-width:1024px){:root{--btn-text-font-size:18px}}html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}hr{box-sizing:content-box;height:0}img{border:0;max-width:100%;-ms-interpolation-mode:bicubic;display:inline-block}button{font-family:inherit;font-size:100%;margin:0;line-height:normal;text-transform:none;-webkit-appearance:button}button::-moz-focus-inner{border:0;padding:0}*,:after,:before{box-sizing:border-box}.dmRespRow.dmRespRowNoPadding{padding:0}.dmRespRow{padding-top:15px;padding-bottom:15px}.dmRespRow:after,.dmRespRow:before{content:' ';display:table}.dmRespRow:after{clear:both}.dmRespRow,.dmRespRow .dmRespColsWrapper{max-width:960px;position:relative;margin:0 auto;width:100%}.dmRespRow .dmRespCol{position:relative;width:100%;display:inline-block;vertical-align:top;float:left}.dmRespRow .dmRespCol>*{max-width:100%}.dmDesktopBody .dmRespRow .large-4{position:relative;width:33.33333%}.dmDesktopBody .dmRespRow .large-12{position:relative;width:100%}[class*=' dm-common-icons-']{speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:dm-common-icons!important}.dm-common-icons-close:before{content:'\e901'}#dm div.dmContent [class*=' icon-'],[class*=' icon-']{font-family:FontAwesome!important;font-weight:400;font-style:normal;text-decoration:inherit;-webkit-font-smoothing:antialiased}[class*=' icon-']:before{text-decoration:none;display:inline-block;speak:none}a [class*=' icon-']{display:inline}[class*=' icon-']{display:inline;width:auto;height:auto;line-height:normal;vertical-align:baseline;background-image:none;background-position:0 0;background-repeat:repeat;margin-top:0}.icon-star:before{content:'\f005'}#dm .dmRespRow .dmRespCol>.dmWidget{overflow:initial}@media (min-width:768px){#dm .dmRespRow .dmRespCol>.dmWidget{width:280px;max-width:100%}}@media (max-width:767px){#dm .dmInner .dmWidget{width:100%}}#dm .dmInner .dmWidget:not(.displayNone){display:inline-block}#dm .dmInner .dmWidget:not(.displayNone)[data-display-type=block]{display:block}#dm .dmInner .dmWidget{text-decoration:none;margin:10px 0;clear:both;position:relative;text-align:center;line-height:22px;box-shadow:none;background-image:none;padding:0;height:auto;border-style:solid;white-space:nowrap}#dm .dmInner .dmWidget:after{content:'';display:inline-block;height:100%;vertical-align:middle;width:0;margin-right:-.25em}#dm .dmInner .dmWidget .iconBg{position:absolute;left:0;width:50px;top:50%;margin-top:-13px}#dm .dmWidget .text{display:inline-block;vertical-align:middle;font-size:1.125em;line-height:normal;white-space:normal;padding:10px 7px;max-width:98%}.dmInner{min-width:768px!important;font-size:16px;background:#fff;color:#767676}html:not(.ios-preview) #dm .hasStickyHeader .dmInner div.dmHeaderContainer{position:fixed!important;z-index:101;width:100%;min-width:768px}#innerBar,#iscrollBody,#site_content,.dmFooterContainer,.dmHeader{position:relative}.dmNewParagraph[data-version]{line-height:initial}.dmNewParagraph[data-version] .text-align-left{text-align:left!important}.dmNewParagraph[data-version] .text-align-justify{text-align:justify!important}.dmNewParagraph[data-version] h3,.dmNewParagraph[data-version] h5,.dmNewParagraph[data-version] p{margin-top:0;margin-bottom:0}.imageWidget img[width][height],img[width][height]{height:auto}*{border:0 solid #27b2b3;scrollbar-arrow-color:#fff;scrollbar-track-color:#F2F2F2;scrollbar-face-color:silver;scrollbar-highlight-color:silver;scrollbar-3dlight-color:silver;scrollbar-shadow-color:silver;scrollbar-darkshadow-color:silver;scrollbar-width:12px}body{width:100%;overflow:hidden;-webkit-text-size-adjust:100%!important;-ms-text-size-adjust:100%!important}h3,h5{margin-left:0;margin-right:0}.dmInner *{-webkit-font-smoothing:antialiased}.clearfix,a,img{vertical-align:top}.dmOuter{word-wrap:break-word}.dmDesktopBody .dmInner{min-width:960px}.dmInner a{color:#1bb0ce}.dmHeader{background:#27b2b3;color:#fff;text-align:center;width:100%;max-width:100%}DIV.dmBody{padding:0;clear:both}.dmContent{margin:0;padding:0}#innerBar{height:36px;width:100%;font-size:20px;margin:0;z-index:80}#dm .dmRespRow.dmRespRowNoPadding{padding:0}.dmLargeBody .dmBody .dmRespRowsWrapper{background-color:#fff}.dmRespRowsWrapper{max-width:960px;margin:0 auto}.dmLargeBody .imageWidget:not(.displayNone){display:inline-block;max-width:100%}.imageWidget:not(.displayNone) img{width:100%}.dmDivider.defaultDivider{min-height:1px;background-color:rgba(118,118,118,.2);margin:0}h3{font-size:23px;font-weight:400}#dm .dmRespColsWrapper{display:block}.dmNewParagraph{text-align:left;margin:8px 0;padding:2px 0}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol,.dmLargeBody .fHeader .dmRespRow .dmRespCol{padding-left:.75%;padding-right:.75%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:first-child,.dmLargeBody .fHeader .dmRespRow .dmRespCol:first-child{padding-left:0;padding-right:1.5%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:last-child,.dmLargeBody .fHeader .dmRespRow .dmRespCol:last-child{padding-right:0;padding-left:1.5%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:only-child{padding-left:0;padding-right:0}#innerBar.lineInnerBar{width:100%;box-shadow:none;-webkit-box-shadow:none;-moz-box-shadow:none;font-size:20px;margin-top:30px;margin-bottom:30px;background-color:transparent;color:#767676}.innerPageTitle{display:block;text-align:center;color:#000;margin:3px 65px;padding:6px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-sizing:border-box;word-wrap:normal}#innerBar .titleLine{display:table-cell;vertical-align:middle;width:50%}.dmPageTitleRow:not(#innerBar){display:none}.titleLine hr{min-height:1px;background-color:rgba(118,118,118,.2)}.lineInnerBar .innerPageTitle{display:table-cell;vertical-align:middle;text-transform:capitalize;text-align:left;margin:0;padding:4px 15px 0;color:#767676;font-family:inherit;white-space:nowrap}.dmFooter{font-size:1em;font-weight:400;text-align:left;background:#fff;padding:0}.dmRespRow.dmFooterContent{padding-top:0}.dmFullFooterResp .dmFooterContent{padding:30px 0}.dmLargeBody .dmFooterResp>.dmRespRow .dmRespCol{padding-left:.75%;padding-right:.75%}.dmLargeBody .dmFooterResp>.dmRespRow .dmRespCol:first-child{padding-left:0;padding-right:1.5%}.dmLargeBody .dmFooterResp>.dmRespRow .dmRespCol:last-child{padding-right:0;padding-left:1.5%}.dmLargeBody .dmFooterResp>.dmRespRow .dmRespCol:only-child{padding-left:0;padding-right:0}.dmLargeBody .dmRespRow.dmFooterContent h3{margin-top:0}.dmStandardDesktop{display:block;margin:0 auto}.dmInner a{outline:0;vertical-align:inherit}#dm .dmDivider{display:block;margin:10px 0}body{background-color:#eee}.dmDivider{min-height:2px;border:currentColor;color:grey;background:0 0}#dm .dmDividerWrapper{display:block}#innerBar.lineInnerBar,.dmFooterDefaultH3,.dmFooterResp>.dmRespRow.dmDividerRow{display:none}.dmLargeBody .dm-layout-sec .dmBody .dmRespRowsWrapper{background-color:#fff;color:#767676}.dm-layout-sec .lineInnerBar .innerPageTitle{color:#767676}.dm-layout-sec .dmDivider.defaultDivider,.dm-layout-sec .titleLine hr{background-color:rgba(118,118,118,.2)}div.dmInner{font-weight:400;background:#f4f4f4}.dmLargeBody .dmFooterResp>div.dmRespRow,.dmLargeBody .innerPageTmplBox>div.dmRespRow{padding-left:40px;padding-right:40px}.dmLargeBody .dmRespRow.dmGalerryWidgetRow{padding-top:40px;padding-bottom:40px}.dmFooter{margin:auto;background-color:#27b2b3;color:#fff}.dmLargeBody .dmRespRow.dmFooterContent{padding:10px 40px}.standardHeaderLayout .dmHeader{float:none;display:block;height:auto}#dm .p_hfcontainer div.u_1349687219,#dm .p_hfcontainer div.u_1682190728{float:none!important;left:0!important;width:100%!important;position:relative!important}#dm div.dmFooter h3,#dm div.dmInner,#dm div.dmInner .dmRespCol{color:rgba(118,118,118,1);font-family:'Source Sans Pro'}#dm DIV.dmOuter DIV.dmInner{background-image:url(https://lirp.cdn-website.com/653c8ee011cd41acaf550387a89f092f/dms3rep/multi/opt/pattern_bg-1920w.jpg);background-size:cover;background-repeat:no-repeat;background-attachment:fixed}@media all{:root{--btn-text-direction:ltr;--btn-border-r-color:var(--btn-border-color);--btn-border-l-color:var(--btn-border-color);--btn-border-b-width:var(--btn-border-width);--btn-border-width:0px;--btn-border-radius:50px;--btn-border-t-width:var(--btn-border-width);--btn-border-tl-radius:var(--btn-border-radius);--btn-border-br-radius:var(--btn-border-radius);--btn-border-bl-radius:var(--btn-border-radius);--btn-bg-color:rgb(0, 165, 255);--btn-border-color:rgba(0, 0, 0, 0);--btn-border-tr-radius:var(--btn-border-radius);--btn-border-r-width:var(--btn-border-width);--btn-bg-image:none;--btn-border-b-color:var(--btn-border-color);--btn-border-l-width:var(--btn-border-width);--btn-border-t-color:var(--btn-border-color);--btn-text-align:center;--btn-text-color:rgb(255, 255, 255);--btn-text-decoration:none;--btn-icon-color:rgb(255, 255, 255);--btn-icon-fill:rgb(255, 255, 255);--btn-icon-wrpr-display:none;--btn-hover-border-b-color:var(--btn-hover-border-color);--btn-hover-bg:var(--btn-bg-color);--btn-hover-border-t-color:var(--btn-hover-border-color);--btn-hover-border-r-color:var(--btn-hover-border-color);--btn-hover-border-l-color:var(--btn-hover-border-color);--btn-hover-border-color:var(--btn-border-color);--btn-hover-text-color:var(--btn-text-color);--btn-hover-text-font-weight:var(--btn-text-font-weight);--btn-hover-text-decoration:var(--btn-text-decoration);--btn-hover-text-font-style:var(--btn-text-font-style)}}@media (min-width:0px) and (max-width:767px){:root{--btn-text-font-size:18px}}#dm .dmWidget:not([data-buttonstyle]){border-radius:50px}#dm .dmWidget:not([data-buttonstyle]) .text{padding:10px 0}#dm .dmWidget:not([data-buttonstyle]) .iconBg{display:none}#dm div.dmInner #site_content .dmWidget{background-color:var(--btn-bg-color);background-image:var(--btn-bg-image);border-color:var(--btn-border-color);border-bottom-color:var(--btn-border-b-color);border-left-color:var(--btn-border-l-color);border-right-color:var(--btn-border-r-color);border-top-color:var(--btn-border-t-color);border-radius:var(--btn-border-radius);border-bottom-left-radius:var(--btn-border-bl-radius);border-bottom-right-radius:var(--btn-border-br-radius);border-top-left-radius:var(--btn-border-tl-radius);border-top-right-radius:var(--btn-border-tr-radius);border-width:var(--btn-border-width);border-bottom-width:var(--btn-border-b-width);border-left-width:var(--btn-border-l-width);border-right-width:var(--btn-border-r-width);border-top-width:var(--btn-border-t-width);direction:var(--btn-text-direction);text-align:var(--btn-text-align)}#dm div.dmInner #site_content .dmWidget span.text{color:var(--btn-text-color);font-size:var(--btn-text-font-size);text-decoration:var(--btn-text-decoration)}#dm div.dmInner #site_content .dmWidget span.icon{color:var(--btn-icon-color);fill:var(--btn-icon-fill)}#dm div.dmInner #site_content .dmWidget:not([data-buttonstyle]) .iconBg{display:var(--btn-icon-wrpr-display)}#dm .dmInner div.dmFooter{background-color:rgba(70,70,70,1)!important}#dm .dmInner div.dmHeader,#dm .dmInner div.dmHeader.u_hcontainer,#dm .dmInner div.u_hcontainer{background-color:rgba(255,255,255,0)!important;box-shadow:none!important;-moz-box-shadow:none!important;-webkit-box-shadow:none!important}#dm .dmBody div.u_1163895205,#dm .dmBody div.u_1479847893,#dm .dmBody div.u_1612672004,#dm .dmBody div.u_1899702815,#dm .p_hfcontainer div.u_1682190728{background-color:rgba(242,197,15,1)!important}#dm .p_hfcontainer .u_1034369409,#dm .p_hfcontainer .u_1250300793{width:100%!important}#dm .dmInner div.fHeader .dmHeader[freeheader=true]{padding:15px 0!important}.fHeader #hcontainer.dmHeader[freeheader=true]{padding-top:initial!important;padding-bottom:initial!important}#dm .p_hfcontainer div.u_1479478304{padding-left:0!important}#dm .p_hfcontainer div.u_1640497565{padding-left:10px!important}#dm .p_hfcontainer div.u_1349687219{top:0!important;height:auto!important;max-width:calc(100% - 0px)!important;min-width:25px!important;padding:2px 0!important;margin:10px 0 8px!important}#dm .p_hfcontainer div.u_1682190728{top:0!important;height:auto!important;max-width:none!important;min-width:0!important;text-align:center!important;padding:0 15px 15px!important;margin:0 auto!important}#dm .p_hfcontainer div.u_1034369409,#dm .p_hfcontainer div.u_1250300793{min-width:25px!important;float:none!important;top:0!important;left:0!important;position:relative!important;text-align:center!important}#dm .dmInner div.dmFooter{padding:0!important;margin:0!important}#dm .p_hfcontainer div.u_1250300793{width:calc(100% - 121px)!important;height:auto!important;max-width:179.3px!important;display:block!important;margin:0 0 0 121px!important;padding:15px 0 0!important}#dm .p_hfcontainer div.u_1034369409{width:calc(100% - 0px)!important;max-width:214.22px!important;justify-content:normal!important;align-items:normal!important;height:auto!important;padding:18px 0 0!important;margin:0 auto!important}.stickyHeaderSpacer{height:208.45px!important}#dm .dmBody a.u_1064671477,#dm .dmBody a.u_1573208044,#dm .dmBody a.u_1735770575,#dm .dmBody a.u_1772594987{background-color:rgba(46,204,113,1)!important}#dm .dmBody a.u_1064671477 span.text,#dm .dmBody a.u_1573208044 span.text,#dm .dmBody a.u_1735770575 span.text,#dm .dmBody a.u_1772594987 span.text{color:rgba(230,7,1,1)!important}#dm .d-page-1890489488 DIV.dmInner{background-color:rgba(255,255,255,1)!important;background-image:url(https://lirp.cdn-website.com/653c8ee011cd41acaf550387a89f092f/dms3rep/multi/opt/5537.jpg),url(data:image/png-2880w;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TpUUqHSwo4pChOlkQFemoVShChVArtOpgcukXNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APEzc1J0UVK/F9aaBHjwXE/3t173L0DhEaFaVbPBKDptplOJsRsblUMvEJAGEEMIi4zy5iTpBQ8x9c9fHy9i/Es73N/jn41bzHAJxLPMsO0iTeIZzZtg/M+cYSVZJX4nHjcpAsSP3JdafEb56LLAs+MmJn0PHGEWCx2sdLFrGRqxNPEUVXTKV/ItljlvMVZq9RY+578haG8vrLMdZojSGIRS5AgQkENZVRgI0arToqFNO0nPPzDrl8il0KuMhg5FlCFBtn1g//B726twtRkKymUAHpfHOdjFAjsAs2643wfO07zBPA/A1d6x19tAPFP0usdLXoEhLeBi+uOpuwBlzvA0JMhm7Ir+WkKhQLwfkbflAMGboG+tVZv7X2cPgAZ6ip1AxwcAmNFyl73eHewu7d/z7T7+wFwJnKmZ9+MiwAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+UCDwksLkLIPkkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAC0lEQVQI12NgAAIAAAUAAeImBZsAAAAASUVORK5CYII=)!important}.dmLargeBody #dm .d-page-1890489488 .dmBody .dmRespRowsWrapper{background-color:rgba(0,0,0,0)!important}#dm .dmBody a.u_1064671477,#dm .dmBody a.u_1573208044,#dm .dmBody a.u_1772594987{float:none!important;top:0!important;left:0!important;width:280px!important;position:relative!important;height:43px!important;max-width:100%!important;min-width:0!important;text-align:center!important;padding:0!important;margin:0 auto!important}#dm .dmBody div.u_1062541170{width:auto!important;margin:0!important;padding:12px 40px 15px!important}#dm .dmBody div.u_1033603900{width:auto!important;margin:0!important;padding:16px 40px 24px!important}#dm .dmBody div.u_1307522961{width:auto!important;margin:0!important;padding:24px 40px!important}#dm .dmBody div.u_1163895205,#dm .dmBody div.u_1479847893,#dm .dmBody div.u_1612672004,#dm .dmBody div.u_1899702815{margin:0!important;padding:24px 0!important}.font-size-18,.size-18{font-size:18px!important}
+        .dmDesktopBody [data-anim-desktop]:not([data-anim-desktop='none']) {
+          visibility: hidden;
+        }
+        
+    </style>
+    
+    
+    
+    <style id="fontFallbacks">
+        
+    </style>
+    
+    
+    <!-- End render the required css and JS in the head section -->
+    
+    
+    
+    
+    
+    
+    
+    
+    <meta property="og:type" content="website">
+    
+      <meta name="twitter:card" content="summary">
+    
+    
+    
+    
+    <!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+    <style type="text/css" id="operaUserStyle">
+      video {
+        filter: -opera-shader(url(data:text/plain;base64,Ly8gaHR0cHM6Ly9naXRodWIuY29tL0dQVU9wZW4tRWZmZWN0cy9GaWRlbGl0eUZYLUNBUwovLyB2MwoKdW5pZm9ybSBzaGFkZXIgaUNodW5rOwp1bmlmb3JtIGZsb2F0MiBpQ2h1bmtTaXplOwp1bmlmb3JtIGZsb2F0MiBpTW91c2U7CnVuaWZvcm0gZmxvYXQgaUFyZ3NbMV07Cgpjb25zdCBmbG9hdCBFUFNJT04gPSAwLjE7ICAgCmNvbnN0IGZsb2F0IFZfTUlOID0gMDsKY29uc3QgZmxvYXQgVl9MT1cgPSAwLjI1Owpjb25zdCBmbG9hdCBWX01FRCA9IDAuNTsKY29uc3QgZmxvYXQgVl9ISUdIID0gMC43NTsKY29uc3QgZmxvYXQgVl9NQVggPSAxOwoKY29uc3QgZmxvYXQgVEhSRVNIT0xEX0FSRUEgPSA4MDAgKiA2MDA7CmNvbnN0IGZsb2F0IE1JTl9BUkVBID0gNDAwICogMTAwOwpjb25zdCBmbG9hdCBNSU5fU1RSSVAgPSAyMDsKY29uc3QgZmxvYXQgTUFSR0lOID0gMTsKCmZsb2F0MyBwaXhlbChpbnQgeCwgaW50IHksIGZsb2F0MiB4eSkgewogICAgcmV0dXJuIGlDaHVuay5ldmFsKHh5ICsgZmxvYXQyKHgsIHkpKS5yZ2I7Cn0KCmZsb2F0MyBzaGFycGVuKGZsb2F0MiB4eSkgewogICAgZmxvYXQzIGYgPQogICAgICAgIHBpeGVsKC0xLCAtMSwgeHkpICogIDEgKwogICAgICAgIHBpeGVsKCAwLCAtMSwgeHkpICogLTEgKwogICAgICAgIHBpeGVsKCAxLCAtMSwgeHkpICogIDEgKwoKICAgICAgICBwaXhlbCgtMSwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMCwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMSwgMCwgeHkpICogLTEgICsKCiAgICAgICAgcGl4ZWwoLTEsIDEsIHh5KSAqIDEgICArCiAgICAgICAgcGl4ZWwoIDAsIDEsIHh5KSAqIC0xICArCiAgICAgICAgcGl4ZWwoIDEsIDEsIHh5KSAqIDE7CiAgICByZXR1cm4gZiAvIC0xOwp9CgpmbG9hdDQgUkdYMihmbG9hdDIgeHkpIHsKICAgIGZsb2F0NCBjb2xvciA9IGlDaHVuay5ldmFsKHh5KTsKCiAgICBpZiAoaUNodW5rU2l6ZS54ICogaUNodW5rU2l6ZS55IDwgTUlOX0FSRUEpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKGlDaHVua1NpemUueSA8IE1JTl9TVFJJUCB8fCBpQ2h1bmtTaXplLnggPCBNSU5fU1RSSVApIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKHh5LnggPCBNQVJHSU4gfHwgeHkueCA+IChpQ2h1bmtTaXplLnggLSBNQVJHSU4pIHx8CiAgICAgICAgeHkueSA8IE1BUkdJTiB8fCB4eS55ID4gKGlDaHVua1NpemUueSAtIE1BUkdJTikpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgcmV0dXJuIGZsb2F0NChzaGFycGVuKHh5KSwgMSk7Cn0KCmZsb2F0IG1pbjMoZmxvYXQgeCwgZmxvYXQgeSwgZmxvYXQgeikgewogICAgcmV0dXJuIG1pbih4LCBtaW4oeSwgeikpOwp9CgpmbG9hdCBtYXgzKGZsb2F0IHgsIGZsb2F0IHksIGZsb2F0IHopIHsKICAgIHJldHVybiBtYXgoeCwgbWF4KHksIHopKTsKfQoKZmxvYXQgcmNwKGZsb2F0IHYpIHsKICAgIHJldHVybiAxIC8gdjsKfQoKZmxvYXQzIFJHWDMoZmxvYXQyIHh5LCBmbG9hdCBzdHJlbmd0aCkgewogICAgZmxvYXQzIGEgPSBwaXhlbCgtMSwgLTEsIHh5KTsKICAgIGZsb2F0MyBiID0gcGl4ZWwoIDAsIC0xLCB4eSk7CiAgICBmbG9hdDMgYyA9IHBpeGVsKCAxLCAtMSwgeHkpOwoKICAgIGZsb2F0MyBkID0gcGl4ZWwoLTEsIDAsIHh5KTsKICAgIGZsb2F0MyBlID0gcGl4ZWwoIDAsIDAsIHh5KTsKICAgIGZsb2F0MyBmID0gcGl4ZWwoIDEsIDAsIHh5KTsKCiAgICBmbG9hdDMgZyA9IHBpeGVsKC0xLCAxLCB4eSk7CiAgICBmbG9hdDMgaCA9IHBpeGVsKCAwLCAxLCB4eSk7CiAgICBmbG9hdDMgaSA9IHBpeGVsKCAxLCAxLCB4eSk7CgogICAgZmxvYXQgbW5SID0gbWluMyhtaW4zKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBtbkcgPSBtaW4zKG1pbjMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG1uQiA9IG1pbjMobWluMyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG1uUjIgPSBtaW4zKG1pbjMobW5SLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG1uRzIgPSBtaW4zKG1pbjMobW5HLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG1uQjIgPSBtaW4zKG1pbjMobW5CLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBtblIgPSBtblIgKyBtblIyOwogICAgbW5HID0gbW5HICsgbW5HMjsKICAgIG1uQiA9IG1uQiArIG1uQjI7CgogICAgZmxvYXQgbXhSID0gbWF4MyhtYXgzKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBteEcgPSBtYXgzKG1heDMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG14QiA9IG1heDMobWF4MyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG14UjIgPSBtYXgzKG1heDMobXhSLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG14RzIgPSBtYXgzKG1heDMobXhHLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG14QjIgPSBtYXgzKG1heDMobXhCLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBteFIgPSBteFIgKyBteFIyOwogICAgbXhHID0gbXhHICsgbXhHMjsKICAgIG14QiA9IG14QiArIG14QjI7CgogICAgZmxvYXQgcmNwTVIgPSByY3AobXhSKTsKICAgIGZsb2F0IHJjcE1HID0gcmNwKG14Ryk7CiAgICBmbG9hdCByY3BNQiA9IHJjcChteEIpOwoKICAgIGZsb2F0IGFtcFIgPSBzYXR1cmF0ZShtaW4obW5SLCAyIC0gbXhSKSAqIHJjcE1SKTsKICAgIGZsb2F0IGFtcEcgPSBzYXR1cmF0ZShtaW4obW5HLCAyIC0gbXhHKSAqIHJjcE1HKTsKICAgIGZsb2F0IGFtcEIgPSBzYXR1cmF0ZShtaW4obW5CLCAyIC0gbXhCKSAqIHJjcE1CKTsKCiAgICBhbXBSID0gc3FydChhbXBSKTsKICAgIGFtcEcgPSBzcXJ0KGFtcEcpOwogICAgYW1wQiA9IHNxcnQoYW1wQik7CgogICAgZmxvYXQgcGVhayA9IC1yY3AobWl4KDgsIDUsIHN0cmVuZ3RoKSk7CgogICAgZmxvYXQgd1IgPSBhbXBSICogcGVhazsKICAgIGZsb2F0IHdHID0gYW1wRyAqIHBlYWs7CiAgICBmbG9hdCB3QiA9IGFtcEIgKiBwZWFrOwoKICAgIGZsb2F0IHJjcFdlaWdodFIgPSByY3AoMSArIDQgKiB3Uik7CiAgICBmbG9hdCByY3BXZWlnaHRHID0gcmNwKDEgKyA0ICogd0cpOwogICAgZmxvYXQgcmNwV2VpZ2h0QiA9IHJjcCgxICsgNCAqIHdCKTsKCiAgICByZXR1cm4gZmxvYXQzKAogICAgICAgIHNhdHVyYXRlKChiLnIgKiB3UiArIGQuciAqIHdSICsgZi5yICogd1IgKyBoLnIgKiB3UiArIGUucikgKiByY3BXZWlnaHRSKSwKICAgICAgICBzYXR1cmF0ZSgoYi5nICogd0cgKyBkLmcgKiB3RyArIGYuZyAqIHdHICsgaC5nICogd0cgKyBlLmcpICogcmNwV2VpZ2h0RyksCiAgICAgICAgc2F0dXJhdGUoKGIuYiAqIHdCICsgZC5iICogd0IgKyBmLmIgKiB3QiArIGguYiAqIHdCICsgZS5iKSAqIHJjcFdlaWdodEIpKTsKfQoKCmZsb2F0NCBtYWluKGZsb2F0MiB4eSkgewoKICAgIGZsb2F0NCBvcmlnaW5hbENvbG9yID0gaUNodW5rLmV2YWwoeHkpOwogICAgaWYgKG9yaWdpbmFsQ29sb3IuYSA8IDEpIHsKICAgICAgICByZXR1cm4gaUNodW5rLmV2YWwoeHkpOwogICAgfQoKICAgIGZsb2F0IGludGVuc2l0eSA9IGlBcmdzWzBdOwogICAgZmxvYXQgc3RyZW5ndGggPSAwOwogICAgZmxvYXQzIGNvbG9yOwoKICAgIGlmIChpbnRlbnNpdHkgPCBWX01JTiArIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMC4xMDsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfTE9XIC0gRVBTSU9OICYmIGludGVuc2l0eSA8IFZfTE9XICsgRVBTSU9OKSB7CiAgICAgICAgc3RyZW5ndGggPSAwLjMzOwogICAgICAgIGNvbG9yID0gUkdYMyh4eSwgc3RyZW5ndGgpOwoKICAgIH0gZWxzZSBpZiAoaW50ZW5zaXR5ID4gVl9NRUQgLSBFUFNJT04gJiYgaW50ZW5zaXR5IDwgVl9NRUQgKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuNTsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfSElHSCAtIEVQU0lPTiAmJiBpbnRlbnNpdHkgPCBWX0hJR0ggKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuOTk7CiAgICAgICAgY29sb3IgPSBSR1gzKHh5LCBzdHJlbmd0aCk7CgogICAgfSBlbHNlIGlmIChpbnRlbnNpdHkgPiBWX01BWCAtIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMTsKICAgICAgICBjb2xvciA9IFJHWDIoeHkpLnJnYjsKICAgIH0KCiAgICByZXR1cm4gZmxvYXQ0KGNvbG9yLCBvcmlnaW5hbENvbG9yLmEpOwp9) -opera-args(0.50 calc(env(-opera-gx-accent-color-r)/255) calc(env(-opera-gx-accent-color-g)/255) calc(env(-opera-gx-accent-color-b)/255)));
+      }
+    
+    
+      img {
+        filter: -opera-shader(url(data:text/plain;base64,Ly8gaHR0cHM6Ly9naXRodWIuY29tL0dQVU9wZW4tRWZmZWN0cy9GaWRlbGl0eUZYLUNBUwovLyB2MwoKdW5pZm9ybSBzaGFkZXIgaUNodW5rOwp1bmlmb3JtIGZsb2F0MiBpQ2h1bmtTaXplOwp1bmlmb3JtIGZsb2F0MiBpTW91c2U7CnVuaWZvcm0gZmxvYXQgaUFyZ3NbMV07Cgpjb25zdCBmbG9hdCBFUFNJT04gPSAwLjE7ICAgCmNvbnN0IGZsb2F0IFZfTUlOID0gMDsKY29uc3QgZmxvYXQgVl9MT1cgPSAwLjI1Owpjb25zdCBmbG9hdCBWX01FRCA9IDAuNTsKY29uc3QgZmxvYXQgVl9ISUdIID0gMC43NTsKY29uc3QgZmxvYXQgVl9NQVggPSAxOwoKY29uc3QgZmxvYXQgVEhSRVNIT0xEX0FSRUEgPSA4MDAgKiA2MDA7CmNvbnN0IGZsb2F0IE1JTl9BUkVBID0gNDAwICogMTAwOwpjb25zdCBmbG9hdCBNSU5fU1RSSVAgPSAyMDsKY29uc3QgZmxvYXQgTUFSR0lOID0gMTsKCmZsb2F0MyBwaXhlbChpbnQgeCwgaW50IHksIGZsb2F0MiB4eSkgewogICAgcmV0dXJuIGlDaHVuay5ldmFsKHh5ICsgZmxvYXQyKHgsIHkpKS5yZ2I7Cn0KCmZsb2F0MyBzaGFycGVuKGZsb2F0MiB4eSkgewogICAgZmxvYXQzIGYgPQogICAgICAgIHBpeGVsKC0xLCAtMSwgeHkpICogIDEgKwogICAgICAgIHBpeGVsKCAwLCAtMSwgeHkpICogLTEgKwogICAgICAgIHBpeGVsKCAxLCAtMSwgeHkpICogIDEgKwoKICAgICAgICBwaXhlbCgtMSwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMCwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMSwgMCwgeHkpICogLTEgICsKCiAgICAgICAgcGl4ZWwoLTEsIDEsIHh5KSAqIDEgICArCiAgICAgICAgcGl4ZWwoIDAsIDEsIHh5KSAqIC0xICArCiAgICAgICAgcGl4ZWwoIDEsIDEsIHh5KSAqIDE7CiAgICByZXR1cm4gZiAvIC0xOwp9CgpmbG9hdDQgUkdYMihmbG9hdDIgeHkpIHsKICAgIGZsb2F0NCBjb2xvciA9IGlDaHVuay5ldmFsKHh5KTsKCiAgICBpZiAoaUNodW5rU2l6ZS54ICogaUNodW5rU2l6ZS55IDwgTUlOX0FSRUEpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKGlDaHVua1NpemUueSA8IE1JTl9TVFJJUCB8fCBpQ2h1bmtTaXplLnggPCBNSU5fU1RSSVApIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKHh5LnggPCBNQVJHSU4gfHwgeHkueCA+IChpQ2h1bmtTaXplLnggLSBNQVJHSU4pIHx8CiAgICAgICAgeHkueSA8IE1BUkdJTiB8fCB4eS55ID4gKGlDaHVua1NpemUueSAtIE1BUkdJTikpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgcmV0dXJuIGZsb2F0NChzaGFycGVuKHh5KSwgMSk7Cn0KCmZsb2F0IG1pbjMoZmxvYXQgeCwgZmxvYXQgeSwgZmxvYXQgeikgewogICAgcmV0dXJuIG1pbih4LCBtaW4oeSwgeikpOwp9CgpmbG9hdCBtYXgzKGZsb2F0IHgsIGZsb2F0IHksIGZsb2F0IHopIHsKICAgIHJldHVybiBtYXgoeCwgbWF4KHksIHopKTsKfQoKZmxvYXQgcmNwKGZsb2F0IHYpIHsKICAgIHJldHVybiAxIC8gdjsKfQoKZmxvYXQzIFJHWDMoZmxvYXQyIHh5LCBmbG9hdCBzdHJlbmd0aCkgewogICAgZmxvYXQzIGEgPSBwaXhlbCgtMSwgLTEsIHh5KTsKICAgIGZsb2F0MyBiID0gcGl4ZWwoIDAsIC0xLCB4eSk7CiAgICBmbG9hdDMgYyA9IHBpeGVsKCAxLCAtMSwgeHkpOwoKICAgIGZsb2F0MyBkID0gcGl4ZWwoLTEsIDAsIHh5KTsKICAgIGZsb2F0MyBlID0gcGl4ZWwoIDAsIDAsIHh5KTsKICAgIGZsb2F0MyBmID0gcGl4ZWwoIDEsIDAsIHh5KTsKCiAgICBmbG9hdDMgZyA9IHBpeGVsKC0xLCAxLCB4eSk7CiAgICBmbG9hdDMgaCA9IHBpeGVsKCAwLCAxLCB4eSk7CiAgICBmbG9hdDMgaSA9IHBpeGVsKCAxLCAxLCB4eSk7CgogICAgZmxvYXQgbW5SID0gbWluMyhtaW4zKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBtbkcgPSBtaW4zKG1pbjMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG1uQiA9IG1pbjMobWluMyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG1uUjIgPSBtaW4zKG1pbjMobW5SLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG1uRzIgPSBtaW4zKG1pbjMobW5HLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG1uQjIgPSBtaW4zKG1pbjMobW5CLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBtblIgPSBtblIgKyBtblIyOwogICAgbW5HID0gbW5HICsgbW5HMjsKICAgIG1uQiA9IG1uQiArIG1uQjI7CgogICAgZmxvYXQgbXhSID0gbWF4MyhtYXgzKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBteEcgPSBtYXgzKG1heDMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG14QiA9IG1heDMobWF4MyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG14UjIgPSBtYXgzKG1heDMobXhSLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG14RzIgPSBtYXgzKG1heDMobXhHLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG14QjIgPSBtYXgzKG1heDMobXhCLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBteFIgPSBteFIgKyBteFIyOwogICAgbXhHID0gbXhHICsgbXhHMjsKICAgIG14QiA9IG14QiArIG14QjI7CgogICAgZmxvYXQgcmNwTVIgPSByY3AobXhSKTsKICAgIGZsb2F0IHJjcE1HID0gcmNwKG14Ryk7CiAgICBmbG9hdCByY3BNQiA9IHJjcChteEIpOwoKICAgIGZsb2F0IGFtcFIgPSBzYXR1cmF0ZShtaW4obW5SLCAyIC0gbXhSKSAqIHJjcE1SKTsKICAgIGZsb2F0IGFtcEcgPSBzYXR1cmF0ZShtaW4obW5HLCAyIC0gbXhHKSAqIHJjcE1HKTsKICAgIGZsb2F0IGFtcEIgPSBzYXR1cmF0ZShtaW4obW5CLCAyIC0gbXhCKSAqIHJjcE1CKTsKCiAgICBhbXBSID0gc3FydChhbXBSKTsKICAgIGFtcEcgPSBzcXJ0KGFtcEcpOwogICAgYW1wQiA9IHNxcnQoYW1wQik7CgogICAgZmxvYXQgcGVhayA9IC1yY3AobWl4KDgsIDUsIHN0cmVuZ3RoKSk7CgogICAgZmxvYXQgd1IgPSBhbXBSICogcGVhazsKICAgIGZsb2F0IHdHID0gYW1wRyAqIHBlYWs7CiAgICBmbG9hdCB3QiA9IGFtcEIgKiBwZWFrOwoKICAgIGZsb2F0IHJjcFdlaWdodFIgPSByY3AoMSArIDQgKiB3Uik7CiAgICBmbG9hdCByY3BXZWlnaHRHID0gcmNwKDEgKyA0ICogd0cpOwogICAgZmxvYXQgcmNwV2VpZ2h0QiA9IHJjcCgxICsgNCAqIHdCKTsKCiAgICByZXR1cm4gZmxvYXQzKAogICAgICAgIHNhdHVyYXRlKChiLnIgKiB3UiArIGQuciAqIHdSICsgZi5yICogd1IgKyBoLnIgKiB3UiArIGUucikgKiByY3BXZWlnaHRSKSwKICAgICAgICBzYXR1cmF0ZSgoYi5nICogd0cgKyBkLmcgKiB3RyArIGYuZyAqIHdHICsgaC5nICogd0cgKyBlLmcpICogcmNwV2VpZ2h0RyksCiAgICAgICAgc2F0dXJhdGUoKGIuYiAqIHdCICsgZC5iICogd0IgKyBmLmIgKiB3QiArIGguYiAqIHdCICsgZS5iKSAqIHJjcFdlaWdodEIpKTsKfQoKCmZsb2F0NCBtYWluKGZsb2F0MiB4eSkgewoKICAgIGZsb2F0NCBvcmlnaW5hbENvbG9yID0gaUNodW5rLmV2YWwoeHkpOwogICAgaWYgKG9yaWdpbmFsQ29sb3IuYSA8IDEpIHsKICAgICAgICByZXR1cm4gaUNodW5rLmV2YWwoeHkpOwogICAgfQoKICAgIGZsb2F0IGludGVuc2l0eSA9IGlBcmdzWzBdOwogICAgZmxvYXQgc3RyZW5ndGggPSAwOwogICAgZmxvYXQzIGNvbG9yOwoKICAgIGlmIChpbnRlbnNpdHkgPCBWX01JTiArIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMC4xMDsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfTE9XIC0gRVBTSU9OICYmIGludGVuc2l0eSA8IFZfTE9XICsgRVBTSU9OKSB7CiAgICAgICAgc3RyZW5ndGggPSAwLjMzOwogICAgICAgIGNvbG9yID0gUkdYMyh4eSwgc3RyZW5ndGgpOwoKICAgIH0gZWxzZSBpZiAoaW50ZW5zaXR5ID4gVl9NRUQgLSBFUFNJT04gJiYgaW50ZW5zaXR5IDwgVl9NRUQgKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuNTsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfSElHSCAtIEVQU0lPTiAmJiBpbnRlbnNpdHkgPCBWX0hJR0ggKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuOTk7CiAgICAgICAgY29sb3IgPSBSR1gzKHh5LCBzdHJlbmd0aCk7CgogICAgfSBlbHNlIGlmIChpbnRlbnNpdHkgPiBWX01BWCAtIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMTsKICAgICAgICBjb2xvciA9IFJHWDIoeHkpLnJnYjsKICAgIH0KCiAgICByZXR1cm4gZmxvYXQ0KGNvbG9yLCBvcmlnaW5hbENvbG9yLmEpOwp9) -opera-args(0.50 calc(env(-opera-gx-accent-color-r)/255) calc(env(-opera-gx-accent-color-g)/255) calc(env(-opera-gx-accent-color-b)/255)));
+      }
+    
+    
+    :root {
+      
+      filter: -opera-shader(url(chrome-extension://fdmgckojopkigcbdkbfjddcafdiialdj/shader/matrix.txt) -opera-args(2 calc(env(-opera-gx-accent-color-r)/255) calc(env(-opera-gx-accent-color-g)/255) calc(env(-opera-gx-accent-color-b)/255) calc(env(-opera-gx-background-color-r)/255) calc(env(-opera-gx-background-color-g)/255) calc(env(-opera-gx-background-color-b)/255)));
+    
+    }
+    
+    
+    </style><style type="text/css">:root [href^="//x4pollyxxpush.com/"], :root zeus-ad, :root topadblock, :root span[id^="ezoic-pub-ad-placeholder-"], :root guj-ad, :root gpt-ad, :root div[id^="zergnet-widget"], :root div[id^="vuukle-ad-"], :root div[id^="sticky_ad_"], :root div[id^="rc-widget-"], :root div[id^="optidigital-adslot"], :root div[id^="gpt_ad_"], :root div[id^="ezoic-pub-ad-"], :root div[id^="div-gpt-"], :root div[id^="dfp-ad-"], :root div[id^="advads_ad_"], :root div[id^="adspot-"], :root div[id^="ads300_250-widget-"], :root div[id^="ads300_100-widget-"], :root div[id^="ads250_250-widget-"], :root div[id^="adrotate_widgets-"], :root div[id^="_vdo_ads_player_ai_"], :root div[id*="ScriptRoot"], :root div[id*="MarketGid"], :root div[data-native_ad], :root div[data-mini-ad-unit], :root div[data-insertion], :root div[data-id-advertdfpconf], :root div[data-google-query-id], :root hl-adsense, :root div[data-contentexchange-widget], :root div[data-content="Advertisement"], :root div[data-alias="300x250 Ad 2"], :root div[data-alias="300x250 Ad 1"], :root div[data-adzone], :root div[data-adunit-path], :root div[data-ad-wrapper], :root div[data-ad-placeholder], :root div[class^="native-ad-"], :root div[data-dfp-id], :root div[class^="kiwi-ad-wrapper"], :root div[class^="Adstyled__AdWrapper-"], :root div[aria-label="Ads"], :root display-ads, :root display-ad-component, :root atf-ad-slot, :root aside[id^="adrotate_widgets-"], :root article.ad, :root ark-top-ad, :root app-advertisement, :root app-ad, :root amp-fx-flying-carpet, :root amp-embed[type="taboola"], :root amp-connatix-player, :root amp-ad-custom, :root amp-ad, :root a[style="width:100%;height:100%;z-index:10000000000000000;position:absolute;top:0;left:0;"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[href^="https://yogacomplyfuel.com/"], :root a[href^="https://www.sugarinstant.com/?partner_id="], :root a[href^="https://www.privateinternetaccess.com/"] > img, :root a[href^="https://www.onlineusershielder.com/"], :root a[href^="https://www.nutaku.net/signup/landing/"], :root a[href^="https://www.nudeidols.com/cams/"], :root a[href^="https://www.mypornstarcams.com/landing/click/"], :root a[href^="https://www.kingsoffetish.com/tour?partner_id="], :root a[href^="https://www.infowarsstore.com/"] > img, :root a[href^="https://www.highcpmrevenuenetwork.com/"], :root a[href^="https://www.googleadservices.com/pagead/aclk?"], :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root a[href^="https://www.get-express-vpn.com/offer/"], :root a[href^="https://www.financeads.net/tc.php?"], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root div[class^="Display_displayAd"], :root a[href^="https://www.sheetmusicplus.com/?aff_id="], :root a[href^="https://www.bang.com/?aff="], :root a[href^="https://www.adxsrve.com/"], :root a[href^="https://www.5mno3.com/"], :root a[href^="https://wirewar.website/"], :root a[href^="https://visit-website.com/"], :root a[href^="https://twinrdsyn.com/"], :root a[href^="https://twinrdsrv.com/"], :root a[href^="https://tsartech.g2afse.com/"], :root a[href^="https://trk.sportsflix4k.club/"], :root a[href^="https://trk.nfl-online-streams.club/"], :root a[href^="https://traffdaq.com/"], :root a[href^="https://tracking.avapartner.com/"], :root a[href^="https://track.wg-aff.com"], :root a[href^="https://track.ultravpn.com/"], :root a[href^="https://track.totalav.com/"], :root a[href^="https://track.afcpatrk.com/"], :root a[href^="https://torguard.net/aff.php"] > img, :root a[href^="https://taghaugh.com/"], :root a[href^="https://click.candyoffers.com/"], :root [href^="https://zstacklife.com/"] img, :root a[href^="https://t.aslnk.link/"], :root a[href^="https://t.adating.link/"], :root a[href^="https://go.trackitalltheway.com/"], :root [href^="https://track.fiverr.com/visit/"] > img, :root a[href^="https://syndication.exoclick.com/"], :root a[href^="https://syndication.dynsrvtbg.com/"], :root a[href^="https://streamate.com/landing/click/"], :root a[href^="https://ad.doubleclick.net/"], :root a[href^="https://static.fleshlight.com/images/banners/"], :root a[href^="https://slkmis.com/"], :root a[href^="https://sTaRtGAMing.net/tienda/"], :root citrus-ad-wrapper, :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], :root a[href^="https://sTaRTgamInG.net/tienda/"], :root [data-adblockkey], :root a[href^="https://sTARtgamIng.net/tienda/"], :root .OUTBRAIN[data-widget-id^="FMS_REELD_"], :root [data-role="tile-ads-module"], :root a[href^="https://adsrv4k.com/"], :root a[href^="https://go.xlviirdr.com"], :root a[href^="https://thaudray.com/"], :root bottomadblock, :root a[href^="https://s.zlinkd.com/"], :root a[href^="https://aweptjmp.com/"], :root a[href^="https://s.zlinkc.com/"], :root a[href^="https://www.mrskin.com/account/"], :root a[href^="https://s.optzsrv.com/"], :root a[data-obtrack^="http://paid.outbrain.com/network/redir?"], :root a[href^="https://reinstandpointdumbest.com/"], :root a[href^="https://go.strpjmp.com/"], :root a[href^="https://refpa4903566.top/"], :root a[href^="https://pubads.g.doubleclick.net/"], :root a[href^="https://prf.hn/click/"][href*="/camref:"] > img, :root a[href^="https://serve.awmdelivery.com/"], :root a[href^="https://prf.hn/click/"][href*="/adref:"] > img, :root a[href^="https://pb-track.com/"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root ps-connatix-module, :root div[id^="ad_position_"], :root a[href^="https://ovb.im/"], :root div[id^="ad-div-"], :root a[href^="https://newbinotracs.com/"], :root a[href^="https://natour.naughtyamerica.com/track/"], :root [href^="https://stvkr.com/"], :root a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"], :root a[href^="https://loboclick.com"], :root .nya-slot[style], :root a[href^="https://a.bestcontentweb.top/"], :root a[href^="https://lobimax.com/"], :root a[href^="https://lead1.pl/"], :root a[href^="https://refpa.top/"], :root a[href^="https://landing.brazzersnetwork.com/"], :root a[href^="https://safesurfingtoday.com/"][href*="?skip="], :root a[href^="https://ads.leovegas.com/redirect.aspx?"], :root a[href^="https://land.brazzersnetwork.com/landing/"], :root a[href^="https://track.adform.net/"], :root [data-css-class="dfp-inarticle"], :root .card-captioned.crd > .crd--cnt > .s2nPlayer, :root a[href^="https://go.tmrjmp.com"], :root a[href^="https://startgamIng.Net/tienda/"], :root a[href^="https://l.hyenadata.com/"], :root a[href^="https://juicyads.in/"], :root a[href^="https://mediaserver.gvcaffiliates.com/renderBanner.do?"], :root a[href^="https://join.dreamsexworld.com/"], :root a[href^="https://itubego.com/video-downloader/?affid="], :root a[href^="https://iqbroker.com/"][href*="?aff="], :root a[href^="https://incisivetrk.cvtr.io/click?"], :root [href^="https://www.herbanomic.com/"] > img, :root a[href^="https://maymooth-stopic.com/"], :root div[data-ad-targeting], :root a[href^="https://hotplaystime.life/"], :root a[href^="https://hot-growngames.life/"], :root [data-revive-zoneid], :root a[href^="https://googleads.g.doubleclick.net/pcs/click"], :root a[href^="https://clk.wrenchsound.store/"], :root a[href^="https://go.zybrdr.com"], :root [href^="http://join.michelle-austin.com/"], :root [class^="tile-picker__CitrusBannerContainer-sc-"], :root a[href^="https://go.xxxiijmp.com"], :root a[href^="https://go.xtbaffiliates.com/"], :root a[href^="https://ismlks.com/"], :root a[href^="//a.bestcontentfare.top/"], :root [href^="https://www.mypillow.com/"] > img, :root a[href^="https://azpresearch.club/"], :root a[href^="https://go.xlirdr.com"], :root a[href^="https://go.skinstrip.net"][href*="?campaignId="], :root a[href^="https://go.markets.com/visit/?bta="], :root a[href^="https://billing.purevpn.com/aff.php"] > img, :root a[href^="https://go.hpyrdr.com/"], :root a[href^="https://go.goaserv.com/"], :root a[href^="https://go.dmzjmp.com"], :root a[href^="https://go.admjmp.com/"], :root [href^="https://kingered-banctours.com/"], :root a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="] > img, :root a-ad, :root a[href^="https://affiliate.rusvpn.com/click.php?"], :root a[href^="https://geniusdexchange.com/"], :root a[href^="https://frameworkdeserve.com/"], :root a[href^="https://flirtandsweets.life/"], :root a[href^="https://www.mrskin.com/tour"], :root a[href^="https://financeads.net/tc.php?"], :root div[data-native-ad], :root a[href^="https://engine.trackingdesks.com/"], :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root [href^="https://www.reimageplus.com/"], :root a[href^="https://engine.phn.doublepimp.com/"], :root a[href^="https://engine.blueistheneworanges.com/"], :root a[href^="https://dl-protect.net/"], :root [href="//jjgirls.com/sex/ChaturbateCams"], :root a[href^="https://datingoffers30.info/"], :root a[href^="https://clixtrac.com/"], :root a[href^="https://click.linksynergy.com/fs-bin/"] > img, :root ad-shield-ads, :root a[href^="https://sTartGAMinG.net/tienda/"], :root AD-TRIPLE-BOX, :root a[href^="https://click.hoolig.app/"], :root img[src^="https://images.purevpnaffiliates.com"], :root a[href^="https://porntubemate.com/"], :root a[href^="http://www.gfrevenge.com/landing/"], :root a[href^="https://clickadilla.com/"], :root a[href^="https://click.dtiserv2.com/"], :root a[href^="https://go.xlvirdr.com"], :root a[href^="http://www.iyalc.com/"], :root a[href^="https://claring-loccelkin.com/"], :root [class^="s2nPlayer"], :root a[href^="https://chaturbate.jjgirls.com/?track="], :root a[href^="https://chaturbate.com/in/?track="], :root a[href^="https://chaturbate.com/in/?tour="], :root a[href^="https://cams.imagetwist.com/in/?track="], :root a[href^="https://go.gldrdr.com/"], :root a[href^="https://buqkrzbrucz.com/"], :root a[href^="https://affcpatrk.com/"], :root a[href^="https://bongacams2.com/track?"], :root a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="], :root a[href^="https://bngpt.com/"], :root a[href^="https://bluedelivery.pro/"], :root a[href^="https://black77854.com/"], :root a[href^="https://bc.game/"], :root a[href^="https://ndt5.net/"], :root a[href^="https://batheunits.com/"], :root a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"], :root a[href^="https://banners.livepartners.com/"], :root a[href^="//whulsaux.com/"], :root a[href^="https://m.do.co/c/"] > img, :root [href="https://masstortfinancing.com"] img, :root a[href^="https://bongacams10.com/track?"], :root a[href^="https://albionsoftwares.com/"], :root a[href^="https://t.hrtye.com/"], :root a[href^="https://go.etoro.com/"] > img, :root a[href^="https://convertmb.com/"], :root a[href^="https://join.sexworld3d.com/track/"], :root a[href^="https://intenseaffiliates.com/redirect/"], :root a[href^="https://ads.ad4game.com/"], :root [id^="google_ads_iframe"], :root a[href^="https://syndication.optimizesrv.com/"], :root a[href^="https://affpa.top/"], :root a[href^="https://adnetwrk.com/"], :root a[href^="https://adjoincomprise.com/"], :root [href^="http://misslinkvocation.com/"], :root a[href^="https://adclick.g.doubleclick.net/"], :root a[href^="https://www.bet365.com/"][href*="affiliate="], :root [href^="https://r.kraken.com/"], :root a[href^="https://mmwebhandler.aff-online.com/"], :root a[href^="https://go.nordvpn.net/aff"] > img, :root [href^="http://clicks.totemcash.com/"], :root a[href^="https://misspkl.com/"], :root a[href^="https://ad.zanox.com/ppc/"] > img, :root a[href^="https://ad.kubiccomps.icu/"], :root div[data-adname], :root a[href^="https://thechleads.pro/"], :root a[href^="https://ab.advertiserurl.com/aff/"], :root a[href^="https://a2.adform.net/"], :root a[href^="https://iactrivago.ampxdirect.com/"], :root a[href^="https://a.medfoodhome.com/"], :root a[href^="https://adultfriendfinder.com/go/"], :root a[href^="https://a.bestcontentoperation.top/"], :root a[href^="http://static.fleshlight.com/images/banners/"], :root a[href^="https://a.adtng.com/"], :root [data-m-ad-id], :root a[href^="https://sTartgAminG.net/tienda/"], :root a[href^="https://a-ads.com/"], :root a[href^="https://join.virtualtaboo.com/track/"], :root a[href^="https://StarTGAminG.net/tienda/"], :root a[href^="https://STaRTgamINg.net/tienda/"], :root a[href^="https://cpmspace.com/"], :root [href^="https://freecourseweb.com/"] > .sitefriend, :root a[href^="https://prf.hn/click/"][href*="/creativeref:"] > img, :root a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="], :root a[href^="https://1betandgonow.com/"], :root [href="https://ourgoldguy.com/contact/"] img, :root a[href^="https://brightadnetwork.com/"], :root [href^="https://www.avantlink.com/click.php"] img, :root a[href^="http://www.onwebcam.com/random?t_link="], :root a[href^="http://www.mrskin.com/tour"], :root a[href^="https://agacelebir.com/"], :root a[href^="https://spygasm.com/track?"], :root ins.adsbygoogle, :root a[href^="https://1startfiledownload1.com/"], :root a[href^="https://s.zlinkb.com/"], :root a[href^="http://d2.zedo.com/"], :root a[href^="http://www.friendlyduck.com/AF_"], :root a[href^="http://trk.globwo.online/"], :root a[href^="http://traffic.tc-clicks.com/"], :root a[href^="http://tour.mrskin.com/"], :root [href^="https://wct.link/"], :root [data-desktop-ad-id], :root a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"], :root a[href^="http://m.hue2m.com/"], :root a[href^="https://funkydaters.com/"], :root [id^="ad_sky"], :root a[href^="http://https://www.get-express-vpn.com/offer/"], :root div[id^="google_dfp_"], :root a[href^="http://googleads.g.doubleclick.net/pcs/click"], :root [href^="http://go.cm-trk2.com/"], :root a[href^="http://click.payserve.com/"], :root a[href^="https://porngames.adult/?SID="], :root a[href^="https://landing1.brazzersnetwork.com"], :root #slashboxes > .deals-rail, :root [href^="http://globsads.com/"], :root [href^="https://www.brighteonstore.com/products/"] img, :root a[href^="http://bc.vc/?r="], :root a[href^="https://mityneedn.com/"], :root [href^="http://homemoviestube.com/"], :root a[href^="http://ad.doubleclick.net/"], :root a[href^="//zunsoach.com/"], :root a[href^="//s.st1net.com/splash.php"], :root a[href^="//pubads.g.doubleclick.net/"], :root a[href^="https://femglobal.app/"], :root a[href^="//go.eabids.com/"], :root a[data-url^="http://paid.outbrain.com/network/redir?"] + .author, :root [href^="https://join.playboyplus.com/track/"], :root a[href^="//ardslediana.com/"], :root [data-d-ad-id], :root a[href*=".engine.adglare.net/"], :root #kt_player > a[target="_blank"], :root a[href*=".cfm?fp="][href*="&maxads="], :root [data-ad-width], :root a[href^="http://bodelen.com/"], :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root [href^="https://cpa.10kfreesilver.com/"], :root a[href^="https://a.bestcontentfood.top/"], :root a[href^="http://wct.link/"], :root [href^="https://goldforyourfuture.com/clk.trk"] img, :root [onclick^="location.href='http://www.reimageplus.com"], :root [id^="section-ad-banner"], :root a[href^="https://go.julrdr.com/"], :root .trc_rbox_div .syndicatedItemUB, :root [href^="https://zone.gotrackier.com/"], :root [href^="https://detachedbates.com/"], :root [href^="https://www.targetingpartner.com/"], :root a[href^="https://fourwhenstatistics.com/"], :root [href^="https://www.restoro.com/"], :root a[href^="https://yourperfectdating.life/"], :root a[href^="https://join.virtuallust3d.com/"], :root .section-subheader > .section-hotel-prices-header, :root [href^="https://go.affiliatexe.com/"], :root [href^="https://www.hostg.xyz/"] > img, :root a[href^="http://adultfriendfinder.com/go/"], :root a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="], :root a[href^="https://tour.mrskin.com/"], :root div[id^="ad-position-"], :root a[href^="http://affiliate.glbtracker.com/"], :root a[href^="https://leg.xyz/?track="], :root div[id^="crt-"][style], :root a[href^="http://adultgames.xxx/"], :root [href^="https://shiftnetwork.infusionsoft.com/go/"] > img, :root a[href^="https://trk.softonixs.xyz/"], :root [href^="https://www.mypatriotsupply.com/"] > img, :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"], :root [href^="https://secure.bmtmicro.com/servlets/"], :root a[href^="https://losingoldfry.com/"], :root .scroll-fixable.rail-right > .deals-rail, :root [href^="https://routewebtk.com/"], :root a[href^="https://oackoubs.com/"], :root a[href^="https://ak.psaltauw.net/"], :root a[href^="https://go.cmtaffiliates.com/"], :root [data-name="adaptiveConstructorAd"], :root [href^="https://optimizedelite.com/"] > img, :root a[href^="https://awptjmp.com/"], :root a[href^="https://go.goasrv.com/"], :root [href^="http://mypillow.com/"] > img, :root a[href^="http://bongacams.com/track?"], :root a[href^="https://fleshlight.sjv.io/"], :root [data-ad-manager-id], :root a[href^="https://promo-bc.com/"], :root a[href^="https://clicks.pipaffiliates.com/"], :root [href^="https://noqreport.com/"] > img, :root a[href^="https://www.highperformancecpmgate.com/"], :root a[href^="https://t.grtyi.com/"], :root [href^="https://mylead.global/stl/"] > img, :root [href^="https://mypatriotsupply.com/"] > img, :root [data-freestar-ad], :root a[href^="https://fc.lc/ref/"], :root .vid-present > .van_vid_carousel__padding, :root span[data-ez-ph-id], :root [href^="https://track.aftrk1.com/"], :root div[id^="adngin-"], :root [data-rc-widget], :root a[href^="https://go.xxxijmp.com"], :root [href^="https://istlnkcl.com/"], :root a[href^="https://staRTgaming.net/tienda/"], :root a[href^="https://STaRtgAmInG.net/tienda/"], :root [href^="https://ilovemyfreedoms.com/landing-"], :root [href^="https://go.xlrdr.com"], :root [href^="https://go.4rabettraff.com/"], :root a[href^="https://tm-offers.gamingadult.com/"], :root [href^="https://charmingdatings.life/"], :root [href^="https://glersakr.com/"], :root .trc_rbox_border_elm .syndicatedItem, :root div[id^="pa_sticky_ad_box_middle_"], :root a[href^="http://www.onclickmega.com/jump/next.php?"], :root a[href^="https://italarizege.xyz/"], :root a[href^="https://wittered-mainging.com/"], :root [href^="https://engine.gettopple.com/"], :root [data-id^="div-gpt-ad"], :root a[href^="https://tracker.loropartners.com/"], :root [href^="https://awbbjmp.com/"], :root a[href^="https://k2s.cc/pr/"], :root [href^="https://affect3dnetwork.com/track/"], :root a[href^="https://camfapr.com/landing/click/"], :root [href="//sexcams.plus/"], :root a[href^="https://go.currency.com/"], :root .resultsList > div > div > div.G-5c[role="tab"][tabindex="0"], :root [href^="http://www.mypillow.com/"] > img, :root div[id^="div-ads-"], :root [href^="https://rapidgator.net/article/premium/ref/"], :root [href^="https://join3.bannedsextapes.com"], :root div[data-spotim-slot], :root [href^="https://antiagingbed.com/discount/"] > img, :root a[href^="https://go.247traffic.com/"], :root [href^="https://join.girlsoutwest.com/"], :root [href^="http://trafficare.net/"], :root a[href^="https://tc.tradetracker.net/"] > img, :root a[href^="https://adserver.adreactor.com/"], :root [href^="http://join.shemalesfromhell.com/"], :root [id^="ad_slider"], :root #searchResultsList > div > div[onclick$="'inline.ad'});"], :root [data-adbridg-ad-class], :root a[href^="http://www.adultdvdempire.com/?partner_id="][href*="&utm_"], :root [href^="http://join.shemale.xxx/"], :root a[href^="https://ads.betfair.com/redirect.aspx?"], :root [href^="http://www.fleshlightgirls.com/"], :root [href^="http://join.trannies-fuck.com/"], :root .trc_rbox .syndicatedItem, :root a[href^="http://cam4com.go2cloud.org/aff_c?"], :root a[href^="https://thefacux.com/"], :root a[href^="https://ads.planetwin365affiliate.com/redirect.aspx?"], :root [href^="http://join.rodneymoore.com/"], :root [href^="https://shrugartisticelder.com"], :root a[href^="https://staRTgamIng.net/tienda/"], :root div[id^="lazyad-"], :root a[href^="http://com-1.pro/"], :root [name^="google_ads_iframe"], :root [href="https://www.masstortfinancing.com/"] > img, :root .ob_container .item-container-obpd, :root [id^="div-gpt-ad"], :root a[href^="https://www.geekbuying.com/dynamic-ads/"], :root a[href^="https://lnkxt.bannerator.com/"], :root [href="https://jdrucker.com/gold"] > img, :root [href^="https://v.investologic.co.uk/"], :root [href^="https://cipledecline.buzz/"], :root a[href^="https://go.xxxjmp.com"], :root #leader-companion > a[href], :root a[href^="https://jaxofuna.com/"], :root div[recirculation-ad-container], :root [href^="https://traffserve.com/"], :root [data-type="ad-vertical"], :root a[href^="https://u.expresstech.io/"], :root [href^="https://mypillow.com/"] > img, :root [href^="https://ad.admitad.com/"], :root [data-testid="ad_testID"], :root [href^="https://goldcometals.com/clk.trk"], :root a[href^="https://bodelen.com/"], :root [data-ad-name], :root a[href*=".g2afse.com/"], :root a[href^="https://go.hpyjmp.com"], :root [href^="https://mystore.com/"] > img, :root [data-mobile-ad-id], :root a[href^="http://tc.tradetracker.net/"] > img, :root a[href^="http://affiliates.thrixxx.com/"], :root div[id^="yandex_ad"], :root a[href^="https://pb-imc.com/"], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root [data-template-type="nativead"], :root [data-ez-name], :root a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"], :root [data-dynamic-ads], :root a[href^="http://go.xtbaffiliates.com/"], :root a[href^="https://consali.com/"], :root .grid > .container > #aside-promotion, :root DFP-AD, :root .trc_related_container div[data-item-syndicated="true"], :root a[href^="https://www.liquidfire.mobi/"], :root [href^="https://click2cvs.com/"], :root [href^="//mage98rquewz.com/"], :root a[href^="https://webroutetrk.com/"], :root a[href^="https://mercurybest.com/"], :root a[href^="https://startgAming.net/tienda/"], :root [href^="https://safer-redirection.com"], :root [onclick*="content.ad/"], :root AMP-AD, :root a[href^="https://sTartGAMiNG.net/tienda/"], :root [data-ad-cls], :root [id^="ad-wrap-"], :root div[id^="taboola-stream-"], :root [href^="https://go.astutelinks.com/"], :root [class^="amp-ad-"], :root [href^="https://affiliate.fastcomet.com/"] > img, :root [class^="adDisplay-module"], :root AD-SLOT, :root .ob_dual_right > .ob_ads_header ~ .odb_div, :root [href^="http://join.shemalepornstar.com/"], :root a[href^="https://go.xlviiirdr.com"], :root .trc_rbox_div .syndicatedItem, :root div[data-adunit], :root app-large-ad, :root [href^="https://turtlebids.irauctions.com/"] img, :root a[href^="https://www.adskeeper.com"], :root [href^="https://totlnkcl.com/"], :root [data-ad-module], :root .plistaList > .itemLinkPET, :root [href^="https://gmxvmvptfm.com/"], :root [href^="https://trackfin.asia/"], :root .plistaList > .plista_widget_underArticle_item[data-type="pet"], :root a[href*="//lkstrck2.com/"], :root a[href^="https://bs.serving-sys.com"], :root [href^="http://residenceseeingstanding.com/"], :root [class^="div-gpt-ad"], :root a[href^="https://ggbetpromo.com/"], :root a[href^="http://partners.etoro.com/"], :root [data-advadstrackid], :root a[href^="https://refpazkjixes.top/"], :root #mgb-container > #mgb, :root [href^="https://www.cloudways.com/en/?id"], :root a[href^="https://tweakostensibleinstaller.com/"], :root a[href^="https://go.xlivrdr.com"], :root a[href^="https://cam4com.go2cloud.org/"], :root a[href^="http://li.blogtrottr.com/click?"] { display: none !important; }</style><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3941/editor/apps/modules/runtime/16.a5037523b4960e25e0b8.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3941/editor/apps/modules/runtime/21.0bf6759b07aeff413864.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3941/editor/apps/modules/runtime/2.bb72b5e7f8fd98bc3088.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3941/editor/apps/modules/runtime/8.e862fd7d143f131cc4b5.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3941/editor/apps/modules/runtime/runtime-module-anchors.310620cbfd37cdb290b3.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3941/editor/apps/modules/runtime/5.8c82c348592d8bb82481.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3941/editor/apps/modules/runtime/6.0e39e84d52a0ee6a92c9.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3941/editor/apps/modules/runtime/9.e228a24d1f2f64462512.js"></script></head>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <body id="dmRoot" data-page-alias="gallery" class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody pcCustomScrollbar d1SiteBody dmBodyNoIscroll fullyLoaded" style="padding:0;margin:0;">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- ========= Site Content ========= -->
+    <div id="dm" class="dmwr">
+        
+        <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+             <div dmwrapped="true" id="1503371011"> <div dmtemplateid="StandardLayoutMultiD" class="standardHeaderLayout dm-bfs dm-layout-sec hasStickyHeader dmPageBody dmFreeHeader d-page-1890489488 runtime-module-container" id="dm-outer-wrapper" data-page-class="1890489488" data-soch="true"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div> <div id="iscrollBody"> <div id="site_content"> <div class="dmHeaderContainer fHeader d-header-wrapper"> <div id="hcontainer" class="dmHeader p_hfcontainer u_hcontainer" freeheader="true" layout="3e258119881349f1b0afec8887fc1e4b===header" data-scrollable-target="body" data-scrollable-target-threshold="1" data-scroll-responder-id="1" logo-size-target="100%" mini-header-show-only-navigation-row="true"> <div dm:templateorder="75" class="dmHeaderResp dmHeaderStack noSwitch" id="1999565118"> <div class="u_1682190728 dmRespRow dmDefaultListContentRow mini-header-hide-row" style="text-align:center" id="1682190728"> <div class="dmRespColsWrapper" id="1750341517"> <div class="u_1479478304 dmRespCol small-12 large-4 medium-4 has-one-widget-only" id="1479478304"> <div class="u_1349687219 dmNewParagraph" id="1349687219" style="transition:opacity 1s ease-in-out;display:block;line-height:initial;" data-version="5"> <h5 class="text-align-justify m-size-19 size-18" style="direction: ltr;"><span style="display: initial; font-weight: bold; text-decoration: inherit; color: rgb(230, 7, 1);" class="m-font-size-19 font-size-18">SENAI Ponte Nova, Rua Doutor Cristiano De Freitas Castro, 928 Ponte Nova Ponte Nova-MG 35430-037 Brasil</span></h5> 
+    <p class="text-align-left"><span style="display: initial; color: rgb(0, 165, 255);"><br></span></p><p><span style="display: initial;"><br></span></p></div></div> 
+     <div class="u_1640497565 dmRespCol small-12 large-4 medium-4 has-one-widget-only" id="1640497565"> <div class="u_1034369409 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1034369409" editablewidget="true"><img src="https://lirp.cdn-website.com/d04fce68/dms3rep/multi/opt/Captura+de+tela+2023-11-20+213319-257w.png" alt="" id="1082740945" class="" data-dm-image-path="https://irp.cdn-website.com/d04fce68/dms3rep/multi/Captura+de+tela+2023-11-20+213319.png" width="405" height="275" onerror="handleImageLoadError(this)"></div> 
+    </div> 
+     <div class="dmRespCol large-4 medium-4 small-12 has-one-widget-only" id="1867116767"> <div class="u_1250300793 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1250300793" editablewidget="true"><img src="https://lirp.cdn-website.com/d04fce68/dms3rep/multi/opt/Captura+de+tela+2023-11-19+205306-215w.png" alt="" id="1642728874" class="" data-dm-image-path="https://irp.cdn-website.com/d04fce68/dms3rep/multi/Captura+de+tela+2023-11-19+205306.png" width="395" height="314" onerror="handleImageLoadError(this)"></div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+     <div class="stickyHeaderSpacer" id="stickyHeaderSpacer" data-new="true"></div> 
+     <div class="dmRespRow dmRespRowStable dmRespRowNoPadding dmPageTitleRow "> <div class="dmRespColsWrapper"> <div class="large-12 dmRespCol"> <div id="innerBar" class="innerBar lineInnerBar"> <div class="titleLine display_None"><hr></div> 
+    <!-- Page title is hidden in css for new responsive sites. It is left here only so we don't break old sites. Don't copy it to new layouts --> <div id="pageTitleText"> <div class="innerPageTitle">GALERIA</div> 
+    </div> 
+     <div class="titleLine display_None"><hr></div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+     <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_gallery"> <div id="allWrapper" class="allWrapper"> <div id="dm_content" class="dmContent"> <div dm:templateid="BlankGalleryRespTemplate" class="dmGalleryTmpl generalRespTmplWrapper" id="1890489488"> <div class="innerPageTmplBox dmRespRowsWrapper dmRespRowsWrapperSize2 dmRespRowsWrapperSize1" id="1611564032" style="min-height: 625.719px;"> <div class="dmRespRow dmGalerryWidgetRow u_1307522961" id="1307522961"> <div class="dmRespColsWrapper" id="1555566321"> <div class="small-12 large-12 medium-12 dmRespCol u_1899702815" id="1899702815"> <a data-display-type="block" class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient u_1735770575" file="false" href="/" data-element-type="dButtonLinkId" id="1735770575"> <span class="iconBg" aria-hidden="true" id="1130340888"> <span class="icon hasFontIcon icon-star" id="1801276723"></span> 
+    </span> 
+     <span class="text" id="1988900491">Produção</span> 
+    </a> 
+    </div> 
+    </div> 
+    </div> 
+     <div class="dmRespRow u_1033603900" id="1033603900"> <div class="dmRespColsWrapper" id="1822558381"> <div class="dmRespCol large-12 medium-12 small-12 u_1612672004" id="1612672004"> <a data-display-type="block" class="u_1772594987 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="/" data-element-type="dButtonLinkId" id="1772594987"> <span class="iconBg" aria-hidden="true" id="1472737095"> <span class="icon hasFontIcon icon-star" id="1634414304"></span> 
+    </span> 
+     <span class="text" id="1065172775">Lógistica</span> 
+    </a> 
+    </div> 
+    </div> 
+    </div> 
+     <div class="dmRespRow u_1062541170" id="1062541170"> <div class="dmRespColsWrapper" id="1542649330"> <div class="dmRespCol large-12 medium-12 small-12 u_1479847893" id="1479847893"> <a data-display-type="block" class="u_1573208044 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="/" data-element-type="dButtonLinkId" id="1573208044"> <span class="iconBg" aria-hidden="true" id="1974637845"> <span class="icon hasFontIcon icon-star" id="1597289230"></span> 
+    </span> 
+     <span class="text" id="1279263739">Escritórios</span> 
+    </a> 
+    </div> 
+    </div> 
+    </div> 
+     <div class="dmRespRow" id="1204176899"> <div class="dmRespColsWrapper" id="1748015852"> <div class="dmRespCol large-12 medium-12 small-12 u_1163895205" id="1163895205"> <a data-display-type="block" class="u_1064671477 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="/contact" data-element-type="dButtonLinkId" id="1064671477"> <span class="iconBg" aria-hidden="true" id="1246307853"> <span class="icon hasFontIcon icon-star" id="1002960404"></span> 
+    </span> 
+     <span class="text" id="1971868823">Livro de normas</span> 
+    </a> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+     <div class="dmFooterContainer"> <div id="fcontainer" class="f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="14" class="dmFooterResp dmFullFooterResp" id="1601648458"> <div class="dmRespRow dmDividerRow" id="1822096218"> <div class="dmRespColsWrapper" id="1550037428"> <div class="large-12 medium-12 small-12 dmRespCol" id="1146839098"> <div class="dmDividerWrapper clearfix" data-element-type="dDividerId" id="1008282019"><hr class="dmDivider defaultDivider" id="1986598209"></div> 
+    </div> 
+    </div> 
+    </div> 
+     <div class="dmRespRow dmFooterContent" id="1757482527"> <div class="dmRespColsWrapper" id="1364411456"> <div class="dmRespCol large-12 medium-12 small-12 dmFooterCol" id="1950050234"> <div class="dmFooterDefaultH3 dmNewParagraph" id="1723843817" data-version="5" style=""><h3 style="" class=""><span style="display: initial;">Siga-Nos!</span></h3></div> 
+    </div> 
+    </div> 
+    </div> 
+     <div id="1368367535" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    </div> 
+    
+        </div>
+    </div>
+    <!--  Add full CSS and Javascript before the close tag of the body if needed -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Google Fonts Include -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- loadCSS function -->
+    
+    
+    
+    <script id="d-js-load-css">
+    /**
+     * There are a few <link> tags with CSS resource in them that are preloaded in the page
+     * in each of those there is a "onload" handler which invokes the loadCSS callback
+     * defined here.
+     * We are monitoring 3 main CSS files - the runtime, the global and the page.
+     * When each load we check to see if we can append them all in a batch. If threre
+     * is no page css (which may happen on inner pages) then we do not wait for it
+     */
+    (function () {
+      let cssLinks = {};
+      function loadCssLink(link) {
+        link.onload = null;
+        link.rel = "stylesheet";
+        link.type = "text/css";
+      }
+      
+        function checkCss() {
+          const pageCssLink = document.querySelector("[id*='CssLink']");
+    
+            if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page)) {
+                const storedRuntimeCssLink = cssLinks.runtime;
+                const storedPageCssLink = cssLinks.page;
+                const storedGlobalCssLink = cssLinks.global;
+    
+                storedGlobalCssLink.disabled = true;
+                loadCssLink(storedGlobalCssLink);
+    
+                if (storedPageCssLink) {
+                    storedPageCssLink.disabled = true;
+                    loadCssLink(storedPageCssLink);
+                }
+    
+                storedRuntimeCssLink.disabled = true;
+                loadCssLink(storedRuntimeCssLink);
+    
+                requestAnimationFrame(() => {
+                    setTimeout(() => {
+                        storedRuntimeCssLink.disabled = false;
+                        storedGlobalCssLink.disabled = false;
+                        if (storedPageCssLink) {
+                          storedPageCssLink.disabled = false;
+                        }
+                        // (SUP-4179) Clear the accumulated cssLinks only when we're
+                        // sure that the document has finished loading and the document 
+                        // has been parsed.
+                        if(document.readyState === 'interactive') {
+                          cssLinks = null;
+                        }
+                    }, 0);
+                });
+            }
+        }
+      
+    
+      function loadCSS(link) {
+        try {
+          var urlParams = new URLSearchParams(window.location.search);
+          var noCSS = !!urlParams.get("nocss");
+          var cssTimeout = urlParams.get("cssTimeout") || 0;
+    
+          if (noCSS) {
+            return;
+          }
+          if (link.href.includes("d-css-runtime")) {
+            cssLinks.runtime = link;
+            checkCss();
+          } else if (link.id === "siteGlobalCss") {
+            cssLinks.global = link;
+            checkCss();
+          } 
+          
+          else if(link.id.includes("CssLink")) {
+            cssLinks.page = link;
+            checkCss();
+          }  
+          
+          else {
+            requestIdleCallback(function () {
+              window.setTimeout(function () {
+                loadCssLink(link);
+              }, parseInt(cssTimeout, 10));
+            });
+          }
+        } catch (e) {
+          throw e
+        }
+      }
+      window.loadCSS = window.loadCSS || loadCSS;
+    })();
+    </script>
+    
+    <link rel="stylesheet" href="https://irp.cdn-website.com/fonts/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&amp;subset=latin-ext&amp;display=swap" as="style" fetchpriority="low" onload="loadCSS(this)" type="text/css">
+    
+    
+    
+    
+    
+    <!-- RT CSS Include d-css-runtime-desktop-one-package-structured-global-->
+    <link rel="stylesheet" as="style" fetchpriority="low" onload="loadCSS(this)" href="https://static.cdn-website.com/mnlt/production/3941/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" type="text/css">
+    
+    <!-- End of RT CSS Include -->
+    
+    
+    <link rel="stylesheet" href="https://irp.cdn-website.com/WIDGET_CSS/production_3941/8275ca19dd81cf9d63195dd36c8d6c58.css" id="widgetCSS" as="style" fetchpriority="low" onload="loadCSS(this)" type="text/css">
+    
+    
+    <!-- Support `img` size attributes -->
+    <style>img[width][height] {
+      height: auto;
+    }</style>
+    
+    <!-- Support showing sticky element on page only -->
+    <style>
+      body[data-page-alias="gallery"] #dm [data-show-on-page-only="gallery"] {
+        display: block !important;
+      }
+    </style>
+    
+    <!-- This is populated in Ajax navigation -->
+    <style id="pageAdditionalWidgetsCss" type="text/css">
+    </style>
+    
+    
+    
+    
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="https://irp.cdn-website.com/d04fce68/files/d04fce68_1.min.css?v=4" id="siteGlobalCss" as="style" fetchpriority="low" onload="loadCSS(this)" type="text/css">
+    
+    
+    
+    <style id="customWidgetStyle" type="text/css">
+        
+    </style>
+    <style id="innerPagesStyle" type="text/css">
+        
+    </style>
+    
+    
+    <style id="additionalGlobalCss" type="text/css">
+    </style>
+    
+    <style id="pagestyle" type="text/css">
+        *#dm *.dmBody div.u_1899702815
+    {
+        background-color:rgba(242,197,15,1) !important;
+    }
+    *#dm *.dmBody div.u_1612672004
+    {
+        background-color:rgba(242,197,15,1) !important;
+    }
+    *#dm *.dmBody div.u_1479847893
+    {
+        background-color:rgba(242,197,15,1) !important;
+    }
+    *#dm *.dmBody div.u_1163895205
+    {
+        background-color:rgba(242,197,15,1) !important;
+    }
+    *#dm *.dmBody a.u_1735770575
+    {
+        background-color:rgba(46,204,113,1) !important;
+    }
+    *#dm *.dmBody a.u_1772594987
+    {
+        background-color:rgba(46,204,113,1) !important;
+    }
+    *#dm *.dmBody a.u_1573208044
+    {
+        background-color:rgba(46,204,113,1) !important;
+    }
+    *#dm *.dmBody a.u_1064671477
+    {
+        background-color:rgba(46,204,113,1) !important;
+    }
+    *#dm *.dmBody a.u_1735770575 span.text
+    {
+        color:rgba(230,7,1,1) !important;
+    }
+    *#dm *.dmBody a.u_1772594987 span.text
+    {
+        color:rgba(230,7,1,1) !important;
+    }
+    *#dm *.dmBody a.u_1573208044 span.text
+    {
+        color:rgba(230,7,1,1) !important;
+    }
+    *#dm *.dmBody a.u_1064671477 span.text
+    {
+        color:rgba(230,7,1,1) !important;
+    }
+    
+    </style>
+    
+    <style id="pagestyleDevice" type="text/css">
+        *#dm *.d-page-1890489488 DIV.dmInner
+    {
+        background-color:rgba(255,255,255,1) !important;
+        background-image:url(https://lirp.cdn-website.com/653c8ee011cd41acaf550387a89f092f/dms3rep/multi/opt/5537-2880w.jpg) !important;
+    }
+    *#dm *.d-page-1890489488 DIV#dmSlideRightNavRight
+    {
+        background-color:rgba(255,255,255,1) !important;
+        background-image:url(https://lirp.cdn-website.com/653c8ee011cd41acaf550387a89f092f/dms3rep/multi/opt/5537-2880w.jpg) !important;
+    }
+    *.dmLargeBody *#dm *.d-page-1890489488 *.dmBody *.dmRespRowsWrapper
+    {
+        background-color:rgba(0,0,0,0) !important;
+    }
+    *#dm *.dmBody a.u_1573208044
+    {
+        float:none !important;
+        top:0px !important;
+        left:0 !important;
+        width:280px !important;
+        position:relative !important;
+        height:43px !important;
+        padding-top:0px !important;
+        padding-left:0px !important;
+        padding-bottom:0px !important;
+        margin-right:auto !important;
+        margin-left:auto !important;
+        max-width:100% !important;
+        margin-top:0 !important;
+        margin-bottom:0 !important;
+        padding-right:0px !important;
+        min-width:0 !important;
+        text-align:center !important;
+    }
+    *#dm *.dmBody a.u_1772594987
+    {
+        float:none !important;
+        top:0px !important;
+        left:0 !important;
+        width:280px !important;
+        position:relative !important;
+        height:43px !important;
+        padding-top:0px !important;
+        padding-left:0px !important;
+        padding-bottom:0px !important;
+        margin-right:auto !important;
+        margin-left:auto !important;
+        max-width:100% !important;
+        margin-top:0 !important;
+        margin-bottom:0 !important;
+        padding-right:0px !important;
+        min-width:0 !important;
+        text-align:center !important;
+    }
+    *#dm *.dmBody a.u_1064671477
+    {
+        float:none !important;
+        top:0px !important;
+        left:0 !important;
+        width:280px !important;
+        position:relative !important;
+        height:43px !important;
+        padding-top:0px !important;
+        padding-left:0px !important;
+        padding-bottom:0px !important;
+        margin-right:auto !important;
+        margin-left:auto !important;
+        max-width:100% !important;
+        margin-top:0 !important;
+        margin-bottom:0 !important;
+        padding-right:0px !important;
+        min-width:0 !important;
+        text-align:center !important;
+    }
+    *#dm *.dmBody div.u_1062541170
+    {
+        margin-left:0px !important;
+        padding-top:12px !important;
+        padding-left:40px !important;
+        padding-bottom:15px !important;
+        margin-top:0px !important;
+        margin-bottom:0px !important;
+        margin-right:0px !important;
+        padding-right:40px !important;
+        width:auto !important;
+    }
+    *#dm *.dmBody div.u_1033603900
+    {
+        margin-left:0px !important;
+        padding-top:16px !important;
+        padding-left:40px !important;
+        padding-bottom:24px !important;
+        margin-top:0px !important;
+        margin-bottom:0px !important;
+        margin-right:0px !important;
+        padding-right:40px !important;
+        width:auto !important;
+    }
+    *#dm *.dmBody div.u_1307522961
+    {
+        margin-left:0px !important;
+        padding-top:24px !important;
+        padding-left:40px !important;
+        padding-bottom:24px !important;
+        margin-top:0px !important;
+        margin-bottom:0px !important;
+        padding-right:40px !important;
+        margin-right:0px !important;
+        width:auto !important;
+    }
+    *#dm *.dmBody div.u_1479847893
+    {
+        margin-left:0px !important;
+        padding-top:24px !important;
+        padding-left:0px !important;
+        padding-bottom:24px !important;
+        margin-top:0px !important;
+        margin-bottom:0px !important;
+        margin-right:0px !important;
+        padding-right:0px !important;
+    }
+    *#dm *.dmBody div.u_1612672004
+    {
+        margin-left:0px !important;
+        padding-top:24px !important;
+        padding-left:0px !important;
+        padding-bottom:24px !important;
+        margin-top:0px !important;
+        margin-bottom:0px !important;
+        margin-right:0px !important;
+        padding-right:0px !important;
+    }
+    *#dm *.dmBody div.u_1163895205
+    {
+        margin-left:0px !important;
+        padding-top:24px !important;
+        padding-left:0px !important;
+        padding-bottom:24px !important;
+        margin-top:0px !important;
+        margin-bottom:0px !important;
+        margin-right:0px !important;
+        padding-right:0px !important;
+    }
+    *#dm *.dmBody div.u_1899702815
+    {
+        margin-left:0px !important;
+        padding-top:24px !important;
+        padding-left:0px !important;
+        padding-bottom:24px !important;
+        margin-top:0px !important;
+        margin-bottom:0px !important;
+        margin-right:0px !important;
+        padding-right:0px !important;
+    }
+    
+    </style>
+    
+    <!-- Flex Sections CSS -->
+    
+    
+    
+    
+    
+    <style id="globalFontSizeStyle" type="text/css">
+        .font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }
+    </style>
+    <style id="pageFontSizeStyle" type="text/css">
+    </style>
+    
+    <!-- ========= JS Section ========= -->
+    
+    <script>
+        var isWLR = true;
+    
+        window.customWidgetsFunctions = {};
+        window.customWidgetsStrings = {};
+        window.collections = {};
+        window.currentLanguage = "PORTUGUESE"
+        window.isSitePreview = false;
+    </script>
+    <script type="text/javascript">
+    
+        var d_version = "production_3941";
+        var build = "2023-11-20T11_50_28";
+        window['v' + 'ersion'] = d_version;
+    
+        function buildEditorParent() {
+            window.isMultiScreen = true;
+            window.editorParent = {};
+            window.previewParent = {};
+            window.assetsCacheQueryParam = "?version=2023-11-20T11_50_28";
+            try {
+                var _p = window.parent;
+                if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                    window.editorParent = _p;
+                } else if (_p.isSitePreview) {
+                    window.previewParent = _p;
+                }
+            } catch (e) {
+    
+            }
+        }
+    
+        buildEditorParent();
+    </script>
+    
+    <!-- Load jQuery -->
+        <script type="text/javascript" id="d-js-jquery" src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+        <!-- End Load jQuery -->
+    <!-- Injecting site-wide before scripts -->
+    <!-- End Injecting site-wide to the head -->
+    
+    
+    <script>
+        var _jquery = window.$;
+    
+        var jqueryAliases = ['$', 'jquery', 'jQuery'];
+    
+        jqueryAliases.forEach((alias) => {
+            Object.defineProperty(window, alias, {
+                get() {
+                    return _jquery;
+                },
+                set() {
+                    console.warn("Trying to over-write the global jquery object!");
+                }
+            });
+        });
+        window.jQuery.migrateMute = true;
+    </script>
+    <script>
+        window.cookiesNotificationMarkupPreview = 'null';
+    </script>
+    
+    <!-- HEAD RT JS Include -->
+    <script id="d-js-params">
+        window.INSITE = window.INSITE || {};
+        window.INSITE.device = "desktop";
+        window.rtCommonProps = {};
+        rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+        rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+        rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+        rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+        rtCommonProps["inlineEditGrid.snap"] =true;
+        rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+        rtCommonProps["rt.pushnotifs.force.button"] =true;
+    
+        rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+        rtCommonProps["common.mapbox.js.override"] =false;
+        rtCommonProps["common.opencage.token"] = '319e14f32bcce967ba55cd263478796d';
+        rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+        rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+        rtCommonProps["isCoverage.test"] =false;
+        rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+        rtCommonProps["feature.flag.mappy.kml"] =false;
+        rtCommonProps["common.resources.dist.cdn"] =true;
+        rtCommonProps["common.build.dist.folder"] = 'production/3941';
+        rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+        rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/3941';
+        rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+        rtCommonProps["feature.flag.runtime.photoswipe.fix"] =true;
+        rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+        rtCommonProps["feature.flag.runtime.newAnimation.respectCssAnimationProps.enabled"] =true;
+        rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+        rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+        rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+        rtCommonProps["feature.flag.addTargetBlankToExternalLinks"] =true;
+        rtCommonProps["unsuspendEcwidStoreOnRuntime.enabled"] =true;
+        rtCommonProps["keyboard.navigation.enabled"] =true;
+        rtCommonProps["scripts.widgetCount.enabled"] =true;
+        rtCommonProps["run.imageCount.script.enabled"] =false;
+        rtCommonProps["maps.cookiebot.enabled"] =true;
+    
+        
+        rtCommonProps['common.mapsProvider'] = 'mapbox';
+        
+        rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+        rtCommonProps['common.geocodeProvider'] = 'here';
+        rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+        rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+        rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+        rtCommonProps['common.map.defaults.strokeSize'] = '2';
+        rtCommonProps['server.for.resources'] = '';
+        rtCommonProps['feature.flag.lazy.widgets'] = true;
+        rtCommonProps['feature.flag.single.wow'] = false;
+        rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+        rtCommonProps['feature.flag.mark.anchors'] = true;
+        rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+        rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+        rtCommonProps["images.sizes.small"] =160;
+        rtCommonProps["images.sizes.mobile"] =640;
+        rtCommonProps["images.sizes.tablet"] =1280;
+        rtCommonProps["images.sizes.desktop"] =1920;
+        rtCommonProps["modules.resources.cdn"] =true;
+        rtCommonProps["import.images.storage.imageCDN"] = 'https://lirp.cdn-website.com/';
+        rtCommonProps["ecom.ecwid.categoryPage.modifyLinks"] = true;
+        rtCommonProps["ecom.ecwidNewUrlStructure.enabled"] = false;
+        rtCommonProps["ecom.ecwid.fallBackInCaseLinksNotFound.enabled"] = true;
+        rtCommonProps["facebook.api.version"] = '7.0';
+        rtCommonProps["feature.flag.photo.gallery.exact.size"] =false;
+        rtCommonProps["new.store.fix.ecwid.back.bug"] =true;
+        rtCommonProps["new.store.accountPage.ecwid.resetPassword.fix"] =true;
+        rtCommonProps["site.runtime.video.background.ssr"] =true;
+        rtCommonProps["geocode.search.localize"] =false;
+        rtCommonProps["facebook.runtime.widgets.upgrade"] =true;
+        rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+        rtCommonProps["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+        rtCommonProps["feature.flag.performance.logs"] =true;
+        rtCommonProps["site.contact.form.fix.for.attribute"] =true;
+        rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+        rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+        rtCommonProps["contact.form.date.format.enabled"] = true;
+        rtCommonProps["filestack.uploadToTempBucket.enabled"] = true;
+        rtCommonProps["platform.monolith.loginBar.getUserLoggedIn.enabled"] = true;
+        rtCommonProps["platform.monolith.loginBar.layout.enabled"] = true;
+        rtCommonProps["ecom.ecwid.solve.url.modifications"] = true;
+        rtCommonProps["ecom.ecwid.configOptions"] = true;
+    </script>
+    <script src="https://static.cdn-website.com/mnlt/production/3941/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js" id="d-js-core"></script>
+    <!-- End of HEAD RT JS Include -->
+    <script src="https://static.cdn-website.com/mnlt/production/3941/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js"></script>
+    <script>jQuery.DM.updateWidthAndHeight();
+    $(window).resize(function () {
+        
+    });
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+    </script>
+    <script type="text/javascript" id="d_track_campaign">
+    (function() {
+         var campaign = (/utm_campaign=([^&]*)/).exec(window.location.search);
+    
+         if (campaign && campaign != null && campaign.length > 1) {
+             campaign = campaign[1];
+             document.cookie = "_dm_rt_campaign=" + campaign + ";expires=" + new Date().getTime() + 24*60*60*1000 + ";domain=" + window.location.hostname + ";path=/";
+         }
+    }());
+    </script>
+    <script type="text/javascript">
+      var _dm_gaq = {};
+      var _gaq = _gaq || [];
+      var _dm_insite = [];
+    </script>
+    
+      
+    <script type="text/javascript" id="d_track_sp">
+    ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+    p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+    };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+    n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+    window.dmsnowplow  = window.snowplow;
+    
+    dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+      appId: 'd04fce68'
+    });
+    
+    dmsnowplow('trackPageView')
+    $.each(_dm_insite, function(idx, rule) {
+        //('trackStructEvent', 'category','action','label','property','value');
+                // Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+                // the tracking is in popup.js
+                if (rule.actionName !== "popup") {
+                    dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+                }
+                 $(document).ready(function(){
+                     $.DM.events.trigger('event-ruleTriggered', {value: rule})}
+                 );
+             });
+    </script>
+       <div style="display:none;" id="P6iryBW0Wu"></div>
+    
+    <!-- photoswipe markup -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    
+        <!-- Background of PhotoSwipe. 
+             It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+    
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+    
+            <!-- Container that holds slides. 
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+    
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+    
+                <div class="pswp__top-bar">
+    
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+    
+                    <div class="pswp__counter"></div>
+    
+                    <button class="pswp__button pswp__button--close" title="Fechar (Esc)"></button>
+    
+                    <button class="pswp__button pswp__button--share" title="Compartilhar"></button>
+    
+                    <button class="pswp__button pswp__button--fs" title="Alternar tela cheia "></button>
+    
+                    <button class="pswp__button pswp__button--zoom" title="Aumentar/diminuir zoom"></button>
+    
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                          <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div> 
+                </div>
+    
+                <button class="pswp__button pswp__button--arrow--left" title="Anterior (seta para esquerda)">
+                </button>
+    
+                <button class="pswp__button pswp__button--arrow--right" title="Próximo (seta para a direita)">
+                </button>
+    
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+    <div id="fb-root" data-locale="pt_PT"></div>
+    <!-- Alias: d04fce68 -->
+    <div class="dmPopupMask" id="dmPopupMask"></div>
+    <div id="dmPopup" class="dmPopup">
+        <div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+         <div class="dmPopupTitle"> <span></span> Share by:</div> 
+        <div class="data"></div>
+    </div><script id="d_track_personalization">
+    // Collects client data and updates cookies used by smart sites
+    var expireDays = 365,visitLength = 30 * 60000;
+    $.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), expireDays);
+    function setSmartSiteCookies() {
+        setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+    }
+    $.DM.events.on("afterAjax", setSmartSiteCookies);
+    setSmartSiteCookies();
+    </script>
+    <script type="text/javascript">
+        
+        Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+        
+        Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+        Parameters.HomeLinkText = 'Home';
+        </script>
+    <script>
+        jQuery(window).on('load', function () {
+            try {
+                jQuery.DM.updateIOSHeight();
+            } catch (e) {
+            }
+        });
+    </script>
+    <script>
+        dmAPI.loadScript(
+            window.rtCommonProps['common.resources.cdn.host'] + '/libs/lozad/1.15.0/lozad.min.js',
+            function () {
+                dmAPI.runOnReady('lozadInit', function () {
+                    window.document.querySelectorAll('img.lazy').forEach(function (img) {
+                        img.addEventListener('load', function (event) {
+                            var img = event.target;
+                            img.style.filter = 'blur(0)';
+                            setTimeout(function () {
+                                $(img).closest('.imageWidget').addClass('lazyLoaded');
+                            }, 250)
+                        });
+                    });
+                    lozad('.lazy', {
+                        threshold: 0.1,
+                        loaded: function (element) {
+                            if (element.getAttribute('data-background-image')) {
+                                element.style.setProperty(
+                                    'background-image',
+                                    "url('" + element.getAttribute('data-background-image') + "')",
+                                    "important"
+                                );
+                            }
+                        }
+                    }).observe();
+                });
+            }
+        );
+    </script>
+    <!--  End Script tags -->
+    
+    <!--  Site Wide Html Markup -->
+    <!--  Site Wide Html Markup -->
+    
+    
+    </body></html>
+    
