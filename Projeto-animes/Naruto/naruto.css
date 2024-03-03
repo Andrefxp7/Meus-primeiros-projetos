@@ -40,12 +40,13 @@
 
 :root{
 
-    --cor1: #BF49F2;
-    --cor2: #ff5e00bd;
-    --cor3: #ff9050;
-    --cor4: #4F0070;
-    --cor5: #000000;
+    --cor1: #041424;
+    --cor2: #247474;
+    --cor3: #94bc8c;
+    --cor4: #dcdc9c;
+    --cor5: #f4e4bc;
     --cor6: white;
+    --cor7: #125212;
 
     --font-padrão: Arial, Verdana, Helvetica, sans-serif;
     --font-titulo: 'Japones';
@@ -63,7 +64,7 @@ body{
 
 header{
 
-    background-color: var(--cor4);
+    background-color:var(--cor1);
 
 }
 
@@ -78,14 +79,15 @@ header > h1{
 
 nav{
 
-    background-color: var(--cor4);
+    background-color: var(--cor1);
     padding-bottom: 10px;
     
 }
 
 nav > a > button{
 
-   background-color: #ff9050;
+   background-color: #da5000;
+   border-color: yellow;
    color:var(--cor5);
    padding-right: 5px;
    padding-left: 5px;
@@ -105,14 +107,14 @@ nav > a{
 
 article{
     
-    background-color:var(--cor5);
+    background-color:var(--cor2);
     margin: auto;
 
 }
 
 article > h2{
 
-    color: var(--cor2);
+    color: var(--cor3);
     font-family:var(--font-titulo2);
     font-size: 35px;
     text-align: center;
@@ -135,25 +137,25 @@ article > p{
 
 strong{
 
-    color: var(--cor3);
+    color: var(--cor5);
 
 }
 
 .sasuke{
 
-    color: #2323c5;
+    color:var(--cor5);
 
 }
 
 .sakura{
 
-    color: #bf35c4;
+    color:var(--cor5);
 
 }
 
 footer{
 
-    background-color: var(--cor5);
+    background-color:var(--cor7);
     font-family: var(--font-rodape);
     font-size: 20px;
     text-align: center;
@@ -185,7 +187,7 @@ nav > a{
 
 a:hover{
 
-    color: rgb(25, 226, 25);
+    color:var(--cor5);
 
 }
 
@@ -207,7 +209,7 @@ div{
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #da5b12;
+    background-color: var(--cor1);
    
 }
 

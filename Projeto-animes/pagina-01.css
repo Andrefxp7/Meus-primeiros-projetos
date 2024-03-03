@@ -40,11 +40,11 @@
 
 :root{
 
-    --cor1: #BF49F2;
-    --cor2: #A800F0;
-    --cor3: #592270;
-    --cor4: #4F0070;
-    --cor5: #000000;
+    --cor1: #041424;
+    --cor2: #247474;
+    --cor3: #94bc8c;
+    --cor4: #dcdc9c;
+    --cor5: #f4e4bc;
     --cor6: white;
 
     --font-padrão: Arial, Verdana, Helvetica, sans-serif;
@@ -58,12 +58,12 @@
 body{
 
     font-family: var(--font-padrão);
-    background-color: #cca0df;
+    background-color: var(--cor5);
 }
 
 header{
 
-    background-color: var(--cor4);
+    background-color: var(--cor1);
 
 }
 
@@ -87,7 +87,7 @@ header > p{
 
 nav{
 
-    background-color: var(--cor4);
+    background-color: var(--cor1);
     padding-bottom: 10px;
     
 }
@@ -103,14 +103,14 @@ nav > a{
 
 article{
     
-    background-color:var(--cor5);
+    background-color: var(--cor2);
     margin: auto;
 
 }
 
 article > h2{
 
-    color: var(--cor1);
+    color:var(--cor3);
     font-family:var(--font-titulo2);
     font-size: 35px;
     text-align: center;
@@ -133,7 +133,7 @@ article > p{
 
 strong{
 
-    color: var(--cor1);
+    color:var(--cor5);
 }
 
 div{
@@ -142,13 +142,13 @@ div{
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #40005c;
+    background-color:var(--cor1);
    
 }
    
 footer{
 
-    background-color:#000000;
+    background-color: #125212;
     font-family: var(--font-rodape);
     font-size: 20px;
     text-align: center;
@@ -174,5 +174,11 @@ p{
 
     color: var(--cor6);
     padding-bottom: 5px;
+
+}
+
+a:hover{
+
+    color:var(--cor5);
 
 }
