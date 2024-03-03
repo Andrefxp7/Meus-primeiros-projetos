@@ -60,6 +60,7 @@
 body{
 
     font-family: var(--font-padrão);
+    background-color: var(--cor5);
     
 }
 
@@ -110,6 +111,9 @@ article{
     
     background-color:var(--cor2);
     margin: auto;
+    margin: auto;
+    max-width: 800px;
+    min-width: 280px;
 
 }
 

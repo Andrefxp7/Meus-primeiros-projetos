@@ -105,6 +105,10 @@ article{
     
     background-color: var(--cor2);
     margin: auto;
+    margin: auto;
+    max-width: 800px;
+    min-width: 280px;
+
 
 }
 
