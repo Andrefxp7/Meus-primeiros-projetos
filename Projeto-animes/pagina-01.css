@@ -30,6 +30,14 @@
 
 }
 
+@font-face {
+
+    font-family: 'grafite';
+    src: url(Fontes/Eastwood\ Italic.ttf) format('truetype');
+    font-weight: normal;
+
+}
+
 :root{
 
     --cor1: #BF49F2;
@@ -42,7 +50,8 @@
     --font-padrão: Arial, Verdana, Helvetica, sans-serif;
     --font-titulo: 'Japones';
     --font-paragrafos: 'escrita';
-    --font-titulo2: 'Festa'
+    --font-titulo2: 'Festa';
+    --font-rodape: 'grafite';
 
 }
 
@@ -103,6 +112,7 @@ article > h2{
 
     color: var(--cor1);
     font-family:var(--font-titulo2);
+    font-size: 35px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 6px;
@@ -138,9 +148,12 @@ div{
    
 footer{
 
-    background-color: #000000;
+    background-color:#000000;
+    font-family: var(--font-rodape);
+    font-size: 20px;
     text-align: center;
     padding: 10px;
+
 }
 
 article > picture > img{
