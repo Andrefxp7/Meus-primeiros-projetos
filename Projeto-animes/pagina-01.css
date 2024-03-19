@@ -59,15 +59,21 @@ body{
 
     font-family: var(--font-padrão);
     background-color: var(--cor5);
+    height: 98vh;
+    
 }
 
 header{
 
     background-color: var(--cor1);
+    background-image: url('Imagens/logo.png');
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: top left;
 
 }
 
-header > h1{
+header > a > h1{
 
     font-family: var(--font-titulo);
     color: var(--cor6);
@@ -76,7 +82,7 @@ header > h1{
 
 }
 
-header > p{
+header > a > p{
 
     font-family: var(--font-paragrafos);
     color: var(--cor6);
@@ -87,8 +93,11 @@ header > p{
 
 nav{
 
-    background-color: var(--cor1);
+    background-color: #141436;
+    padding-top: 10px;
     padding-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
     
 }
 
@@ -152,7 +161,7 @@ div{
    
 footer{
 
-    background-color: #125212;
+    background-color: black;
     font-family: var(--font-rodape);
     font-size: 20px;
     text-align: center;
@@ -171,6 +180,7 @@ article > picture > img{
 a{
 
     color: var(--cor6);
+    text-decoration: none ;
 
 }
 

@@ -66,6 +66,11 @@ body{
 header{
 
     background-color:var(--cor1);
+    background-image: url('../Imagens/logo.png');
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: top left;
+    padding-bottom: 20px;
 
 }
 
@@ -80,8 +85,10 @@ header > h1{
 
 nav{
 
-    background-color:var(--cor1);
+    background-color: #141436;
+    padding-top: 10px;
     padding-bottom: 10px;
+    text-align: center;
     
 }
 
@@ -172,7 +179,7 @@ strong{
 
 footer{
 
-    background-color:var(--cor7);
+    background-color: black;
     font-family: var(--font-rodape);
     font-size: 20px;
     text-align: center;
