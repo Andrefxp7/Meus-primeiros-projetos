@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+html, body{
+
+   height:400px;
+   max-width: 600px;
+   background: url('imagens/fundo-estrelado.png') no-repeat top center;
+   background-size: cover;
+   background-attachment: fixed;
+
+}
+
+body{
+
+    background-color: black;
+   
+}
+
+main{
+
+    height: 100vh;
+    margin: auto;
+    position: relative;
+
+}
+
+section#Celular{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+
+    height: 627px;
+    width: 311px;
+    background: url('imagens/frame-iphone.png') no-repeat;
+}
+
+iframe#tela{
+
+
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 270px;
+    height: 471px;
+}
+
+section#Redes-Sociais img{
+
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+}
+
+
+section#Redes-Sociais{
+
+    text-align: right;
+}
+
+section#Redes-Sociais img:hover{
+
+    border: 2px solid rgba(255, 255, 255, 0.356);
+    transform: translate(-3px, -3px);
+}
