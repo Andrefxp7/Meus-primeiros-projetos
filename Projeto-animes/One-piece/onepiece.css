@@ -9,7 +9,7 @@
 @font-face {
 
     font-family: 'Japones';
-    src: url('Fontes/go3v2.ttf') format('truetype');
+    src: url('../Fontes/go3v2.ttf') format('truetype');
     font-weight: normal;
 
 }
@@ -17,7 +17,7 @@
 @font-face {
 
     font-family: 'escrita';
-    src: url('Fontes/Butter.otf') format('opentype');
+    src: url('../Fontes/Butter.otf') format('opentype');
     font-weight: normal;
 
 }
@@ -25,7 +25,7 @@
 @font-face {
 
     font-family: 'Festa';
-    src: url('Fontes/Glossy\ Sheen\ Shine\ DEMO.ttf') format('truetype');
+    src: url('../Fontes/Glossy\ Sheen\ Shine\ DEMO.ttf') format('truetype');
     font-weight: normal;
 
 }
@@ -33,7 +33,7 @@
 @font-face {
 
     font-family: 'grafite';
-    src: url(Fontes/Eastwood\ Italic.ttf) format('truetype');
+    src: url('../Fontes/Eastwood\ Italic.ttf') format('truetype');
     font-weight: normal;
 
 }
@@ -46,6 +46,7 @@
     --cor4: #dcdc9c;
     --cor5: #f4e4bc;
     --cor6: white;
+    --cor7: #125212;
 
     --font-padrão: Arial, Verdana, Helvetica, sans-serif;
     --font-titulo: 'Japones';
@@ -58,36 +59,27 @@
 body{
 
     font-family: var(--font-padrão);
-    background-color: var(--cor5);
-    height: 98vh;
+    background-color: #f4e4bc;
     
 }
 
 header{
 
-    background-color: var(--cor1);
-    background-image: url('Imagens/logo.png');
+    background-color:var(--cor1);
+    background-image: url('../Imagens/logo.png');
     background-repeat: no-repeat;
     background-size: 100px;
     background-position: top left;
+    padding-bottom: 20px;
 
 }
 
-a > header > h1{
+header > h1{
 
     font-family: var(--font-titulo);
     color: var(--cor6);
     text-align: center;
     padding: 15px;
-
-}
-
-a > header > p{
-
-    font-family: var(--font-paragrafos);
-    color: var(--cor6);
-    text-align: center;
-    padding-bottom: 15px;
 
 }
 
@@ -97,8 +89,19 @@ nav{
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    font-size: 15px;
     
+}
+
+nav > a > button{
+
+   background-color: #ffffff;
+   border-color: rgb(0, 0, 0);
+   color:var(--cor1);
+   padding-right: 5px;
+   padding-left: 5px;
+   padding-top: 2px;
+   padding-bottom: 2px;
+
 }
 
 nav > a{
@@ -112,7 +115,7 @@ nav > a{
 
 article{
     
-    background-color: var(--cor2);
+    background-color:var(--cor2);
     margin: auto;
     margin: auto;
     max-width: 800px;
@@ -123,7 +126,7 @@ article{
 
 article > h2{
 
-    color:var(--cor3);
+    color: var(--cor3);
     font-family:var(--font-titulo2);
     font-size: 35px;
     text-align: center;
@@ -146,19 +149,10 @@ article > p{
 
 strong{
 
-    color:var(--cor5);
+    color: var(--cor5);
+
 }
 
-div{
-
-    margin-top: 20px;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color:var(--cor1);
-   
-}
-   
 footer{
 
     background-color: black;
@@ -166,7 +160,6 @@ footer{
     font-size: 20px;
     text-align: center;
     padding: 10px;
-
 }
 
 article > picture > img{
@@ -174,14 +167,34 @@ article > picture > img{
     display: block;
     margin: auto;
     width: 50%;
+    padding-bottom:10px;
 
 }
 
 a{
 
     color: var(--cor6);
-    text-decoration: none ;
+    text-decoration: none;
+    
+}
 
+nav > a{
+
+    font-family: var(--font-paragrafos);
+    font-size: 20px;
+
+}
+
+a:hover{
+
+    color:var(--cor5);
+
+}
+
+abbr{
+
+    text-decoration: none;
+    
 }
 
 p{
@@ -191,8 +204,34 @@ p{
 
 }
 
-a:hover{
+div{
 
-    color:var(--cor5);
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--cor1);
+   
+}
+
+div > p{
+
+    color: var(--cor6);
+    padding-bottom: 20px;
 
 }
+
+div > ul > li{
+
+    color: var(--cor6);
+    padding-bottom: 5px;
+    
+    
+}
+
+div > ul{
+
+    padding-left: 10px;
+
+}
+
+   
