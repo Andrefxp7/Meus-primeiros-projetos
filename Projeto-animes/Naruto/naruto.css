@@ -60,6 +60,9 @@ body{
 
     font-family: var(--font-padrão);
     background-color: #f4e4bc;
+    background: url("../Imagens/wallpaper.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -95,7 +98,7 @@ nav{
 nav > a > button{
 
    background-color: #da5000;
-   border-color: yellow;
+   border-color: #ffff00;
    color:var(--cor5);
    padding-right: 5px;
    padding-left: 5px;
@@ -126,9 +129,12 @@ article{
 
 article > h2{
 
+    background: -webkit-linear-gradient(#ff5e00, #ffff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: var(--cor3);
     font-family:var(--font-titulo2);
-    font-size: 35px;
+    font-size: 50px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 6px;

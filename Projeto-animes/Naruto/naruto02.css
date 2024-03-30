@@ -60,6 +60,9 @@ body{
 
     font-family: var(--font-padrão);
     background-color:var(--cor5);
+    background: url("../Imagens/wallpaper.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -130,23 +133,18 @@ article{
 
 article > h1{
 
-    font-family: var(--font-titulo2);
-    font-size: 40px;
-    color:var(--cor3);
-    text-align: center;
-    padding-top: 10px;
-    
-}
-
-article > h2{
-
+    background: -webkit-linear-gradient(#ff5e00, #ffff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: var(--cor3);
     font-family:var(--font-titulo2);
+    font-size: 50px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 6px;
-
+    
 }
+
 
 article > p{
 
