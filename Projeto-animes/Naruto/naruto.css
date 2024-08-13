@@ -17,7 +17,7 @@
 @font-face {
 
     font-family: 'escrita';
-    src: url('../Fontes/Butter.otf') format('opentype');
+    src: url('../Fontes/learned.ttf') format('truetype');
     font-weight: normal;
 
 }
@@ -38,21 +38,32 @@
 
 }
 
+@font-face {
+
+    font-family: 'naveg';
+    src: url('../Fontes/Butter.otf') format('opentype');
+    font-weight: normal;
+
+}
+
 :root{
 
-    --cor1: #041424;
+    --cor1: #131313;
     --cor2: #247474;
     --cor3: #94bc8c;
     --cor4: #dcdc9c;
     --cor5: #f4e4bc;
     --cor6: white;
-    --cor7: #125212;
+    --cor7: #ff5353;
+    --cor8: #fff456;
+    --cor9: #581010;
 
     --font-padrão: Arial, Verdana, Helvetica, sans-serif;
     --font-titulo: 'Japones';
     --font-paragrafos: 'escrita';
     --font-titulo2: 'Festa';
     --font-rodape: 'grafite';
+    --font-navegador: 'naveg';
 
 }
 
@@ -88,7 +99,7 @@ header > h1{
 
 nav{
 
-    background-color: #141436;
+    background-color:#131313;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
@@ -118,7 +129,7 @@ nav > a{
 
 article{
     
-    background-color:var(--cor2);
+    background-color: #131313;
     margin: auto;
     margin: auto;
     max-width: 800px;
@@ -144,12 +155,13 @@ article > h2{
 article > p{
 
     color:var(--cor6);
-    font-family: var(--font-padrão);
+    font-family: var(--font-paragrafos);
     text-align: justify;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
     padding-top: 15px;
+    font-size: 25px;
     
 }
 
@@ -205,7 +217,7 @@ nav > a{
 
 a:hover{
 
-    color:var(--cor5);
+    color:var(--cor8);
 
 }
 
@@ -227,7 +239,7 @@ div{
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: var(--cor1);
+    background-color: var(--cor9);
    
 }
 
@@ -249,6 +261,16 @@ div > ul > li{
 div > ul{
 
     padding-left: 10px;
+
+}
+
+button{
+
+    background-color: #da5000;
+    border-color: #ffff00;
+    color:var(--cor5);
+    padding-left: 4px;
+    padding-right: 4px;
 
 }
 

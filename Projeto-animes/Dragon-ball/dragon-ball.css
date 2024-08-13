@@ -17,7 +17,7 @@
 @font-face {
 
     font-family: 'escrita';
-    src: url('../Fontes/Butter.otf') format('opentype');
+    src: url('../Fontes/learned.ttf') format('truetype');
     font-weight: normal;
 
 }
@@ -38,29 +38,39 @@
 
 }
 
+@font-face {
+
+    font-family: 'naveg';
+    src: url('../Fontes/Butter.otf') format('opentype');
+    font-weight: normal;
+
+}
+
 :root{
 
-    
-    --cor1: #041424;
+    --cor1: #131313;
     --cor2: #247474;
     --cor3: #94bc8c;
     --cor4: #dcdc9c;
     --cor5: #f4e4bc;
     --cor6: white;
-    --cor7: #125212;
+    --cor7: #ff5353;
+    --cor8: #fff456;
+    --cor9: #581010;
 
     --font-padrão: Arial, Verdana, Helvetica, sans-serif;
     --font-titulo: 'Japones';
     --font-paragrafos: 'escrita';
     --font-titulo2: 'Festa';
     --font-rodape: 'grafite';
+    --font-navegador: 'naveg';
 
 }
 
 body{
 
     font-family: var(--font-padrão);
-    background-color: var(--cor5);
+    background-color: #f4e4bc;
     background: url("../Imagens/wallpaper.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -69,12 +79,12 @@ body{
 
 header{
 
-    background-color: var(--cor1);
+    background-color:var(--cor1);
     background-image: url('../Imagens/logo.png');
     background-repeat: no-repeat;
     background-size: 100px;
     background-position: top left;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 
 }
 
@@ -89,17 +99,17 @@ header > h1{
 
 nav{
 
-    background-color: #141436;
-    text-align: center;
-    padding-bottom: 10px;
+    background-color:#131313;
     padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
     
 }
 
 nav > a > button{
 
-   background-color: #042484;
-   border-color:#fc5c1c;
+   background-color: #4700b9;
+   border-color: #ff0000;
    color:var(--cor5);
    padding-right: 5px;
    padding-left: 5px;
@@ -119,17 +129,18 @@ nav > a{
 
 article{
     
-    background-color:var(--cor2);
+    background-color: #131313;
     margin: auto;
     margin: auto;
     max-width: 800px;
     min-width: 280px;
 
+
 }
 
 article > h2{
 
-    background: -webkit-linear-gradient(#ff4800, #002caf );
+    background: -webkit-linear-gradient(#ff2e2e, #0004ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: var(--cor3);
@@ -144,18 +155,31 @@ article > h2{
 article > p{
 
     color:var(--cor6);
-    font-family: var(--font-padrão);
+    font-family: var(--font-paragrafos);
     text-align: justify;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
     padding-top: 15px;
+    font-size: 25px;
     
 }
 
 strong{
 
     color: var(--cor5);
+
+}
+
+.sasuke{
+
+    color:var(--cor5);
+
+}
+
+.sakura{
+
+    color:var(--cor5);
 
 }
 
@@ -193,7 +217,7 @@ nav > a{
 
 a:hover{
 
-    color:var(--cor5);
+    color:var(--cor8);
 
 }
 
@@ -215,7 +239,7 @@ div{
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color:var(--cor1);
+    background-color: var(--cor9);
    
 }
 
