@@ -11,34 +11,34 @@
 @font-face {
 
     font-family: 'titulos';
-    src: url('fonts/minecraft.ttf') format('truetype');
+    src: url('../fonts/minecraft.ttf') format('truetype');
 
 }
 
 @font-face {
 
     font-family: 'subtitulos';
-    src: url('fonts/comics.ttf') format('truetype');
+    src: url('../fonts/comics.ttf') format('truetype');
 
 }
 
 @font-face {
 
     font-family: 'creditos_rodape';
-    src: url('fonts/Starborn.otf') format('opentype');
+    src: url('../fonts/Starborn.otf') format('opentype');
 
 }
 
 @font-face {
 
     font-family: 'paragrafo';
-    src: url('fonts/letter.ttf') format('truetype');
+    src: url('../fonts/letter.ttf') format('truetype');
 
 }
 
 body{
 
-    background-image: url('img/fundo.png');
+    background-image: url('../img/fundo.png');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -211,12 +211,27 @@ aside > div > ul > li{
 
 aside > div > ul{
 
-    padding-left: 30px;
+    padding-left: 45px;
+    display: inline-block;
+
+}
+
+aside > div {
+
+    display: inline-block;
 
 }
 
 .video{
 
     text-align: center;
+
+}
+
+.dois{
+    
+    display: inline-block;
+    padding-left: 45px;
+    padding-top: 20px;
 
 }
