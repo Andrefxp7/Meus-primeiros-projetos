@@ -11,34 +11,34 @@
 @font-face {
 
     font-family: 'titulos';
-    src: url('../fonts/minecraft.ttf') format('truetype');
+    src: url('../../fonts/minecraft.ttf') format('truetype');
 
 }
 
 @font-face {
 
     font-family: 'subtitulos';
-    src: url('../fonts/comics.ttf') format('truetype');
+    src: url('../../fonts/comics.ttf') format('truetype');
 
 }
 
 @font-face {
 
     font-family: 'creditos_rodape';
-    src: url('../fonts/Starborn.otf') format('opentype');
+    src: url('../../fonts/Starborn.otf') format('opentype');
 
 }
 
 @font-face {
 
     font-family: 'paragrafo';
-    src: url('../fonts/letter.ttf') format('truetype');
+    src: url('../../fonts/letter.ttf') format('truetype');
 
 }
 
 body{
 
-    background-image: url('../img/fundo.png');
+    background-image: url('../../img/fundo.png');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -235,3 +235,38 @@ aside > div {
     padding-top: 20px;
 
 }
+
+aside > div > ul > li > a{
+
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+a:hover{
+
+
+    color: rgb(130, 255, 130);
+
+}
+
+footer{
+
+    background-color: rgb(68, 68, 68);
+
+}
+
+footer > p{
+
+    padding: 10px;
+    text-align: center;
+    font-family: 'titulos';
+    background-image: linear-gradient(to right, rgb(255, 251, 0), rgb(0, 131, 44));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+
+
