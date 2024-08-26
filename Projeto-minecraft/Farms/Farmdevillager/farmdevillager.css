@@ -1,4 +1,3 @@
-
 @charset "UTF-8";
 
 *{
@@ -102,7 +101,7 @@ main{
 
 main > h2{
     
-    background-image: linear-gradient(to right, rgb(0, 68, 255), rgb(255, 230, 0));
+    background-image: linear-gradient(to right, rgb(88, 68, 51), rgb(82, 61, 38));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -256,7 +255,8 @@ footer{
 
 footer > p{
 
-    padding: 10px;
+    padding-bottom: 15px;
+    padding-top: 10px;
     text-align: center;
     font-family: 'titulos';
     background-image: linear-gradient(to right, rgb(255, 251, 0), rgb(0, 131, 44));
@@ -273,6 +273,3 @@ footer > p{
     font-size: 15px;
     
 }
-
-
-

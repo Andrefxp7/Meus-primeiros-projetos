@@ -38,9 +38,7 @@
 
 body{
 
-    background-image: url('img/fundo.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color:black ;
 
 }
 
@@ -192,5 +190,6 @@ main > img{
     display: block;
     margin: auto;
     width: 50%;
+    padding-bottom: 20px;
 
 }
