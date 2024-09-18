@@ -126,6 +126,30 @@ main > p{
 
 }
 
+main > ul{
+
+    padding-top: 20px;
+    padding-left: 35px;
+    font-size: 23px;
+    font-family: 'paragrafo';
+    
+}
+
+main > ul > li{
+
+    padding-bottom: 20px;
+
+}
+
+img{
+    
+    display: block;
+    margin: auto;
+    width: 40%;
+    padding-bottom: 20px;
+
+}
+
 aside{
 
     background-color: rgb(0, 0, 0);
