@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+header{
+
+    background-color: black;
+
+}
+
+header > h1{
+
+    color: aliceblue;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 40px;
+
+}
+
+nav{
+
+    background-color: blanchedalmond;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+nav > a{
+
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+
+}
+
+main{
+
+    background-color: rgb(244, 201, 255);
+    padding-bottom: 30px;
+}
+
+main > h2{
+
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 30px;
+
+}
+
+main > p{
+
+    text-align: justify;
+    font-size: 19px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+main > ul{
+
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+main > ul > li{
+
+    padding: 10px;
+    font-size: 15px;
+
+}
+
+main > ul > li > ol > li{
+
+    padding: 7px;
+    margin-left: 10px;
+    margin-top: 15px;
+
+}
+
+#para{
+
+    padding-bottom: 20px;
+
+}
+
+#mapa{
+
+    display: block;
+    margin: auto;
+    width: 80%;
+    padding-bottom: 20px;
+    padding-top: 40px;
+
+}
+
+#add{
+
+    text-align: center;
+}
+
+img{
+    
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding-bottom: 20px;
+    padding-top: 40px;
+
+}
+
+button{
+
+    background-color: rgb(50, 42, 165);
+    padding: 10px;
+    color: aliceblue;
+    display: block;
+    margin: auto;
+
+}
+
+textarea{
+
+    display: block;
+    margin: auto;
+    width: 700px;
+    height: 300px;
+}
+
+footer{
+
+    background-color: black;
+    padding: 10px;
+    color: aliceblue;
+    text-align: center;
+
+}
+
+footer > p{
+
+    padding-bottom: 10px;
+
+}
+
+a:hover{
+
+    color: rgb(255, 0, 0);
+
+}
