@@ -1,0 +1,342 @@
+
+div > h1{
+    color: aliceblue;
+    font-size: 30px;
+
+}
+
+ul{
+
+font-size: 25px;
+color: rgb(255, 255, 255);
+padding-left: 50px;
+padding-top: 40px;
+padding-bottom: 40px;
+
+}
+
+li{
+
+margin-right: 40px;
+margin: auto;
+font-size: 19px;
+
+}
+
+.segu::marker{
+
+color: rgb(43, 80, 160);
+width: 50px;
+height: 50px;
+
+}
+
+.ter::marker{
+
+color: rgb(12, 167, 12); 
+
+}
+
+.quar::marker{
+
+color: rgb(21, 82, 24);
+
+}
+
+.quin::marker{
+
+color: rgb(255, 217, 0);
+
+}
+
+.sext::marker{
+
+color: rgb(55, 126, 173);
+
+}
+
+/*Pag1 e Pag2*/
+
+        @font-face {
+
+            font-family: 'tit';
+            src: url('fonts/winter.ttf') format('truetype');
+
+        }
+
+   a{
+
+    text-decoration: none;
+
+   }
+
+   input,textarea{
+
+    display: block;
+    margin: auto;
+
+   }
+
+   form > p > label{
+
+    text-align: center;
+
+   }
+
+   button{
+
+    padding: 10px;
+
+   }
+
+   th{
+
+    text-align: center;
+
+   }
+
+   td{
+
+    text-align: center;
+   }
+
+   .tit{
+
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: tit;
+
+    padding: 15px;
+    text-align: center;
+
+   }
+
+
+div > h1{
+    color: aliceblue;
+    font-size: 30px;
+
+}
+
+ul{
+
+font-size: 25px;
+color: rgb(255, 255, 255);
+padding-left: 50px;
+padding-top: 40px;
+padding-bottom: 40px;
+
+}
+
+li{
+
+margin-right: 40px;
+margin: auto;
+font-size: 19px;
+
+}
+
+.segu::marker{
+
+color: rgb(43, 80, 160);
+width: 50px;
+height: 50px;
+
+}
+
+.ter::marker{
+
+color: rgb(12, 167, 12); 
+
+}
+
+.quar::marker{
+
+color: rgb(21, 82, 24);
+
+}
+
+.quin::marker{
+
+color: rgb(255, 217, 0);
+
+}
+
+.sext::marker{
+
+color: rgb(55, 126, 173);
+
+}
+
+/*Pag1 e Pag2*/
+
+        @font-face {
+
+            font-family: 'tit';
+            src: url('fonts/winter.ttf') format('truetype');
+
+        }
+
+   a{
+
+    text-decoration: none;
+
+   }
+
+   input,textarea{
+
+    display: block;
+    margin: auto;
+
+   }
+
+   form > p > label{
+
+    text-align: center;
+
+   }
+
+   button{
+
+    padding: 10px;
+
+   }
+
+   th{
+
+    text-align: center;
+
+   }
+
+   td{
+
+    text-align: center;
+   }
+
+   .tit{
+
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: tit;
+
+    padding: 15px;
+    text-align: center;
+
+   }
+
+
+div > h1{
+    color: aliceblue;
+    font-size: 30px;
+
+}
+
+ul{
+
+font-size: 25px;
+color: rgb(255, 255, 255);
+padding-left: 50px;
+padding-top: 40px;
+padding-bottom: 40px;
+
+}
+
+li{
+
+margin-right: 40px;
+margin: auto;
+font-size: 19px;
+
+}
+
+.segu::marker{
+
+color: rgb(43, 80, 160);
+width: 50px;
+height: 50px;
+
+}
+
+.ter::marker{
+
+color: rgb(12, 167, 12); 
+
+}
+
+.quar::marker{
+
+color: rgb(21, 82, 24);
+
+}
+
+.quin::marker{
+
+color: rgb(255, 217, 0);
+
+}
+
+.sext::marker{
+
+color: rgb(55, 126, 173);
+
+}
+
+/*Pag1 e Pag2*/
+
+        @font-face {
+
+            font-family: 'tit';
+            src: url('fonts/winter.ttf') format('truetype');
+
+        }
+
+   a{
+
+    text-decoration: none;
+
+   }
+
+   input,textarea{
+
+    display: block;
+    margin: auto;
+
+   }
+
+   form > p > label{
+
+    text-align: center;
+
+   }
+
+   button{
+
+    padding: 10px;
+
+   }
+
+   th{
+
+    text-align: center;
+
+   }
+
+   td{
+
+    text-align: center;
+   }
+
+   .tit{
+
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: tit;
+
+    padding: 15px;
+    text-align: center;
+
+   }
+

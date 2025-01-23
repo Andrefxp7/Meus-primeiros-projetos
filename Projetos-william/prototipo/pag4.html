@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Acomodações</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #2a2a2a;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .date-picker {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .date-picker .date-container {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            background-color: #333;
+            color: #fff;
+            width: 300px;
+            text-align: center;
+        }
+
+        .date-picker input[type="date"] {
+            margin-top: 10px;
+            padding: 5px;
+            font-size: 1em;
+            border: none;
+            border-radius: 4px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .date-picker button {
+            margin-top: 10px;
+            background-color: #ff5c5c;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .date-picker button:hover {
+            background-color: #e84e4e;
+        }
+
+        .room-layout {
+            flex: 2;
+            text-align: center;
+        }
+
+        .room-layout h2 {
+            font-size: 1.5em;
+            color: #ff00ff;
+            margin-bottom: 10px;
+        }
+
+        .rooms {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+        }
+
+        .room {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .room.selected {
+            background-color: #ff5c5c;
+            color: #fff;
+        }
+
+        .room:hover {
+            background-color: #ddd;
+        }
+
+        .room.disabled {
+            background-color: #ccc;
+            color: #999;
+            pointer-events: none;
+        }
+        .header .icon {
+            font-size: 1.5em;
+            
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            gap: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .iconfoto {
+            float: left;
+        }
+        .iconconf {
+            float: right;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .header {
+                font-size: 1.5em;
+                padding: 10px;
+            }
+
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .room-layout, .date-picker {
+                width: 100%;
+                text-align: center;
+            }
+
+            .rooms {
+                grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+                gap: 10px;
+            }
+
+            .room {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2em;
+            }
+
+            .date-picker .date-container {
+                max-width: 280px;
+            }
+
+            .date-picker input[type="date"] {
+                font-size: 1em;
+            }}
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary" data-bs-theme="dark" style="padding: 20px;">
+        <div class="container-fluid">
+          <a href="index.html"><span class="navbar-brand mb-0 h1"> <- Voltar a tela inicial</span></a>
+        </div>
+      </nav>
+    
+    <div class="container">
+        <div class="header">
+            Gestão de Acomodações
+        </div>
+
+        <div class="content">
+            <div class="date-picker">
+                <div class="date-container">
+                    <label for="date">Escolha uma data</label>
+                    <br>
+                    <input type="date" id="date" value="2025-12-25">
+                    <br>
+                    <button onclick="confirmDate()">OK</button>
+                </div>
+            </div>
+
+            <div class="room-layout">
+                <h2>LAYOUT DE QUARTOS</h2>
+                <div class="rooms">
+                    <div class="room" onclick="toggleRoomSelection(this)">1</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">2</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">3</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">4</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">5</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">6</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">7</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">8</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">9</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">10</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">11</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">12</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">13</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">14</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">15</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">16</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">17</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">18</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">19</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">20</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">21</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">22</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">23</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">24</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">25</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">26</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">27</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">28</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">29</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">30</div>
+                    <div class="room" onclick="toggleRoomSelection(this)">31</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function confirmDate() {
+            const dateInput = document.getElementById('date');
+            alert(`Data selecionada: ${dateInput.value}`);
+        }
+
+        function toggleRoomSelection(roomElement) {
+            roomElement.classList.toggle('selected');
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
